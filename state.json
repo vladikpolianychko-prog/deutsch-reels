@@ -1,0 +1,21 @@
+{
+  "updated": "2026-10-16",
+  "metricool": {"brandId": "7305714", "timezone": "Europe/Berlin"},
+  "next_prefix_number": 10,
+  "next_prefix": "bei",
+  "prefix_queue_after_bei": ["weg", "zurück", "fest", "her", "hin", "los", "weiter", "vorbei", "zusammen", "um (обережно: є відокремлювані й невідокремлювані дієслова)", "durch", "über", "unter"],
+  "last_carousel_design": "DAHYEBo3ruM",
+  "style_reference_media": {
+    "nach": ["MAHYEMPJd4Q", "MAHYEJeIJEs", "MAHYEPqsU30", "MAHYEIxMJ88", "MAHYEHroRDU", "MAHYEGeMMUs"]
+  },
+  "reel_correct_option_last": {"aus": "B", "nach": "A", "next_should_be": "B"},
+  "reel_format": "toolkit/reel/render_reel.sh (7 с, відповідь на 3,25 с)",
+  "posts": [
+    {"series": "aus", "no": 8, "type": "carousel", "url": "https://www.instagram.com/p/Degj8ziCqLy/"},
+    {"series": "aus", "no": 8, "type": "reel v2 (9 с)", "url": "https://www.instagram.com/reel/DegzpKKFUiG/"},
+    {"series": "nach", "no": 9, "type": "carousel", "url": "https://www.instagram.com/p/DejECiviMvb/", "published": "2026-10-16 10:00"},
+    {"series": "nach", "no": 9, "type": "reel v3 (7 с)", "metricool_uuid": "-6601683739348417833", "scheduled": "2026-10-16 14:00"}
+  ],
+  "do_not_publish": ["reels/jobcenter-ledig-faul.mp4 (користувач: не публікувати)"],
+  "metricool_drafts_to_ignore": ["Story (uuid -2801422566541996318)", "Jobcenter reel (uuid 3942085842112497195)", "ТЕСТ — видалити (30 Dec)"]
+}
