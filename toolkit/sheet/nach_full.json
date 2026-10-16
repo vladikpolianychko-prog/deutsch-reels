@@ -1,0 +1,965 @@
+{
+ "sticky": "Deutsch в зошиті · Префікси №9",
+ "title": "nach-",
+ "meaning": "= слідом / після / ще раз",
+ "rule_head": "Правило рамки",
+ "rule": [
+  {
+   "segs": [
+    [
+     "Дієслово",
+     "red"
+    ],
+    [
+     " — на 2-му місці, ",
+     "ink"
+    ],
+    [
+     "nach-",
+     "blue"
+    ],
+    [
+     " — у кінці:",
+     "ink"
+    ]
+   ],
+   "size": 46
+  },
+  {
+   "segs": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "denke",
+     "red"
+    ],
+    [
+     " gut ",
+     "ink"
+    ],
+    [
+     "nach",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "size": 64,
+   "bold": true,
+   "gap": 10
+  },
+  {
+   "segs": [
+    [
+     "Я добре роздумую.",
+     "grey"
+    ]
+   ],
+   "size": 36
+  },
+  {
+   "segs": [
+    [
+     "Perfekt: ",
+     "ink"
+    ],
+    [
+     "nach",
+     "blue"
+    ],
+    [
+     " + ",
+     "ink"
+    ],
+    [
+     "ge",
+     "orange"
+    ],
+    [
+     " + dacht = ",
+     "ink"
+    ],
+    [
+     "nachgedacht",
+     "red"
+    ]
+   ],
+   "size": 46
+  },
+  {
+   "segs": [
+    [
+     "У підрядному — разом: ..., weil ich ",
+     "ink"
+    ],
+    [
+     "nachdenke",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "size": 46
+  }
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "Усі дієслова з ",
+    "ink"
+   ],
+   [
+    "nach-",
+    "blue"
+   ],
+   [
+    " відокремлювані: префікс іде в кінець.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Perfekt: ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    "+",
+    "ink"
+   ],
+   [
+    "ge",
+    "orange"
+   ],
+   [
+    "+корінь: nachgefragt, nachgeschaut.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Рух і зміна: ",
+    "ink"
+   ],
+   [
+    "ist",
+    "red"
+   ],
+   [
+    " nachkommen, nachlaufen, nachwachsen.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Решта дієслів: ",
+    "ink"
+   ],
+   [
+    "hat",
+    "green"
+   ],
+   [
+    " + Partizip II: hat nachgeprüft.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "З modal-дієсловом префікс не відділяється: ",
+    "ink"
+   ],
+   [
+    "Ich muss nachfragen.",
+    "blue"
+   ]
+  ]
+ ],
+ "plan": [
+  [
+   [
+    "1  ",
+    "orange"
+   ],
+   [
+    "Прочитай правило рамки та пам'ятку.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  ",
+    "orange"
+   ],
+   [
+    "50 дієслів (стор. 2–5): по 10 на день.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  ",
+    "orange"
+   ],
+   [
+    "15 вправ (стор. 6–7), відповіді (стор. 8).",
+    "ink"
+   ]
+  ]
+ ],
+ "groups": [
+  {
+   "title": "Думати, перевіряти, шукати",
+   "verbs": [
+    [
+     "nachdenken",
+     "роздумувати",
+     "Ich denke über meine Zukunft nach.",
+     "hat nachgedacht"
+    ],
+    [
+     "nachfragen",
+     "перепитати, уточнити",
+     "Ich frage morgen im Büro nach.",
+     "hat nachgefragt"
+    ],
+    [
+     "nachschauen",
+     "глянути, перевірити",
+     "Schau bitte kurz im Kalender nach.",
+     "hat nachgeschaut"
+    ],
+    [
+     "nachsehen",
+     "перевірити, подивитися",
+     "Ich sehe schnell nach, ob er da ist.",
+     "hat nachgesehen"
+    ],
+    [
+     "nachprüfen",
+     "перевірити (факти)",
+     "Ich prüfe die Zahlen noch einmal nach.",
+     "hat nachgeprüft"
+    ],
+    [
+     "nachrechnen",
+     "перерахувати",
+     "Rechne das lieber noch einmal nach.",
+     "hat nachgerechnet"
+    ],
+    [
+     "nachzählen",
+     "перелічити, перерахувати",
+     "Ich zähle das Wechselgeld nach.",
+     "hat nachgezählt"
+    ],
+    [
+     "nachmessen",
+     "перемірити",
+     "Wir messen die Wand noch einmal nach.",
+     "hat nachgemessen"
+    ],
+    [
+     "nachweisen",
+     "підтвердити документом",
+     "Du musst deinen Abschluss nachweisen.",
+     "hat nachgewiesen"
+    ],
+    [
+     "nachschlagen",
+     "шукати в словнику",
+     "Ich schlage das Wort im Wörterbuch nach.",
+     "hat nachgeschlagen"
+    ],
+    [
+     "nachlesen",
+     "перечитати, прочитати",
+     "Das kannst du im Text nachlesen.",
+     "hat nachgelesen"
+    ],
+    [
+     "nachforschen",
+     "з'ясовувати, розслідувати",
+     "Ich forsche nach, woher die Nachricht kommt.",
+     "hat nachgeforscht"
+    ],
+    [
+     "nachhaken",
+     "допитуватися, наполягати",
+     "Ich hake beim Amt noch einmal nach.",
+     "hat nachgehakt"
+    ]
+   ]
+  },
+  {
+   "title": "Повторювати, виправляти, надолужувати",
+   "verbs": [
+    [
+     "nachmachen",
+     "повторити за кимось",
+     "Mach mir das nach!",
+     "hat nachgemacht"
+    ],
+    [
+     "nachahmen",
+     "наслідувати",
+     "Das Kind ahmt den Vater nach.",
+     "hat nachgeahmt"
+    ],
+    [
+     "nachsprechen",
+     "повторювати вголос",
+     "Sprich den Satz langsam nach.",
+     "hat nachgesprochen"
+    ],
+    [
+     "nachspielen",
+     "відтворити, зіграти знову",
+     "Die Kinder spielen die Szene nach.",
+     "hat nachgespielt"
+    ],
+    [
+     "nachzeichnen",
+     "змалювати, обвести",
+     "Sie zeichnet das Bild nach.",
+     "hat nachgezeichnet"
+    ],
+    [
+     "nachbauen",
+     "зробити копію",
+     "Er baut das Modell nach.",
+     "hat nachgebaut"
+    ],
+    [
+     "nachkochen",
+     "приготувати за рецептом",
+     "Ich koche das Rezept heute nach.",
+     "hat nachgekocht"
+    ],
+    [
+     "nachbessern",
+     "доопрацювати",
+     "Wir bessern den Text noch nach.",
+     "hat nachgebessert"
+    ],
+    [
+     "nachstellen",
+     "відрегулювати",
+     "Er stellt die Uhr nach.",
+     "hat nachgestellt"
+    ],
+    [
+     "nachhelfen",
+     "підтягнути, допомогти",
+     "Ich helfe meinem Sohn in Mathe nach.",
+     "hat nachgeholfen"
+    ],
+    [
+     "nachholen",
+     "надолужити",
+     "Ich hole die Stunde nächste Woche nach.",
+     "hat nachgeholt"
+    ],
+    [
+     "nachvollziehen",
+     "зрозуміти (логіку)",
+     "Ich kann deine Entscheidung nachvollziehen.",
+     "hat nachvollzogen"
+    ]
+   ]
+  },
+  {
+   "title": "Додати, докупити, доплатити",
+   "verbs": [
+    [
+     "nachfüllen",
+     "долити, поповнити",
+     "Ich fülle das Wasser nach.",
+     "hat nachgefüllt"
+    ],
+    [
+     "nachschenken",
+     "долити (напій)",
+     "Darf ich dir Tee nachschenken?",
+     "hat nachgeschenkt"
+    ],
+    [
+     "nachlegen",
+     "підкинути, додати",
+     "Er legt Holz nach.",
+     "hat nachgelegt"
+    ],
+    [
+     "nachsalzen",
+     "досолити",
+     "Ich salze die Suppe nach.",
+     "hat nachgesalzen"
+    ],
+    [
+     "nachtanken",
+     "дозаправитися",
+     "Wir tanken unterwegs nach.",
+     "hat nachgetankt"
+    ],
+    [
+     "nachbestellen",
+     "дозамовити",
+     "Wir bestellen noch Getränke nach.",
+     "hat nachbestellt"
+    ],
+    [
+     "nachkaufen",
+     "докупити",
+     "Ich kaufe die Batterien nach.",
+     "hat nachgekauft"
+    ],
+    [
+     "nachzahlen",
+     "доплатити",
+     "Ich muss 20 Euro nachzahlen.",
+     "hat nachgezahlt"
+    ],
+    [
+     "nachreichen",
+     "подати пізніше (документ)",
+     "Ich reiche das Zeugnis später nach.",
+     "hat nachgereicht"
+    ],
+    [
+     "nachtragen",
+     "дописати, внести пізніше",
+     "Ich trage die Daten später nach.",
+     "hat nachgetragen"
+    ],
+    [
+     "nachschreiben",
+     "написати пізніше",
+     "Er schreibt die Klausur nach.",
+     "hat nachgeschrieben"
+    ],
+    [
+     "nachschicken",
+     "переслати слідом",
+     "Ich schicke dir das Dokument nach.",
+     "hat nachgeschickt"
+    ],
+    [
+     "nachfeiern",
+     "відсвяткувати пізніше",
+     "Wir feiern deinen Geburtstag nach.",
+     "hat nachgefeiert"
+    ]
+   ]
+  },
+  {
+   "title": "Рух, час, наслідки",
+   "verbs": [
+    [
+     "nachkommen",
+     "прийти пізніше, слідом",
+     "Ich komme später nach.",
+     "ist nachgekommen"
+    ],
+    [
+     "nachlaufen",
+     "бігти слідом",
+     "Der Hund läuft mir nach.",
+     "ist nachgelaufen"
+    ],
+    [
+     "nachfolgen",
+     "йти слідом",
+     "Du gehst vor, ich folge nach.",
+     "ist nachgefolgt"
+    ],
+    [
+     "nachrufen",
+     "гукнути навздогін",
+     "Er ruft mir etwas nach.",
+     "hat nachgerufen"
+    ],
+    [
+     "nachgehen",
+     "відставати (годинник)",
+     "Meine Uhr geht nach.",
+     "ist nachgegangen"
+    ],
+    [
+     "nachrücken",
+     "посунути, зайняти місце",
+     "Der nächste Kandidat rückt nach.",
+     "ist nachgerückt"
+    ],
+    [
+     "nachwachsen",
+     "відростати",
+     "Die Haare wachsen schnell nach.",
+     "ist nachgewachsen"
+    ],
+    [
+     "nachlassen",
+     "слабшати",
+     "Der Regen lässt nach.",
+     "hat nachgelassen"
+    ],
+    [
+     "nachgeben",
+     "поступитися",
+     "Ich gebe nicht nach.",
+     "hat nachgegeben"
+    ],
+    [
+     "nachwirken",
+     "діяти надалі",
+     "Das Gespräch wirkt lange nach.",
+     "hat nachgewirkt"
+    ],
+    [
+     "nachtrauern",
+     "сумувати за втраченим",
+     "Er trauert der Zeit nach.",
+     "hat nachgetrauert"
+    ],
+    [
+     "nachsitzen",
+     "залишитися після уроків",
+     "Der Schüler muss nachsitzen.",
+     "hat nachgesessen"
+    ]
+   ]
+  }
+ ],
+ "ex_title": "15 вправ",
+ "ex": [
+  {
+   "head": "A. Präsens: встав дієслово і префікс",
+   "items": [
+    [
+     "Ich ______ morgen im Büro ______.",
+     "nachfragen"
+    ],
+    [
+     "Du ______ die Zahlen noch einmal ______.",
+     "nachprüfen"
+    ],
+    [
+     "Er ______ die Suppe ______.",
+     "nachsalzen"
+    ],
+    [
+     "Wir ______ das Rezept heute ______.",
+     "nachkochen"
+    ],
+    [
+     "Der Regen ______ langsam ______.",
+     "nachlassen"
+    ]
+   ]
+  },
+  {
+   "head": "B. Perfekt: встав правильну форму",
+   "items": [
+    [
+     "Gestern habe ich das Wort im Wörterbuch ______.",
+     "nachschlagen"
+    ],
+    [
+     "Er hat die Klausur ______.",
+     "nachschreiben"
+    ],
+    [
+     "Wir haben deinen Geburtstag ______.",
+     "nachfeiern"
+    ],
+    [
+     "Der Hund ______ mir ______.",
+     "nachlaufen, Perfekt"
+    ],
+    [
+     "Ich ______ das Zeugnis später ______.",
+     "nachreichen, Perfekt"
+    ]
+   ]
+  },
+  {
+   "head": "C. Переклади на німецьку",
+   "items": [
+    [
+     "Я прийду пізніше.",
+     "nachkommen"
+    ],
+    [
+     "Можна тобі долити чаю?",
+     "nachschenken"
+    ],
+    [
+     "Я не поступлюся.",
+     "nachgeben"
+    ]
+   ]
+  },
+  {
+   "head": "D. Склади речення",
+   "items": [
+    [
+     "ich / schlage / das Wort / im Wörterbuch / nach",
+     "порядок слів"
+    ],
+    [
+     "Ich bin still, weil ich gerade ______.",
+     "nachdenken"
+    ]
+   ]
+  }
+ ],
+ "answers_title": "Відповіді (закрий, поки не зробиш вправи!)",
+ "answers": [
+  [
+   [
+    "1  ",
+    "orange"
+   ],
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "frage",
+    "red"
+   ],
+   [
+    " morgen im Büro ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  ",
+    "orange"
+   ],
+   [
+    "Du ",
+    "ink"
+   ],
+   [
+    "prüfst",
+    "red"
+   ],
+   [
+    " die Zahlen noch einmal ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  ",
+    "orange"
+   ],
+   [
+    "Er ",
+    "ink"
+   ],
+   [
+    "salzt",
+    "red"
+   ],
+   [
+    " die Suppe ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  ",
+    "orange"
+   ],
+   [
+    "Wir ",
+    "ink"
+   ],
+   [
+    "kochen",
+    "red"
+   ],
+   [
+    " das Rezept heute ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "5  ",
+    "orange"
+   ],
+   [
+    "Der Regen ",
+    "ink"
+   ],
+   [
+    "lässt",
+    "red"
+   ],
+   [
+    " langsam ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "6  ",
+    "orange"
+   ],
+   [
+    "Gestern habe ich das Wort im Wörterbuch ",
+    "ink"
+   ],
+   [
+    "nachgeschlagen",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "7  ",
+    "orange"
+   ],
+   [
+    "Er hat die Klausur ",
+    "ink"
+   ],
+   [
+    "nachgeschrieben",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "8  ",
+    "orange"
+   ],
+   [
+    "Wir haben deinen Geburtstag ",
+    "ink"
+   ],
+   [
+    "nachgefeiert",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "9  ",
+    "orange"
+   ],
+   [
+    "Der Hund ",
+    "ink"
+   ],
+   [
+    "ist",
+    "red"
+   ],
+   [
+    " mir ",
+    "ink"
+   ],
+   [
+    "nachgelaufen",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "10  ",
+    "orange"
+   ],
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "habe",
+    "red"
+   ],
+   [
+    " das Zeugnis später ",
+    "ink"
+   ],
+   [
+    "nachgereicht",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "11  ",
+    "orange"
+   ],
+   [
+    "Ich komme später ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "12  ",
+    "orange"
+   ],
+   [
+    "Darf ich dir Tee ",
+    "ink"
+   ],
+   [
+    "nachschenken",
+    "red"
+   ],
+   [
+    "?",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "13  ",
+    "orange"
+   ],
+   [
+    "Ich gebe nicht ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "14  ",
+    "orange"
+   ],
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "schlage",
+    "red"
+   ],
+   [
+    " das Wort im Wörterbuch ",
+    "ink"
+   ],
+   [
+    "nach",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "15  ",
+    "orange"
+   ],
+   [
+    "Ich bin still, weil ich gerade ",
+    "ink"
+   ],
+   [
+    "nachdenke",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ],
+ "friend": "Перевір друга: хто швидше зробить усі 15 без підглядання?",
+ "footer": "Далі: Префікси №10 — bei-    @deutsch_v_zoshity",
+ "plan_title": "Як користуватися"
+}
