@@ -1,0 +1,396 @@
+{
+  "sticky": "Deutsch в зошиті · Префікси №9",
+  "title": "nach-",
+  "meaning": "= слідом / після / ще раз",
+  "rule_head": "Правило рамки",
+  "rule": [
+    {
+      "size": 40,
+      "bold": false,
+      "segs": [
+        [
+          "Дієслово",
+          "red"
+        ],
+        [
+          " — на 2-му місці, ",
+          "ink"
+        ],
+        [
+          "nach-",
+          "blue"
+        ],
+        [
+          " — у кінці:",
+          "ink"
+        ]
+      ]
+    },
+    {
+      "size": 62,
+      "bold": true,
+      "segs": [
+        [
+          "Ich ",
+          "ink"
+        ],
+        [
+          "denke",
+          "red"
+        ],
+        [
+          " gut ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          ".",
+          "ink"
+        ]
+      ]
+    },
+    {
+      "size": 34,
+      "bold": false,
+      "segs": [
+        [
+          "Я добре роздумую.",
+          "grey"
+        ]
+      ]
+    },
+    {
+      "size": 42,
+      "bold": false,
+      "gap": 20,
+      "segs": [
+        [
+          "Perfekt: ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          " + ",
+          "ink"
+        ],
+        [
+          "ge",
+          "orange"
+        ],
+        [
+          " + dacht = ",
+          "ink"
+        ],
+        [
+          "nachgedacht",
+          "red"
+        ]
+      ]
+    },
+    {
+      "size": 40,
+      "bold": false,
+      "gap": 14,
+      "segs": [
+        [
+          "У підрядному — разом: ",
+          "ink"
+        ],
+        [
+          "…, weil ich nachdenke.",
+          "blue"
+        ]
+      ]
+    }
+  ],
+  "verbs_title": "5 дієслів з nach-",
+  "verbs": [
+    {
+      "de": "nachdenken",
+      "ua": "роздумувати",
+      "ex": [
+        [
+          "Ich denke über meine Zukunft ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          ".",
+          "ink"
+        ]
+      ],
+      "tr": "Я думаю над своїм майбутнім.",
+      "perfekt": "hat nachgedacht"
+    },
+    {
+      "de": "nachfragen",
+      "ua": "перепитати, уточнити",
+      "ex": [
+        [
+          "Ich frage morgen ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          ".",
+          "ink"
+        ]
+      ],
+      "tr": "Я уточню завтра.",
+      "perfekt": "hat nachgefragt"
+    },
+    {
+      "de": "nachschauen",
+      "ua": "перевірити, глянути",
+      "ex": [
+        [
+          "Ich schaue kurz ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          ".",
+          "ink"
+        ]
+      ],
+      "tr": "Я швидко перевірю.",
+      "perfekt": "hat nachgeschaut"
+    },
+    {
+      "de": "nachmachen",
+      "ua": "повторити за кимось",
+      "ex": [
+        [
+          "Mach mir das ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          "!",
+          "ink"
+        ]
+      ],
+      "tr": "Повтори за мною!",
+      "perfekt": "hat nachgemacht"
+    },
+    {
+      "de": "nachkommen",
+      "ua": "прийти слідом, пізніше",
+      "ex": [
+        [
+          "Ich komme später ",
+          "ink"
+        ],
+        [
+          "nach",
+          "blue"
+        ],
+        [
+          ".",
+          "ink"
+        ]
+      ],
+      "tr": "Я прийду пізніше.",
+      "perfekt": "ist nachgekommen (sein!)"
+    }
+  ],
+  "test_title": "Тест: встав дієслово з nach-",
+  "test": [
+    {
+      "q": [
+        [
+          "Du ______ gut ______.",
+          "ink"
+        ]
+      ],
+      "hint": "(nachdenken)"
+    },
+    {
+      "q": [
+        [
+          "Ich ______ später ______.",
+          "ink"
+        ]
+      ],
+      "hint": "(nachkommen)"
+    },
+    {
+      "q": [
+        [
+          "Ich ______ noch einmal ______.",
+          "ink"
+        ]
+      ],
+      "hint": "(nachfragen)"
+    },
+    {
+      "q": [
+        [
+          "Gestern habe ich lange ______.",
+          "ink"
+        ]
+      ],
+      "hint": "(nachdenken, Perfekt)"
+    }
+  ],
+  "friend": "Перевір друга: хто швидше вставить усе без підглядання?",
+  "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+  "answers": [
+    [
+      [
+        "1  Du ",
+        "ink"
+      ],
+      [
+        "denkst",
+        "red"
+      ],
+      [
+        " gut ",
+        "ink"
+      ],
+      [
+        "nach",
+        "blue"
+      ],
+      [
+        ".",
+        "ink"
+      ]
+    ],
+    [
+      [
+        "2  Ich ",
+        "ink"
+      ],
+      [
+        "komme",
+        "red"
+      ],
+      [
+        " später ",
+        "ink"
+      ],
+      [
+        "nach",
+        "blue"
+      ],
+      [
+        ".",
+        "ink"
+      ]
+    ],
+    [
+      [
+        "3  Ich ",
+        "ink"
+      ],
+      [
+        "frage",
+        "red"
+      ],
+      [
+        " noch einmal ",
+        "ink"
+      ],
+      [
+        "nach",
+        "blue"
+      ],
+      [
+        ".",
+        "ink"
+      ]
+    ],
+    [
+      [
+        "4  Gestern habe ich lange ",
+        "ink"
+      ],
+      [
+        "nachgedacht",
+        "red"
+      ],
+      [
+        ".",
+        "ink"
+      ]
+    ]
+  ],
+  "footer": "Далі: Префікси №10 — bei-    @deutsch_v_zoshity",
+  "recap_title": "Запам'ятай",
+  "recap": [
+    [
+      [
+        "Рамка: дієслово — на 2-му місці, ",
+        "ink"
+      ],
+      [
+        "nach-",
+        "blue"
+      ],
+      [
+        " — у кінець.",
+        "ink"
+      ]
+    ],
+    [
+      [
+        "Perfekt: ",
+        "ink"
+      ],
+      [
+        "nach",
+        "blue"
+      ],
+      [
+        "+",
+        "ink"
+      ],
+      [
+        "ge",
+        "orange"
+      ],
+      [
+        "+корінь: nachgedacht, nachgefragt, nachgeschaut.",
+        "ink"
+      ]
+    ],
+    [
+      [
+        "nachkommen",
+        "blue"
+      ],
+      [
+        " — з ",
+        "ink"
+      ],
+      [
+        "sein",
+        "red"
+      ],
+      [
+        ": ist nachgekommen.",
+        "ink"
+      ]
+    ]
+  ]
+}
