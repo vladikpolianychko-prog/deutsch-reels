@@ -1,21 +1,106 @@
 {
-  "updated": "2026-10-16",
-  "metricool": {"brandId": "7305714", "timezone": "Europe/Berlin"},
-  "next_prefix_number": 10,
-  "next_prefix": "bei",
-  "prefix_queue_after_bei": ["weg", "zurück", "fest", "her", "hin", "los", "weiter", "vorbei", "zusammen", "um (обережно: є відокремлювані й невідокремлювані дієслова)", "durch", "über", "unter"],
-  "last_carousel_design": "DAHYEBo3ruM",
-  "style_reference_media": {
-    "nach": ["MAHYEMPJd4Q", "MAHYEJeIJEs", "MAHYEPqsU30", "MAHYEIxMJ88", "MAHYEHroRDU", "MAHYEGeMMUs"]
+  "updated": "2026-10-17",
+  "metricool": {
+    "brandId": "7305714",
+    "timezone": "Europe/Berlin"
   },
-  "reel_correct_option_last": {"aus": "B", "nach": "A", "next_should_be": "B"},
+  "next_prefix_number": 11,
+  "next_prefix": "weg",
+  "prefix_queue_after_bei": [
+    "weg",
+    "zurück",
+    "fest",
+    "her",
+    "hin",
+    "los",
+    "weiter",
+    "vorbei",
+    "zusammen",
+    "um (обережно: є відокремлювані й невідокремлювані дієслова)",
+    "durch",
+    "über",
+    "unter"
+  ],
+  "last_carousel_design": "DAHYQkPsp8E",
+  "style_reference_media": {
+    "nach": [
+      "MAHYEMPJd4Q",
+      "MAHYEJeIJEs",
+      "MAHYEPqsU30",
+      "MAHYEIxMJ88",
+      "MAHYEHroRDU",
+      "MAHYEGeMMUs"
+    ],
+    "bei": [
+      "MAHYQtMUgkY",
+      "MAHYQsO63Ks",
+      "MAHYQnnbkFM",
+      "MAHYQlUC0Js",
+      "MAHYQr8QvZc",
+      "MAHYQkSpYNQ"
+    ]
+  },
+  "reel_correct_option_last": {
+    "aus": "B",
+    "nach": "A",
+    "bei": "B",
+    "next_should_be": "A"
+  },
   "reel_format": "toolkit/reel/render_reel.sh (7 с, відповідь на 3,25 с)",
   "posts": [
-    {"series": "aus", "no": 8, "type": "carousel", "url": "https://www.instagram.com/p/Degj8ziCqLy/"},
-    {"series": "aus", "no": 8, "type": "reel v2 (9 с)", "url": "https://www.instagram.com/reel/DegzpKKFUiG/"},
-    {"series": "nach", "no": 9, "type": "carousel", "url": "https://www.instagram.com/p/DejECiviMvb/", "published": "2026-10-16 10:00"},
-    {"series": "nach", "no": 9, "type": "reel v3 (7 с)", "metricool_uuid": "-6601683739348417833", "scheduled": "2026-10-16 14:00"}
+    {
+      "series": "aus",
+      "no": 8,
+      "type": "carousel",
+      "url": "https://www.instagram.com/p/Degj8ziCqLy/"
+    },
+    {
+      "series": "aus",
+      "no": 8,
+      "type": "reel v2 (9 с)",
+      "url": "https://www.instagram.com/reel/DegzpKKFUiG/"
+    },
+    {
+      "series": "nach",
+      "no": 9,
+      "type": "carousel",
+      "url": "https://www.instagram.com/p/DejECiviMvb/",
+      "published": "2026-10-16 10:00"
+    },
+    {
+      "series": "nach",
+      "no": 9,
+      "type": "reel v3 (7 с)",
+      "metricool_uuid": "-6601683739348417833",
+      "scheduled": "2026-10-16 14:00"
+    },
+    {
+      "series": "bei",
+      "no": 10,
+      "type": "carousel",
+      "metricool_uuid": "6816418820002893369",
+      "metricool_id": "398431288",
+      "scheduled": "2026-10-17 13:30"
+    },
+    {
+      "series": "bei",
+      "no": 10,
+      "type": "reel v3 (7 с)",
+      "metricool_uuid": "-7768093458071599563",
+      "metricool_id": "398431955",
+      "scheduled": "2026-10-17 16:00"
+    }
   ],
-  "do_not_publish": ["reels/jobcenter-ledig-faul.mp4 (користувач: не публікувати)"],
-  "metricool_drafts_to_ignore": ["Story (uuid -2801422566541996318)", "Jobcenter reel (uuid 3942085842112497195)", "ТЕСТ — видалити (30 Dec)"]
+  "do_not_publish": [
+    "reels/jobcenter-ledig-faul.mp4 (користувач: не публікувати)"
+  ],
+  "metricool_drafts_to_ignore": [
+    "Story (uuid -2801422566541996318)",
+    "Jobcenter reel (uuid 3942085842112497195)",
+    "ТЕСТ — видалити (30 Dec)"
+  ],
+  "schedule_regime": "з 18.10.2026 щодня: карусель 10:00 і рілс 14:00 до неї (Europe/Berlin). Виняток 17.10: карусель 13:30, рілс 16:00.",
+  "sheets": {
+    "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
+  }
 }
