@@ -1,131 +1,139 @@
 {
-  "updated": "2026-10-18",
-  "metricool": {
-    "brandId": "7305714",
-    "timezone": "Europe/Berlin"
+ "updated": "2026-10-18",
+ "metricool": {
+  "brandId": "7305714",
+  "timezone": "Europe/Berlin"
+ },
+ "next_prefix_number": 12,
+ "next_prefix": "zurück",
+ "prefix_queue_after_bei": [
+  "zurück",
+  "fest",
+  "her",
+  "hin",
+  "los",
+  "weiter",
+  "vorbei",
+  "zusammen",
+  "um (обережно: є відокремлювані й невідокремлювані дієслова)",
+  "durch",
+  "über",
+  "unter"
+ ],
+ "last_carousel_design": "DAHYSBKUsyI",
+ "style_reference_media": {
+  "nach": [
+   "MAHYEMPJd4Q",
+   "MAHYEJeIJEs",
+   "MAHYEPqsU30",
+   "MAHYEIxMJ88",
+   "MAHYEHroRDU",
+   "MAHYEGeMMUs"
+  ],
+  "bei": [
+   "MAHYQtMUgkY",
+   "MAHYQsO63Ks",
+   "MAHYQnnbkFM",
+   "MAHYQlUC0Js",
+   "MAHYQr8QvZc",
+   "MAHYQkSpYNQ"
+  ],
+  "weg": [
+   "MAHYSPrN6M4",
+   "MAHYSAHOu7s",
+   "MAHYSNCAYN8",
+   "MAHYSGiegF0",
+   "MAHYSHSU41g",
+   "MAHYSBXa0B4"
+  ]
+ },
+ "reel_correct_option_last": {
+  "aus": "B",
+  "nach": "A",
+  "bei": "B",
+  "next_should_be": "B",
+  "weg": "A"
+ },
+ "reel_format": "v4 ситуація (з 19.10); квіз v3 — ставимо на паузу",
+ "posts": [
+  {
+   "series": "aus",
+   "no": 8,
+   "type": "carousel",
+   "url": "https://www.instagram.com/p/Degj8ziCqLy/"
   },
-  "next_prefix_number": 12,
-  "next_prefix": "zurück",
-  "prefix_queue_after_bei": [
-    "zurück",
-    "fest",
-    "her",
-    "hin",
-    "los",
-    "weiter",
-    "vorbei",
-    "zusammen",
-    "um (обережно: є відокремлювані й невідокремлювані дієслова)",
-    "durch",
-    "über",
-    "unter"
-  ],
-  "last_carousel_design": "DAHYSBKUsyI",
-  "style_reference_media": {
-    "nach": [
-      "MAHYEMPJd4Q",
-      "MAHYEJeIJEs",
-      "MAHYEPqsU30",
-      "MAHYEIxMJ88",
-      "MAHYEHroRDU",
-      "MAHYEGeMMUs"
-    ],
-    "bei": [
-      "MAHYQtMUgkY",
-      "MAHYQsO63Ks",
-      "MAHYQnnbkFM",
-      "MAHYQlUC0Js",
-      "MAHYQr8QvZc",
-      "MAHYQkSpYNQ"
-    ],
-    "weg": [
-      "MAHYSPrN6M4",
-      "MAHYSAHOu7s",
-      "MAHYSNCAYN8",
-      "MAHYSGiegF0",
-      "MAHYSHSU41g",
-      "MAHYSBXa0B4"
-    ]
+  {
+   "series": "aus",
+   "no": 8,
+   "type": "reel v2 (9 с)",
+   "url": "https://www.instagram.com/reel/DegzpKKFUiG/"
   },
-  "reel_correct_option_last": {
-    "aus": "B",
-    "nach": "A",
-    "bei": "B",
-    "next_should_be": "B",
-    "weg": "A"
+  {
+   "series": "nach",
+   "no": 9,
+   "type": "carousel",
+   "url": "https://www.instagram.com/p/DejECiviMvb/",
+   "published": "2026-10-16 10:00"
   },
-  "reel_format": "toolkit/reel/render_reel.sh (7 с, відповідь на 3,25 с)",
-  "posts": [
-    {
-      "series": "aus",
-      "no": 8,
-      "type": "carousel",
-      "url": "https://www.instagram.com/p/Degj8ziCqLy/"
-    },
-    {
-      "series": "aus",
-      "no": 8,
-      "type": "reel v2 (9 с)",
-      "url": "https://www.instagram.com/reel/DegzpKKFUiG/"
-    },
-    {
-      "series": "nach",
-      "no": 9,
-      "type": "carousel",
-      "url": "https://www.instagram.com/p/DejECiviMvb/",
-      "published": "2026-10-16 10:00"
-    },
-    {
-      "series": "nach",
-      "no": 9,
-      "type": "reel v3 (7 с)",
-      "metricool_uuid": "-6601683739348417833",
-      "scheduled": "2026-10-16 14:00"
-    },
-    {
-      "series": "bei",
-      "no": 10,
-      "type": "carousel",
-      "metricool_uuid": "6816418820002893369",
-      "metricool_id": "398431288",
-      "scheduled": "2026-10-17 13:30"
-    },
-    {
-      "series": "bei",
-      "no": 10,
-      "type": "reel v3 (7 с)",
-      "metricool_uuid": "-7768093458071599563",
-      "metricool_id": "398431955",
-      "scheduled": "2026-10-17 16:00"
-    },
-    {
-      "series": "weg",
-      "no": 11,
-      "type": "carousel",
-      "metricool_uuid": "6833024673401425117",
-      "metricool_id": "398624228",
-      "scheduled": "2026-10-18 10:00"
-    },
-    {
-      "series": "weg",
-      "no": 11,
-      "type": "reel v3 (7 с)",
-      "metricool_uuid": "5328640534850784411",
-      "metricool_id": "398957801",
-      "scheduled": "2026-10-18 14:00",
-      "file": "reels/weg-11.mp4"
-    }
-  ],
-  "do_not_publish": [
-    "reels/jobcenter-ledig-faul.mp4 (користувач: не публікувати)"
-  ],
-  "metricool_drafts_to_ignore": [
-    "Story (uuid -2801422566541996318)",
-    "Jobcenter reel (uuid 3942085842112497195)",
-    "ТЕСТ — видалити (30 Dec)"
-  ],
-  "schedule_regime": "з 18.10.2026 щодня: карусель 10:00 і рілс 14:00 до неї (Europe/Berlin). Виняток 17.10: карусель 13:30, рілс 16:00.",
-  "sheets": {
-    "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
+  {
+   "series": "nach",
+   "no": 9,
+   "type": "reel v3 (7 с)",
+   "metricool_uuid": "-6601683739348417833",
+   "scheduled": "2026-10-16 14:00"
+  },
+  {
+   "series": "bei",
+   "no": 10,
+   "type": "carousel",
+   "metricool_uuid": "6816418820002893369",
+   "metricool_id": "398431288",
+   "scheduled": "2026-10-17 13:30"
+  },
+  {
+   "series": "bei",
+   "no": 10,
+   "type": "reel v3 (7 с)",
+   "metricool_uuid": "-7768093458071599563",
+   "metricool_id": "398431955",
+   "scheduled": "2026-10-17 16:00"
+  },
+  {
+   "series": "weg",
+   "no": 11,
+   "type": "carousel",
+   "metricool_uuid": "6833024673401425117",
+   "metricool_id": "398624228",
+   "scheduled": "2026-10-18 10:00"
+  },
+  {
+   "series": "weg",
+   "no": 11,
+   "type": "reel v3 (7 с)",
+   "metricool_uuid": "5328640534850784411",
+   "metricool_id": "398957801",
+   "scheduled": "2026-10-18 14:00",
+   "file": "reels/weg-11.mp4"
+  },
+  {
+   "date": "2026-10-19 14:00",
+   "type": "reel",
+   "topic": "situ-01-kita",
+   "metricool_uuid": "4486518052312141621",
+   "file": "reels/situ-01-kita.mp4",
+   "note": "перший рілс-ситуація, формат v4; CTA KITA — потрібен PDF з фразами"
   }
+ ],
+ "do_not_publish": [
+  "reels/jobcenter-ledig-faul.mp4 (користувач: не публікувати)"
+ ],
+ "metricool_drafts_to_ignore": [
+  "Story (uuid -2801422566541996318)",
+  "Jobcenter reel (uuid 3942085842112497195)",
+  "ТЕСТ — видалити (30 Dec)"
+ ],
+ "schedule_regime": "з 18.10.2026 щодня: карусель 10:00 і рілс 14:00 до неї (Europe/Berlin). Виняток 17.10: карусель 13:30, рілс 16:00.",
+ "sheets": {
+  "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
+ }
 }
