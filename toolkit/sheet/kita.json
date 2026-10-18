@@ -1,0 +1,353 @@
+{
+ "sticky": "Deutsch в зошиті · Німецька в житті №1",
+ "title": "Kita",
+ "meaning": "= дитячий садочок",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Забрати дитину — тільки ",
+     "ink"
+    ],
+    [
+     "abholen",
+     "blue"
+    ],
+    [
+     ":",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "hole",
+     "red"
+    ],
+    [
+     " mein Kind ",
+     "ink"
+    ],
+    [
+     "ab",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Я забираю дитину.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "aufheben",
+     "red"
+    ],
+    [
+     " = підняти з підлоги (НЕ забрати!)",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз для садочка",
+ "verbs": [
+  {
+   "de": "abholen",
+   "ua": "забрати",
+   "ex": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "hole",
+     "red"
+    ],
+    [
+     " mein Kind um 15 Uhr ",
+     "ink"
+    ],
+    [
+     "ab",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Я заберу дитину о 15:00.",
+   "perfekt": "Kann ich heute früher abholen?"
+  },
+  {
+   "de": "bringen",
+   "ua": "привести",
+   "ex": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "bringe",
+     "red"
+    ],
+    [
+     " mein Kind morgen um 8 Uhr.",
+     "ink"
+    ]
+   ],
+   "tr": "Я приведу дитину завтра о 8:00.",
+   "perfekt": "Morgen bringt Papa das Kind."
+  },
+  {
+   "de": "krank melden",
+   "ua": "повідомити про хворобу",
+   "ex": [
+    [
+     "Mein Kind ist ",
+     "ink"
+    ],
+    [
+     "krank",
+     "red"
+    ],
+    [
+     " und kommt heute nicht.",
+     "ink"
+    ]
+   ],
+   "tr": "Дитина хвора і сьогодні не прийде.",
+   "perfekt": "Ich melde mein Kind krank."
+  },
+  {
+   "de": "die Vollmacht",
+   "ua": "довіреність",
+   "ex": [
+    [
+     "Heute ",
+     "ink"
+    ],
+    [
+     "holt",
+     "red"
+    ],
+    [
+     " die Oma das Kind ",
+     "ink"
+    ],
+    [
+     "ab",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Сьогодні дитину забере бабуся.",
+   "perfekt": "Sie hat eine Vollmacht."
+  },
+  {
+   "de": "die Wechselkleidung",
+   "ua": "змінний одяг",
+   "ex": [
+    [
+     "Braucht mein Kind ",
+     "ink"
+    ],
+    [
+     "Wechselkleidung",
+     "red"
+    ],
+    [
+     "?",
+     "ink"
+    ]
+   ],
+   "tr": "Чи потрібен дитині змінний одяг?",
+   "perfekt": "Bitte Matschhose mitbringen."
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Ich ______ mein Kind um 15 Uhr ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(abholen)"
+  },
+  {
+   "q": [
+    [
+     "Mein Kind ist ______ und kommt heute nicht.",
+     "ink"
+    ]
+   ],
+   "hint": "(krank)"
+  },
+  {
+   "q": [
+    [
+     "Heute ______ die Oma das Kind ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(abholen)"
+  },
+  {
+   "q": [
+    [
+     "Ich ______ mein Kind morgen um 8 Uhr.",
+     "ink"
+    ]
+   ],
+   "hint": "(bringen)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Ich ",
+    "ink"
+   ],
+   [
+    "hole",
+    "red"
+   ],
+   [
+    " mein Kind um 15 Uhr ",
+    "ink"
+   ],
+   [
+    "ab",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Mein Kind ist ",
+    "ink"
+   ],
+   [
+    "krank",
+    "red"
+   ],
+   [
+    " und kommt heute nicht.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Heute ",
+    "ink"
+   ],
+   [
+    "holt",
+    "red"
+   ],
+   [
+    " die Oma das Kind ",
+    "ink"
+   ],
+   [
+    "ab",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Ich ",
+    "ink"
+   ],
+   [
+    "bringe",
+    "red"
+   ],
+   [
+    " mein Kind morgen um 8 Uhr.",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "aufheben",
+    "red"
+   ],
+   [
+    " = підняти з підлоги, а не забрати",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "der Elternabend",
+    "blue"
+   ],
+   [
+    " = батьківські збори",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "die Brotdose",
+    "blue"
+   ],
+   [
+    " = ланчбокс, ",
+    "ink"
+   ],
+   [
+    "die Trinkflasche",
+    "blue"
+   ],
+   [
+    " = пляшечка",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Далі: Німецька в житті №2 — табель    @deutsch_v_zoshity"
+}
