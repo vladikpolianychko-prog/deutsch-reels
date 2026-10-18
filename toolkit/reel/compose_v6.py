@@ -87,7 +87,7 @@ HOOK_DE = card([[DE(l, 84)] for l in CFG.get("hook_de_lines", [CFG["hook_de"]])]
 B_OKS = bubble([[DE(l, 70)] for l in CFG["say"]], .45, 620)
 _rh = B_OKS.height - 100 - 8; OKS_ROWS = [480 - B_OKS.height / 2 + 20 + 23 + (k + .55) * (_rh - 46) / len(CFG["say"]) for k in range(len(CFG["say"]))]
 B_KLA = bubble([[DE(l, 70)] for l in CFG["klaus"]], .62, 640)
-HEARD = card([[UA("Він почув:", 50, CORAL, "bold")], [UA(CFG["heard"], 66, OUT)]], CREAM, border=CORAL, maxw=980)
+HEARD = card([[UA(CFG.get("heard_label", "Він почув:"), 50, CORAL, "bold")], [UA(CFG["heard"], 66, OUT)]], CREAM, border=CORAL, maxw=980)
 FIX = card([[UA("ПРАВИЛЬНО", 44, WHITE, "black")], [DE(CFG["fix"], 92, WHITE)], [UA(CFG["gloss_de"], 62, SUN, "black"), UA(" = " + CFG["gloss_ua"], 62, WHITE, "bold")]], (35, 150, 118), pad=(46, 30), maxw=1000, gap=10)
 CTA = card([[UA(CFG["cta"], 66, OUT)]], SUN, pad=(44, 28), maxw=1000)
 QM = line_sprite([UA("?!", 150, CORAL)], 400)

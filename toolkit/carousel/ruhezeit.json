@@ -1,0 +1,166 @@
+{
+ "no": 3,
+ "prefix": "Ruhezeit",
+ "keyword": "RUHE",
+ "sticky": "Німецька в житті №3",
+ "big": "Ruhezeit",
+ "t2": "Час тиші = Ruhezeit",
+ "t3": "5 слів про сусідів",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю фрази для сусідів",
+ "next": "Далі: Jobcenter і «Kater»",
+ "hook_de": "Ich sauge nur kurz Staub.",
+ "wrong_ua": "Це ж лише хвилинка...",
+ "rule": [
+  [
+   [
+    "Ruhezeit",
+    "blue"
+   ],
+   [
+    " — тиша: 22:00–6:00",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Sonntag",
+    "red"
+   ],
+   [
+    " — тиша весь день",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Nach 22 Uhr ist ",
+   "ink"
+  ],
+  [
+   "Ruhezeit",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "Після 22:00 — час тиші.",
+ "perfekt": [
+  [
+   "Скажи: ",
+   "grey"
+  ],
+  [
+   "ich höre auf!",
+   "blue"
+  ]
+ ],
+ "verbs": [
+  [
+   "die Ruhezeit",
+   "час тиші"
+  ],
+  [
+   "die Hausordnung",
+   "правила будинку"
+  ],
+  [
+   "leise / laut",
+   "тихо / гучно"
+  ],
+  [
+   "der Nachbar",
+   "сусід"
+  ],
+  [
+   "sich beschweren",
+   "поскаржитись"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Nach 22 Uhr ist _____.",
+     "ink"
+    ]
+   ],
+   "hint": "Ruhezeit"
+  },
+  {
+   "q": [
+    [
+     "Bitte sei _____, ich schlafe.",
+     "ink"
+    ]
+   ],
+   "hint": "leise"
+  },
+  {
+   "q": [
+    [
+     "Das steht in der _____.",
+     "ink"
+    ]
+   ],
+   "hint": "Hausordnung"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Nach 22 Uhr ist ",
+    "ink"
+   ],
+   [
+    "Ruhezeit",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Bitte sei ",
+    "ink"
+   ],
+   [
+    "leise",
+    "red"
+   ],
+   [
+    ", ich schlafe.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Das steht in der ",
+    "ink"
+   ],
+   [
+    "Hausordnung",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ],
+ "note": [
+  [
+   "Не знала? ",
+   "grey"
+  ],
+  [
+   "Das wusste ich nicht.",
+   "ink"
+  ]
+ ]
+}

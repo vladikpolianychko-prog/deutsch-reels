@@ -1,0 +1,313 @@
+{
+ "sticky": "Deutsch в зошиті · Німецька в житті №3",
+ "title": "Ruhezeit",
+ "meaning": "= час тиші",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Зазвичай тиша з 22:00 до 6:00:",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Nach 22 Uhr ist ",
+     "ink"
+    ],
+    [
+     "Ruhezeit",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Після 22:00 — час тиші.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "Hausordnung",
+     "red"
+    ],
+    [
+     " = точні години саме у вашому будинку",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз для сусідів",
+ "verbs": [
+  {
+   "de": "leise sein",
+   "ua": "бути тихо",
+   "ex": [
+    [
+     "Bitte sei ",
+     "ink"
+    ],
+    [
+     "leise",
+     "red"
+    ],
+    [
+     ", die Kinder schlafen.",
+     "ink"
+    ]
+   ],
+   "tr": "Будь ласка, тихіше, діти сплять.",
+   "perfekt": "Wir sind gleich leise."
+  },
+  {
+   "de": "aufhören",
+   "ua": "припинити",
+   "ex": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "höre",
+     "red"
+    ],
+    [
+     " sofort ",
+     "ink"
+    ],
+    [
+     "auf",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Я одразу припиняю.",
+   "perfekt": "Ich habe aufgehört."
+  },
+  {
+   "de": "sich entschuldigen",
+   "ua": "вибачитись",
+   "ex": [
+    [
+     "Entschuldigung, das wusste ich nicht.",
+     "ink"
+    ]
+   ],
+   "tr": "Вибачте, я не знала.",
+   "perfekt": "Es kommt nicht wieder vor."
+  },
+  {
+   "de": "die Hausordnung",
+   "ua": "правила будинку",
+   "ex": [
+    [
+     "Das steht in der ",
+     "ink"
+    ],
+    [
+     "Hausordnung",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Це написано в правилах будинку.",
+   "perfekt": "Wo hängt die Hausordnung?"
+  },
+  {
+   "de": "sich beschweren",
+   "ua": "поскаржитись",
+   "ex": [
+    [
+     "Der Nachbar hat sich ",
+     "ink"
+    ],
+    [
+     "beschwert",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Сусід поскаржився.",
+   "perfekt": "Die Hausverwaltung weiß Bescheid."
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Nach 22 Uhr ist ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(Ruhezeit)"
+  },
+  {
+   "q": [
+    [
+     "Bitte sei ______, ich schlafe.",
+     "ink"
+    ]
+   ],
+   "hint": "(leise)"
+  },
+  {
+   "q": [
+    [
+     "Ich ______ sofort ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(aufhören)"
+  },
+  {
+   "q": [
+    [
+     "Das steht in der ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(Hausordnung)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Nach 22 Uhr ist ",
+    "ink"
+   ],
+   [
+    "Ruhezeit",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Bitte sei ",
+    "ink"
+   ],
+   [
+    "leise",
+    "red"
+   ],
+   [
+    ", ich schlafe.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Ich ",
+    "ink"
+   ],
+   [
+    "höre",
+    "red"
+   ],
+   [
+    " sofort ",
+    "ink"
+   ],
+   [
+    "auf",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Das steht in der ",
+    "ink"
+   ],
+   [
+    "Hausordnung",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "Sonntagsruhe",
+    "blue"
+   ],
+   [
+    " = у неділю й свята шумні роботи заборонені",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Staubsaugen, Bohren, Waschen",
+    "red"
+   ],
+   [
+    " — краще вдень у будень",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "der Nachbar",
+    "blue"
+   ],
+   [
+    " = сусід, ",
+    "ink"
+   ],
+   [
+    "die Nachbarin",
+    "blue"
+   ],
+   [
+    " = сусідка",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Далі: Німецька в житті №4 — Jobcenter    @deutsch_v_zoshity"
+}

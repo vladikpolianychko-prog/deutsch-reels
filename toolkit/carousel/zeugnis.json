@@ -1,0 +1,166 @@
+{
+ "no": 2,
+ "prefix": "Zeugnis",
+ "keyword": "NOTE",
+ "sticky": "Німецька в житті №2",
+ "big": "Zeugnis",
+ "t2": "1 = найкраща, 6 = найгірша",
+ "t3": "5 слів про школу",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю фрази для школи",
+ "next": "Далі: сусід стукає о 22:05",
+ "hook_de": "Mathe: eine Eins — sehr gut!",
+ "wrong_ua": "Одиниця — це жах і ганьба",
+ "rule": [
+  [
+   [
+    "1 = sehr gut",
+    "blue"
+   ],
+   [
+    " — відмінно",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "6 = ungenügend",
+    "red"
+   ],
+   [
+    " — незадовільно",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Ich habe eine ",
+   "ink"
+  ],
+  [
+   "Eins",
+   "blue"
+  ],
+  [
+   " in Mathe.",
+   "ink"
+  ]
+ ],
+ "example_ua": "У мене «відмінно» з математики.",
+ "perfekt": [
+  [
+   "2 = gut, 3 = ",
+   "ink"
+  ],
+  [
+   "befriedigend",
+   "blue"
+  ]
+ ],
+ "verbs": [
+  [
+   "das Zeugnis",
+   "табель"
+  ],
+  [
+   "die Note",
+   "оцінка"
+  ],
+  [
+   "sitzenbleiben",
+   "лишитись на другий рік"
+  ],
+  [
+   "die Hausaufgaben",
+   "домашнє завдання"
+  ],
+  [
+   "der Elternbrief",
+   "лист для батьків"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Eine _____ ist die beste Note.",
+     "ink"
+    ]
+   ],
+   "hint": "Eins"
+  },
+  {
+   "q": [
+    [
+     "Heute gibt es das _____.",
+     "ink"
+    ]
+   ],
+   "hint": "Zeugnis"
+  },
+  {
+   "q": [
+    [
+     "Wie ist die _____ in Mathe?",
+     "ink"
+    ]
+   ],
+   "hint": "Note"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Eine ",
+    "ink"
+   ],
+   [
+    "Eins",
+    "red"
+   ],
+   [
+    " ist die beste Note.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Heute gibt es das ",
+    "ink"
+   ],
+   [
+    "Zeugnis",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Wie ist die ",
+    "ink"
+   ],
+   [
+    "Note",
+    "red"
+   ],
+   [
+    " in Mathe?",
+    "ink"
+   ]
+  ]
+ ],
+ "note": [
+  [
+   "Яка оцінка? ",
+   "grey"
+  ],
+  [
+   "Welche Note hat er?",
+   "ink"
+  ]
+ ]
+}

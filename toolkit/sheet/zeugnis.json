@@ -1,0 +1,293 @@
+{
+ "sticky": "Deutsch в зошиті · Німецька в житті №2",
+ "title": "Zeugnis",
+ "meaning": "= табель, шкільне свідоцтво",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "В Німеччині оцінки навпаки: ",
+     "ink"
+    ],
+    [
+     "1",
+     "blue"
+    ],
+    [
+     " — найкраща:",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "1 = ",
+     "ink"
+    ],
+    [
+     "sehr gut",
+     "blue"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Відмінно!",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "6 = ungenügend",
+     "red"
+    ],
+    [
+     " — це найгірше (НЕ радій!)",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз про школу",
+ "verbs": [
+  {
+   "de": "die Note",
+   "ua": "оцінка",
+   "ex": [
+    [
+     "Welche ",
+     "ink"
+    ],
+    [
+     "Note",
+     "red"
+    ],
+    [
+     " hat er in Mathe?",
+     "ink"
+    ]
+   ],
+   "tr": "Яка в нього оцінка з математики?",
+   "perfekt": "Er hat eine Zwei."
+  },
+  {
+   "de": "das Zeugnis",
+   "ua": "табель",
+   "ex": [
+    [
+     "Wann gibt es das ",
+     "ink"
+    ],
+    [
+     "Zeugnis",
+     "red"
+    ],
+    [
+     "?",
+     "ink"
+    ]
+   ],
+   "tr": "Коли видають табель?",
+   "perfekt": "Am letzten Schultag."
+  },
+  {
+   "de": "sitzenbleiben",
+   "ua": "лишитись на другий рік",
+   "ex": [
+    [
+     "Er muss nicht ",
+     "ink"
+    ],
+    [
+     "sitzenbleiben",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Він не залишається на другий рік.",
+   "perfekt": "Er wird versetzt."
+  },
+  {
+   "de": "die Hausaufgaben",
+   "ua": "домашнє завдання",
+   "ex": [
+    [
+     "Er macht seine ",
+     "ink"
+    ],
+    [
+     "Hausaufgaben",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Він робить уроки.",
+   "perfekt": "Hat sie alles gemacht?"
+  },
+  {
+   "de": "der Elternbrief",
+   "ua": "лист для батьків",
+   "ex": [
+    [
+     "Wir haben einen ",
+     "ink"
+    ],
+    [
+     "Elternbrief",
+     "red"
+    ],
+    [
+     " bekommen.",
+     "ink"
+    ]
+   ],
+   "tr": "Ми отримали лист для батьків.",
+   "perfekt": "Bitte hier unterschreiben."
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Eine ______ ist die beste Note.",
+     "ink"
+    ]
+   ],
+   "hint": "(Eins)"
+  },
+  {
+   "q": [
+    [
+     "Wann gibt es das ______?",
+     "ink"
+    ]
+   ],
+   "hint": "(Zeugnis)"
+  },
+  {
+   "q": [
+    [
+     "Er muss nicht ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(sitzenbleiben)"
+  },
+  {
+   "q": [
+    [
+     "Welche ______ hat er in Mathe?",
+     "ink"
+    ]
+   ],
+   "hint": "(Note)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Eine ",
+    "ink"
+   ],
+   [
+    "Eins",
+    "red"
+   ],
+   [
+    " ist die beste Note.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Wann gibt es das ",
+    "ink"
+   ],
+   [
+    "Zeugnis",
+    "red"
+   ],
+   [
+    "?",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Er muss nicht ",
+    "ink"
+   ],
+   [
+    "sitzenbleiben",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Welche ",
+    "ink"
+   ],
+   [
+    "Note",
+    "red"
+   ],
+   [
+    " hat er in Mathe?",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "1 sehr gut · 2 gut · 3 befriedigend",
+    "blue"
+   ]
+  ],
+  [
+   [
+    "4 ausreichend · 5 mangelhaft · 6 ungenügend",
+    "red"
+   ]
+  ],
+  [
+   [
+    "versetzt werden",
+    "blue"
+   ],
+   [
+    " = перейти в наступний клас",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Далі: Німецька в житті №3 — Ruhezeit    @deutsch_v_zoshity"
+}
