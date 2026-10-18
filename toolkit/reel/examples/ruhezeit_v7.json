@@ -1,0 +1,418 @@
+{
+ "series": "Німецька в житті №3 · Ruhezeit",
+ "hook_ua": "Сусід: «Ruhezeit!»",
+ "hook_de_lines": [
+  "Вона: «Danke,",
+  "gleichfalls!»"
+ ],
+ "heard_label": "Він почув:",
+ "heard": "«Дякую, і вам гарної тиші!»",
+ "fix": "Ich bin gleich leise.",
+ "gloss_de": "leise",
+ "gloss_ua": "тихо",
+ "cta": "Скинь сусідці-українці",
+ "bubble_font": 62,
+ "open": [
+  0.35,
+  1.0
+ ],
+ "cast": {
+  "A": {
+   "name": "Марина",
+   "x": 300,
+   "appear": 0.85,
+   "look": 6,
+   "jumps": [
+    8.4
+   ],
+   "look_spec": {
+    "hair": "bun",
+    "hair_color": [
+     92,
+     56,
+     40
+    ],
+    "scrunchie": [
+     255,
+     201,
+     60
+    ],
+    "outfit": "hoodie",
+    "outfit_color": [
+     61,
+     196,
+     160
+    ],
+    "outfit_shade": [
+     44,
+     160,
+     130
+    ],
+    "legs_color": [
+     72,
+     100,
+     160
+    ],
+    "shoes": [
+     244,
+     244,
+     248
+    ],
+    "eyes": [
+     70,
+     140,
+     90
+    ],
+    "blush": true,
+    "lips": [
+     214,
+     70,
+     90
+    ],
+    "leg": 205,
+    "torso": 205,
+    "shoulders": 80,
+    "hips": 90,
+    "ph": 0.8
+   },
+   "poses": [
+    [
+     0,
+     "rest"
+    ],
+    [
+     2.75,
+     "wave"
+    ],
+    [
+     4.8,
+     "rest"
+    ],
+    [
+     8.4,
+     "face"
+    ],
+    [
+     11.0,
+     "rest"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "happy"
+    ],
+    [
+     8.4,
+     "shock"
+    ],
+    [
+     11.0,
+     "neutral"
+    ],
+    [
+     12.4,
+     "happy"
+    ]
+   ]
+  },
+  "B": {
+   "name": "Herr Becker (сусід)",
+   "x": 800,
+   "appear": 0.75,
+   "look": -5,
+   "look_spec": {
+    "hair": "bald_sides",
+    "hair_color": [
+     206,
+     206,
+     212
+    ],
+    "mustache": [
+     222,
+     222,
+     228
+    ],
+    "glasses": true,
+    "hat": "nightcap",
+    "hat_color": [
+     90,
+     120,
+     200
+    ],
+    "outfit": "robe",
+    "outfit_color": [
+     150,
+     50,
+     70
+    ],
+    "outfit_shade": [
+     118,
+     36,
+     54
+    ],
+    "legs_color": [
+     236,
+     238,
+     246
+    ],
+    "stripe": [
+     90,
+     110,
+     170
+    ],
+    "shoes": [
+     120,
+     70,
+     90
+    ],
+    "skin": [
+     248,
+     212,
+     188
+    ],
+    "skin_sh": [
+     226,
+     180,
+     152
+    ],
+    "brow": [
+     196,
+     196,
+     202
+    ],
+    "brow_w": 11,
+    "eyes": [
+     90,
+     110,
+     130
+    ],
+    "leg": 235,
+    "torso": 245,
+    "shoulders": 78,
+    "hips": 84,
+    "head_rx": 76,
+    "ph": 2.0
+   },
+   "poses": [
+    [
+     0,
+     "hips"
+    ],
+    [
+     1.1,
+     "finger"
+    ],
+    [
+     3.2,
+     "hips"
+    ],
+    [
+     5.2,
+     "finger"
+    ],
+    [
+     8.2,
+     "hips"
+    ],
+    [
+     11.4,
+     "rest"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "angry"
+    ],
+    [
+     4.7,
+     "shock"
+    ],
+    [
+     5.3,
+     "angry"
+    ],
+    [
+     11.4,
+     "happy"
+    ]
+   ]
+  }
+ },
+ "scene": {
+  "kind": "night_door",
+  "door": [
+   655,
+   945,
+   600
+  ],
+  "clock": [
+   120,
+   960
+  ],
+  "time": [
+   22,
+   30
+  ],
+  "moon": [
+   545,
+   800
+  ],
+  "speaker_x": 520,
+  "music_off": 9.6
+ },
+ "dialogue": [
+  {
+   "who": "B",
+   "lines": [
+    "Ruhezeit!"
+   ],
+   "pos": [
+    790,
+    360
+   ],
+   "tail": 0.5,
+   "in": 1.15,
+   "out": 4.9
+  },
+  {
+   "who": "A",
+   "lines": [
+    "Danke,",
+    "gleichfalls!"
+   ],
+   "pos": [
+    330,
+    470
+   ],
+   "tail": 0.45,
+   "in": 2.75,
+   "out": 12.3,
+   "wrong": true
+  },
+  {
+   "who": "B",
+   "lines": [
+    "Gleichfalls?!",
+    "Es ist Ruhezeit!"
+   ],
+   "pos": [
+    770,
+    300
+   ],
+   "tail": 0.55,
+   "in": 5.25,
+   "out": 12.3
+  }
+ ],
+ "voices": [
+  {
+   "file": "voice/ruhezeit/neighbour.mp3",
+   "t": 1.25,
+   "who": "B"
+  },
+  {
+   "file": "voice/ruhezeit/oksana.mp3",
+   "t": 2.85,
+   "who": "A"
+  },
+  {
+   "file": "voice/ruhezeit/klaus_old.mp3",
+   "t": 5.35,
+   "who": "B"
+  },
+  {
+   "file": "voice/ruhezeit/narrator.mp3",
+   "t": 9.7,
+   "who": "narrator"
+  }
+ ],
+ "beats": {
+  "series_out": 5.0,
+  "strike": 9.2,
+  "qm": 8.5,
+  "qm_pos": [
+   130,
+   720
+  ],
+  "heard": [
+   6.0,
+   9.3
+  ],
+  "fix": 9.5,
+  "cta": 12.7
+ },
+ "sfx": [
+  [
+   "flip",
+   0.4,
+   0.7
+  ],
+  [
+   "boing",
+   0.75,
+   0.4
+  ],
+  [
+   "boing",
+   0.85,
+   0.4
+  ],
+  [
+   "pop",
+   1.15,
+   0.12
+  ],
+  [
+   "pop",
+   2.75,
+   0.12
+  ],
+  [
+   "pop",
+   5.25,
+   0.12
+  ],
+  [
+   "slide",
+   6.0,
+   0.6
+  ],
+  [
+   "slap",
+   8.4,
+   0.2
+  ],
+  [
+   "pop",
+   8.5,
+   0.12
+  ],
+  [
+   "scribble",
+   9.2,
+   0.4
+  ],
+  [
+   "slide",
+   9.5,
+   0.6
+  ],
+  [
+   "chime",
+   9.6,
+   1.0
+  ],
+  [
+   "pop",
+   12.7,
+   0.12
+  ],
+  [
+   "flip",
+   15.0,
+   0.7
+  ]
+ ]
+}

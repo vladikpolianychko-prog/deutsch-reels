@@ -103,3 +103,11 @@
 ## 9. PDF-шпаргалки
 Шпаргалка для слова-ключа з каруселі: `python3 toolkit/sheet/make_sheet.py toolkit/sheet/<префікс>.json sheets/<префікс>-shpargalka.pdf [папка_превʼю]` (A4, 2 сторінки: правило, 5 дієслів, тест, відповіді, «Запам'ятай»). Зразок специфікації: toolkit/sheet/nach.json. Готову шпаргалку для нового префікса створювати разом із каруселлю (завдання A), покласти в sheets/ і згадати у звіті. Користувач розсилає PDF у директ вручну.
 Розширена версія (8 стор.: правило, 50 дієслів у 4 темах, 15 вправ, відповіді): `cd toolkit/sheet && python3 make_sheet_full.py nach_full.json ../../sheets/<префікс>-50-diyeslov-15-vprav.pdf [папка_превʼю]` (зразок nach_full.json; без стрілок → у тексті, шрифт їх не має). Саме її користувач надсилає в директ.
+
+## 6c. Рілс v7: свої персонажі в кожному рілсі (з 18.10)
+Відгук власника: персонажі не повторюються, у кожного рілса свої риси, дитина тільки там, де вона в сюжеті.
+- Рушій: `toolkit/reel/compose_v7.py`, рендер: `toolkit/reel/render_reel7.sh cfg.json out.mp4`.
+- У cfg задаються: `cast.A/B` (зовнішність `look_spec`: зачіска long/bun/short/bald_sides, одяг dress/hoodie/sweater/robe, борода, вуса, окуляри, капелюх party/nightcap, кольори; `poses`: rest/offer_r/hands_up/face/wave/finger/hips/belly/shrug; `moods`: happy/angry/shock/laugh/neutral), `scene.kind` (birthday / night_door, або допиши новий у `props_back`), `dialogue` (порядок і час бульбашок), `voices` (who = A/B/narrator), `beats`, `sfx`.
+- Приклади: `examples/geschenk_v7.json` (Ірина з подарунком + іменинник Юрген), `examples/ruhezeit_v7.json` (Марина + сусід Herr Becker у халаті).
+- Перед рендером перевір кожен mp3: `ffmpeg -i f.mp3 -af volumedetect -f null -`. Якщо mean_volume близько −91 дБ, файл порожній.
+- Для кожної нової ситуації придумуй нових персонажів і новий реквізит. Повторювати пару Оксана/Клаус не можна.

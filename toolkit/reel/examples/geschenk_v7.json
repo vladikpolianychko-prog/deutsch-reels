@@ -1,0 +1,349 @@
+{
+ "series": "Німецька в житті №2 · День народження",
+ "hook_ua": "На дні народження:",
+ "hook_de_lines": [
+  "«Ich habe ein Gift",
+  "für dich!»"
+ ],
+ "heard_label": "Він почув:",
+ "heard": "«Я маю ОТРУТУ для тебе»",
+ "fix": "Ich habe ein Geschenk.",
+ "gloss_de": "Geschenk",
+ "gloss_ua": "подарунок",
+ "cta": "Скинь мамі, яка вчить німецьку",
+ "bubble_font": 62,
+ "open": [
+  0.9,
+  1.7
+ ],
+ "cast": {
+  "A": {
+   "name": "Ірина (гостя)",
+   "x": 270,
+   "appear": 1.9,
+   "look": 6,
+   "jumps": [
+    8.6
+   ],
+   "look_spec": {
+    "hair": "long",
+    "hair_color": [
+     44,
+     32,
+     40
+    ],
+    "outfit": "dress",
+    "outfit_color": [
+     226,
+     78,
+     92
+    ],
+    "outfit_shade": [
+     192,
+     56,
+     72
+    ],
+    "shoes": [
+     190,
+     44,
+     60
+    ],
+    "eyes": [
+     110,
+     70,
+     40
+    ],
+    "blush": true,
+    "earrings": true,
+    "lips": [
+     210,
+     40,
+     70
+    ],
+    "leg": 210,
+    "torso": 205,
+    "shoulders": 78,
+    "hips": 88,
+    "ph": 0.3
+   },
+   "poses": [
+    [
+     0,
+     "offer_r"
+    ],
+    [
+     8.6,
+     "face"
+    ],
+    [
+     11.2,
+     "rest"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "happy"
+    ],
+    [
+     8.6,
+     "shock"
+    ],
+    [
+     11.2,
+     "laugh"
+    ]
+   ]
+  },
+  "B": {
+   "name": "Юрген (іменинник)",
+   "x": 820,
+   "appear": 2.1,
+   "look": -5,
+   "lean": [
+    [
+     6.0,
+     10.8
+    ]
+   ],
+   "lean_amt": 26,
+   "look_spec": {
+    "hair": "short",
+    "hair_color": [
+     226,
+     186,
+     104
+    ],
+    "beard": [
+     214,
+     168,
+     92
+    ],
+    "glasses": true,
+    "hat": "party",
+    "outfit": "sweater",
+    "outfit_color": [
+     92,
+     158,
+     110
+    ],
+    "outfit_shade": [
+     70,
+     128,
+     88
+    ],
+    "knit": [
+     250,
+     244,
+     230
+    ],
+    "legs_color": [
+     116,
+     88,
+     70
+    ],
+    "shoes": [
+     70,
+     46,
+     34
+    ],
+    "eyes": [
+     70,
+     120,
+     190
+    ],
+    "brow": [
+     180,
+     140,
+     80
+    ],
+    "leg": 225,
+    "torso": 235,
+    "shoulders": 96,
+    "hips": 112,
+    "head_rx": 84,
+    "ph": 1.4
+   },
+   "poses": [
+    [
+     0,
+     "rest"
+    ],
+    [
+     6.0,
+     "hands_up"
+    ],
+    [
+     11.0,
+     "belly"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "happy"
+    ],
+    [
+     6.0,
+     "shock"
+    ],
+    [
+     11.0,
+     "laugh"
+    ]
+   ]
+  }
+ },
+ "scene": {
+  "kind": "birthday",
+  "table_x": 545,
+  "box_drop": 8.6,
+  "box_floor_x": 430,
+  "poison": [
+   6.6,
+   9.6
+  ],
+  "confetti": 11.0,
+  "confetti_x": 560
+ },
+ "dialogue": [
+  {
+   "who": "A",
+   "lines": [
+    "Ich habe ein",
+    "Gift für dich!"
+   ],
+   "pos": [
+    320,
+    480
+   ],
+   "tail": 0.4,
+   "in": 2.85,
+   "out": 12.3,
+   "wrong": true
+  },
+  {
+   "who": "B",
+   "lines": [
+    "Gift?!",
+    "Für mich?!"
+   ],
+   "pos": [
+    800,
+    300
+   ],
+   "tail": 0.55,
+   "in": 6.15,
+   "out": 12.3
+  }
+ ],
+ "voices": [
+  {
+   "file": "voice/geschenk/oksana.mp3",
+   "t": 2.95,
+   "who": "A"
+  },
+  {
+   "file": "voice/geschenk/klaus.mp3",
+   "t": 6.25,
+   "who": "B"
+  },
+  {
+   "file": "voice/geschenk/narrator.mp3",
+   "t": 10.15,
+   "who": "narrator"
+  }
+ ],
+ "beats": {
+  "series_out": 5.9,
+  "strike": 9.5,
+  "qm": 8.7,
+  "qm_pos": [
+   130,
+   740
+  ],
+  "heard": [
+   6.6,
+   9.6
+  ],
+  "fix": 9.9,
+  "cta": 12.7
+ },
+ "sfx": [
+  [
+   "flip",
+   0.95,
+   0.7
+  ],
+  [
+   "boing",
+   1.9,
+   0.4
+  ],
+  [
+   "boing",
+   2.1,
+   0.4
+  ],
+  [
+   "pop",
+   2.85,
+   0.12
+  ],
+  [
+   "pop",
+   6.15,
+   0.12
+  ],
+  [
+   "slide",
+   6.6,
+   0.6
+  ],
+  [
+   "slap",
+   8.6,
+   0.2
+  ],
+  [
+   "pop",
+   8.7,
+   0.12
+  ],
+  [
+   "scribble",
+   9.5,
+   0.4
+  ],
+  [
+   "slide",
+   9.9,
+   0.6
+  ],
+  [
+   "chime",
+   10.1,
+   1.0
+  ],
+  [
+   "pop",
+   11.0,
+   0.12
+  ],
+  [
+   "pop",
+   11.08,
+   0.12
+  ],
+  [
+   "pop",
+   12.7,
+   0.12
+  ],
+  [
+   "flip",
+   15.0,
+   0.7
+  ]
+ ]
+}
