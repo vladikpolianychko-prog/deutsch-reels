@@ -219,10 +219,9 @@ def oksana(pen, x, y, t, st):
         A1 = lerp(lerp(r_a1, g[0], guard), j[0], jab); A2 = lerp(lerp(r_a2, g[1], guard), j[1], jab)
         el, hand = limb(sh, A1, 92, A2, 84)
         pen.cap(sh, el, 22, LEO); pen.cap(el, hand, 20, LEO)
-        pen.d.rectangle([*P(hand[0] - 26, hand[1] - 10), *P(hand[0] + 26, hand[1] + 10)], fill=WHITE + (255,))
-        pen.shaded_ell(hand[0], hand[1] + 4, 40, 36, CORAL, (214, 70, 60))
-        pen.ell(hand[0] - side * 30, hand[1] - 6, 14, 18, CORAL, 5)
-        pen.ell(hand[0] - 12, hand[1] - 12, 9, 6, (255, 190, 180), 0)
+        pen.d.rectangle([*P(hand[0] - 22, hand[1] - 22), *P(hand[0] + 22, hand[1] - 8)], fill=(200, 140, 70, 255))   # sleeve cuff
+        pen.shaded_ell(hand[0], hand[1] + 6, 20, 22, SKIN, SKIN_SH, 5)
+        pen.ell(hand[0] - side * 16, hand[1] + 2, 8, 12, SKIN, 4)                                             # thumb
     # hair back, head, hair front, curlers
     pen.ell(hx, hy - 6, 112, 104, (250, 222, 150))
     for ex in (-1, 1): pen.ell(hx + ex * 84, hy + 10, 18, 22, SKIN)
@@ -337,7 +336,7 @@ def scene_chars(t):
     talk = (abs(math.sin(t * 13)) * .9 + .1) if 2.9 <= t <= 4.9 else 0
     shock = ease(seg(t, 8.6, 8.8)) * (1 - seg(t, 14.6, 14.9))
     jump = max(0, math.sin(seg(t, 8.6, 9.1) * math.pi)) * 46
-    jab = max(0, math.sin(seg(t, 2.3, 2.75) * math.pi * 2)) if t < 2.8 else 0
+    jab = 0
     os_ = dict(talk=talk, shock=shock, jump=jump, jabR=jab, guard=shock * .9, blink=blink_at(t, 3.3, .4) if shock < .5 else 0, lookx=6 if t > 5 else 3)
     # --- Klaus state
     sq = max(0, math.sin(seg(t, 5.0, 5.45) * math.pi))
