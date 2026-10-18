@@ -81,6 +81,22 @@ def s3(S, top, fin):
         else: M.put(img, b, X0 + 100 + a.width + 8, y + 14); y += 170
     return img, y - 40
 
+def s3b(S, top, fin):
+    """«Не плутай!»: groups of look-alike words, each word with its meaning"""
+    img = M.paper(7); y = top; y = heading(img, S.get("t_conf", "Не плутай!"), y, PINK, 80, 7) + 50
+    cols = ("blue", "red", "orange")
+    rows_all = [[(de, cols[k % 3]), ("  — " + ua, "ink")] for g in S["confusables"] for k, (de, ua) in enumerate(g)]
+    fs = uniform(rows_all, 50, True, X1 - X0 - 60)
+    for gi, g in enumerate(S["confusables"]):
+        rows = [sp([(de, cols[k % 3]), ("  — " + ua, "ink")], fs, True, 10 ** 6) for k, (de, ua) in enumerate(g)]
+        bh = sum(r.height for r in rows) + 2 * (len(rows) - 1) + 30
+        M.frame(img, X0 - 10, y, X1 - X0 + 20, bh, COL["grey"], 40 + gi)
+        yy = y + 15
+        for k, r in enumerate(rows):
+            M.put(img, r, X0 + 24, yy); yy += r.height + 2
+        y += bh + 26
+    return img, y - 26
+
 def s4(S, top, fin):
     img = M.paper(4); y = top; y = heading(img, S.get("t4", f"Тест: встав дієслово з {S['prefix']}-"), y, BLUE_HL, 66, 5) + 110
     qs = uniform([[(f"{i}  ", "orange")] + segs(q["q"]) for i, q in enumerate(S["test"], 1)], 66, True, X1 - X0 - 20)
@@ -121,6 +137,7 @@ def build(f, S):
 def main():
     S = json.load(open(sys.argv[1], encoding="utf-8")); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     assert len(S["verbs"]) == 5 and len(S["test"]) == 3 and len(S["answers"]) == 3
-    for i, f in enumerate((s1, s2, s3, s4, s5, s6), 1): build(f, S).save(os.path.join(out, f"slide{i}.png"))
+    fs = (s1, s2, s3, s3b, s4, s5, s6) if S.get("confusables") else (s1, s2, s3, s4, s5, s6)
+    for i, f in enumerate(fs, 1): build(f, S).save(os.path.join(out, f"slide{i}.png"))
     print("ok", out)
 if __name__ == "__main__": main()

@@ -166,5 +166,51 @@
    "Das ist lieb von dir.",
    "ink"
   ]
+ ],
+ "confusables": [
+  [
+   [
+    "das Geschenk",
+    "подарунок"
+   ],
+   [
+    "das Gift",
+    "отрута"
+   ]
+  ],
+  [
+   [
+    "der Kuchen",
+    "пиріг, торт"
+   ],
+   [
+    "die Küche",
+    "кухня"
+   ],
+   [
+    "der Koch",
+    "кухар"
+   ]
+  ],
+  [
+   [
+    "bekommen",
+    "отримувати (не «become»!)"
+   ],
+   [
+    "werden",
+    "ставати"
+   ]
+  ],
+  [
+   [
+    "schenken",
+    "дарувати"
+   ],
+   [
+    "schicken",
+    "надсилати"
+   ]
+  ]
  ]
 }
