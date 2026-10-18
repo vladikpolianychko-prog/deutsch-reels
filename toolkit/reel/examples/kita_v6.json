@@ -1,0 +1,22 @@
+{
+ "series": "Німецька в житті №1 · Kita",
+ "hook_ua": "Мама в садочку каже:",
+ "hook_de": "«Ich möchte mein Kind aufheben»",
+ "say": [
+  "Ich möchte",
+  "mein Kind aufheben."
+ ],
+ "klaus": [
+  "Bitte schön,",
+  "aufgehoben!"
+ ],
+ "heard": "«Хочу ПІДНЯТИ дитину»",
+ "fix": "Ich hole mein Kind ab.",
+ "gloss_de": "abholen",
+ "gloss_ua": "забрати",
+ "cta": "Скинь мамі, яка вчить німецьку",
+ "hook_de_lines": [
+  "«Ich möchte mein Kind",
+  "aufheben»"
+ ]
+}
