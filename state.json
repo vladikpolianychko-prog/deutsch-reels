@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "metricool": {
     "brandId": "7305714",
     "timezone": "Europe/Berlin"
@@ -51,8 +51,8 @@
     "aus": "B",
     "nach": "A",
     "bei": "B",
-    "next_should_be": "A",
-    "weg_planned": "(рілс ще не створено; за чергою має бути A)"
+    "next_should_be": "B",
+    "weg": "A"
   },
   "reel_format": "toolkit/reel/render_reel.sh (7 с, відповідь на 3,25 с)",
   "posts": [
@@ -105,6 +105,15 @@
       "metricool_uuid": "6833024673401425117",
       "metricool_id": "398624228",
       "scheduled": "2026-10-18 10:00"
+    },
+    {
+      "series": "weg",
+      "no": 11,
+      "type": "reel v3 (7 с)",
+      "metricool_uuid": "5328640534850784411",
+      "metricool_id": "398957801",
+      "scheduled": "2026-10-18 14:00",
+      "file": "reels/weg-11.mp4"
     }
   ],
   "do_not_publish": [
