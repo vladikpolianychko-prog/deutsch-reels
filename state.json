@@ -139,7 +139,7 @@
   "Jobcenter reel (uuid 3942085842112497195)",
   "ТЕСТ — видалити (30 Dec)"
  ],
- "schedule_regime": "з 18.10.2026 щодня: карусель 10:00 і рілс 14:00 до неї (Europe/Berlin). Виняток 17.10: карусель 13:30, рілс 16:00.",
+ "schedule_regime": "з 18.10.2026 вечір щодня: РІЛС 10:00, КАРУСЕЛЬ 18:00 того ж дня, про одну ситуацію (Europe/Berlin; піки активності Metricool: 10–12 і 18).",
  "sheets": {
   "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
  },
@@ -152,7 +152,7 @@
    "carousel": "carousels/situ-01-kita",
    "sheet": "sheets/kita-frazy.pdf",
    "reel": "reels/situ-01-kita-v6.mp4",
-   "scheduled": "19.10 10:00 карусель, 14:00 рілс v6 з озвучкою (uuid 4486518052312141621)"
+   "scheduled": "19.10 18:00 карусель, 10:00 рілс v6 з озвучкою (uuid 4486518052312141621)"
   },
   "2": {
    "slug": "geschenk",
@@ -161,7 +161,7 @@
    "sheet": "sheets/geschenk-frazy.pdf",
    "reel_cfg": "toolkit/reel/examples/geschenk_v6.json",
    "voices": "згенеровано в ElevenLabs, чекаємо mp3 від користувача",
-   "scheduled": "20.10 10:00 карусель (uuid -8502002857521953838); рілс 14:00 ще НЕ запланований"
+   "scheduled": "20.10 18:00 карусель (uuid -8502002857521953838); рілс 10:00 ще НЕ запланований"
   },
   "3": {
    "slug": "ruhezeit",
@@ -170,7 +170,7 @@
    "sheet": "sheets/ruhezeit-frazy.pdf",
    "reel_cfg": "toolkit/reel/examples/ruhezeit_v6.json",
    "voices": "згенеровано в ElevenLabs, чекаємо mp3 від користувача",
-   "scheduled": "21.10 10:00 карусель (uuid -7895639236535761639); рілс 14:00 ще НЕ запланований"
+   "scheduled": "21.10 18:00 карусель (uuid -7895639236535761639); рілс 10:00 ще НЕ запланований"
   }
  },
  "removed_situations": [
