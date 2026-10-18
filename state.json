@@ -122,6 +122,13 @@
    "metricool_uuid": "4486518052312141621",
    "file": "reels/situ-01-kita.mp4",
    "note": "перший рілс-ситуація, формат v4; CTA KITA — потрібен PDF з фразами"
+  },
+  {
+   "date": "2026-10-19 10:00",
+   "type": "carousel",
+   "topic": "situ-01-kita",
+   "metricool_uuid": "-3664884690813628686",
+   "folder": "carousels/situ-01-kita"
   }
  ],
  "do_not_publish": [
@@ -135,5 +142,8 @@
  "schedule_regime": "з 18.10.2026 щодня: карусель 10:00 і рілс 14:00 до неї (Europe/Berlin). Виняток 17.10: карусель 13:30, рілс 16:00.",
  "sheets": {
   "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
- }
+ },
+ "series": "Німецька в житті (з 19.10). Префікси зупинено після №11 weg-.",
+ "next_situation_number": 2,
+ "next_situation": "Табель (Zeugnis: 1 = найкраща)"
 }
