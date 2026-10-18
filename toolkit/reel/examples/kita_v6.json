@@ -18,5 +18,22 @@
  "hook_de_lines": [
   "«Ich möchte mein Kind",
   "aufheben»"
+ ],
+ "voices": [
+  {
+   "file": "voice/kita/oksana.mp3",
+   "t": 2.95,
+   "who": "oksana"
+  },
+  {
+   "file": "voice/kita/klaus.mp3",
+   "t": 6.25,
+   "who": "klaus"
+  },
+  {
+   "file": "voice/kita/narrator.mp3",
+   "t": 10.15,
+   "who": "narrator"
+  }
  ]
 }

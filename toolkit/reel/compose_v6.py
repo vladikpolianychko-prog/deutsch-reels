@@ -329,11 +329,31 @@ OPEN = (0.9, 1.7); CLOSE = (15.0, 15.8)
 FLOOR = 1300; OX, KX, KIDX = 290, 800, 560
 def blink_at(t, period, ph): q = (t + ph) % period; return 1 - abs(q - .09) / .09 if q < .18 else 0
 
+# ---- lip sync: per-speaker loudness envelope from the voice files (cfg "voices"), else a simple talk cycle
+import subprocess
+ENV = {}
+def _load_env():
+    for v in CFG.get("voices", []):
+        path = v["file"] if os.path.isabs(v["file"]) else str(ROOT / v["file"])
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", "8000", "-f", "s16le", "-"], capture_output=True, check=True).stdout
+        x = np.frombuffer(raw, np.int16) / 32768.
+        hop = 8000 // FPS; n = len(x) // hop
+        e = np.array([np.sqrt(np.mean(x[i * hop:(i + 1) * hop] ** 2)) for i in range(n)])
+        e = np.clip(e / (np.percentile(e, 90) + 1e-6), 0, 1.2)
+        ENV.setdefault(v["who"], []).append((v["t"], e))
+_load_env()
+def voice_talk(who, t):
+    for t0, e in ENV.get(who, []):
+        i = int(round((t - t0) * FPS))
+        if 0 <= i < len(e): return float(clamp(e[i] * 1.1))
+    return None
+
 def scene_chars(t):
     lay = Image.new("RGBA", (RW * S, RH * S), (0, 0, 0, 0)); pen = Pen(ImageDraw.Draw(lay))
     def appear(t0): p = seg(t, t0, t0 + .5); return p
     # --- Oksana state
-    talk = (abs(math.sin(t * 13)) * .9 + .1) if 2.9 <= t <= 4.9 else 0
+    vt = voice_talk("oksana", t)
+    talk = vt if vt is not None else ((abs(math.sin(t * 13)) * .9 + .1) if 2.9 <= t <= 4.9 and not ENV else 0)
     shock = ease(seg(t, 8.6, 8.8)) * (1 - seg(t, 14.6, 14.9))
     jump = max(0, math.sin(seg(t, 8.6, 9.1) * math.pi)) * 46
     jab = 0
@@ -341,7 +361,8 @@ def scene_chars(t):
     # --- Klaus state
     sq = max(0, math.sin(seg(t, 5.0, 5.45) * math.pi))
     lift = (back(seg(t, 5.3, 5.9), 1.4) if t >= 5.3 else 0) * (1 - ease(seg(t, 12.0, 12.6)))
-    ktalk = (abs(math.sin(t * 11 + 1)) * .9 + .1) if 6.2 <= t <= 8.1 else 0
+    vk = voice_talk("klaus", t)
+    ktalk = vk if vk is not None else ((abs(math.sin(t * 11 + 1)) * .9 + .1) if 6.2 <= t <= 8.1 and not ENV else 0)
     ks = dict(squat=sq, lift=min(lift, 1.08), talk=ktalk, blink=blink_at(t, 2.9, 1.2), brow=1 if 6.2 <= t <= 8.1 else 0)
     def scaled(fn, x, st, t0):
         p = appear(t0)
