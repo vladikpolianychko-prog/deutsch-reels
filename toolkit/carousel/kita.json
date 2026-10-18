@@ -1,0 +1,190 @@
+{
+ "no": 1,
+ "prefix": "Kita",
+ "keyword": "KITA",
+ "sticky": "Німецька в житті №1",
+ "big": "Kita",
+ "t2": "Забрати дитину = abholen",
+ "t3": "5 слів для Kita",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю фрази для садочка",
+ "next": "Далі: чому «1» в табелі — це добре?",
+ "hook_de": "Ich hebe mein Kind auf.",
+ "wrong_ua": "Я забираю дитину з садочка",
+ "rule": [
+  [
+   [
+    "abholen",
+    "blue"
+   ],
+   [
+    " — забрати дитину",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "aufheben",
+    "red"
+   ],
+   [
+    " — підняти з підлоги",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Ich ",
+   "ink"
+  ],
+  [
+   "hole",
+   "red"
+  ],
+  [
+   " mein Kind um 15 Uhr ",
+   "ink"
+  ],
+  [
+   "ab",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "Я забираю дитину о 15:00.",
+ "perfekt": [
+  [
+   "Perfekt: ",
+   "ink"
+  ],
+  [
+   "Ich habe mein Kind ",
+   "ink"
+  ],
+  [
+   "abgeholt",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "verbs": [
+  [
+   "abholen",
+   "забрати дитину"
+  ],
+  [
+   "bringen",
+   "привести"
+  ],
+  [
+   "krank sein",
+   "хворіти"
+  ],
+  [
+   "die Brotdose",
+   "ланчбокс"
+  ],
+  [
+   "der Elternabend",
+   "батьківські збори"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Ich _____ mein Kind um 15 Uhr _____.",
+     "ink"
+    ]
+   ],
+   "hint": "abholen"
+  },
+  {
+   "q": [
+    [
+     "Mein Sohn ist heute _____.",
+     "ink"
+    ]
+   ],
+   "hint": "krank sein"
+  },
+  {
+   "q": [
+    [
+     "Heute ist der _____ um 18 Uhr.",
+     "ink"
+    ]
+   ],
+   "hint": "der Elternabend"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "hole",
+    "red"
+   ],
+   [
+    " mein Kind um 15 Uhr ",
+    "ink"
+   ],
+   [
+    "ab",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Mein Sohn ist heute ",
+    "ink"
+   ],
+   [
+    "krank",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Heute ist der ",
+    "ink"
+   ],
+   [
+    "Elternabend",
+    "red"
+   ],
+   [
+    " um 18 Uhr.",
+    "ink"
+   ]
+  ]
+ ],
+ "note": [
+  [
+   "Можна раніше? ",
+   "grey"
+  ],
+  [
+   "Kann ich früher abholen?",
+   "ink"
+  ]
+ ]
+}

@@ -42,8 +42,8 @@ def uniform(rows, size, bold, maxw):
     return size
 
 def s1(S, top, fin):
-    img = M.paper(1); y = top; y = sticky(img, f"Префікси №{S['no']}", y) + 50
-    t = sp([(S["prefix"] + "-", "blue")], 330, True, X1 - X0)
+    img = M.paper(1); y = top; y = sticky(img, S.get("sticky", f"Префікси №{S['no']}"), y) + 50
+    t = sp([(S.get("big", S["prefix"] + "-"), "blue")], 330, True, X1 - X0)
     hl(img, CX - t.width // 2 - 20, y + 55, t.width + 40, t.height - 110, BLUE_HL, 7); cput(img, t, y); y += t.height + 40
     h = sp([(S["hook_de"], "ink")], 78, True, X1 - X0 - 30); hl(img, CX - h.width // 2 - 15, y + 8, h.width + 30, h.height - 22, BLUE_HL, 5); cput(img, h, y); y += h.height + 60
     w = sp([(S["wrong_ua"], "red")], 60, False, X1 - X0 - 30); hl(img, CX - w.width // 2 - 15, y + 8, w.width + 30, w.height - 22, PINK, 8); cput(img, w, y)
@@ -54,8 +54,9 @@ def s1(S, top, fin):
     return img, y
 
 def s2(S, top, fin):
-    img = M.paper(2); y = top; y = heading(img, f"Як працює {S['prefix']}-", y, BLUE_HL, 84) + 70
-    rows = [sp(segs(r), 60, False, X1 - X0 - 70) for r in S["rule"]]
+    img = M.paper(2); y = top; y = heading(img, S.get("t2", f"Як працює {S['prefix']}-"), y, BLUE_HL, 84) + 70
+    rsz = uniform([segs(r) for r in S["rule"]], 60, False, X1 - X0 - 70)
+    rows = [sp(segs(r), rsz, False, 10 ** 6) for r in S["rule"]]
     rh = sum(i.height + 10 for i in rows) + 70; M.frame(img, X0 - 10, y, X1 - X0 + 20, rh, COL["red"], 11)
     yy = y + 35
     for im in rows: cput(img, im, yy); yy += im.height + 10
@@ -67,18 +68,21 @@ def s2(S, top, fin):
     return img, y
 
 def s3(S, top, fin):
-    img = M.paper(3); y = top; y = heading(img, f"5 дієслів з {S['prefix']}-", y, LIME, 84, 4) + 90
+    img = M.paper(3); y = top; y = heading(img, S.get("t3", f"5 дієслів з {S['prefix']}-"), y, LIME, 84, 4) + 90
     aw = max(sp([(d, "blue")], 66, True, 10 ** 6).width for d, _ in S["verbs"])
     us = uniform([[("— " + ua, "ink")] for _, ua in S["verbs"]], 50, False, X1 - X0 - 100 - aw - 8)
+    two = us < 42                       # long words: translation goes on its own line under the word
+    if two: us = uniform([[("— " + ua, "ink")] for _, ua in S["verbs"]], 46, False, X1 - X0 - 100)
     for i, (de, ua) in enumerate(S["verbs"], 1):
         hl(img, X0 - 4, y + 14, 76, 76, LIME, 20 + i); n = sp([(str(i), "ink")], 62, True, 70); M.put(img, n, X0 + 34 - n.width // 2, y + 8)
         a = sp([(de, "blue")], 66, True, 470); M.put(img, a, X0 + 100, y)
-        b = sp([("— " + ua, "ink")], us, False, 10 ** 6); M.put(img, b, X0 + 100 + a.width + 8, y + 14)
-        y += 170
+        b = sp([("— " + ua, "ink")], us, False, 10 ** 6)
+        if two: M.put(img, b, X0 + 100, y + a.height - 14); y += 185
+        else: M.put(img, b, X0 + 100 + a.width + 8, y + 14); y += 170
     return img, y - 40
 
 def s4(S, top, fin):
-    img = M.paper(4); y = top; y = heading(img, f"Тест: встав дієслово з {S['prefix']}-", y, BLUE_HL, 66, 5) + 110
+    img = M.paper(4); y = top; y = heading(img, S.get("t4", f"Тест: встав дієслово з {S['prefix']}-"), y, BLUE_HL, 66, 5) + 110
     qs = uniform([[(f"{i}  ", "orange")] + segs(q["q"]) for i, q in enumerate(S["test"], 1)], 66, True, X1 - X0 - 20)
     for i, q in enumerate(S["test"], 1):
         s = sp([(f"{i}  ", "orange")] + segs(q["q"]), qs, True, 10 ** 6)
@@ -102,7 +106,7 @@ def s6(S, top, fin):
     a = sp([("Напиши", "ink")], 112, True, X1 - X0); hl(img, CX - a.width // 2 - 20, y + 20, a.width + 40, a.height - 50, BLUE_HL, 6); cput(img, a, y); y += a.height + 30
     k = sp([(S["keyword"], "blue")], 210, True, X1 - X0); cput(img, k, y); y += k.height + 10
     arrow(img, CX, y, y + 110, COL["ink"]); y += 170
-    b = sp([("надішлю PDF-шпаргалку", "ink")], 68, True, X1 - X0 - 30); hl(img, CX - b.width // 2 - 15, y + 10, b.width + 30, b.height - 26, LIME, 8); cput(img, b, y); y += b.height + 80
+    b = sp([(S.get("cta2", "надішлю PDF-шпаргалку"), "ink")], 68, True, X1 - X0 - 30); hl(img, CX - b.width // 2 - 15, y + 10, b.width + 30, b.height - 26, LIME, 8); cput(img, b, y); y += b.height + 80
     c = sp([(S["next"], "ink")], 56, True, X1 - X0 - 30); hl(img, CX - c.width // 2 - 15, y + 8, c.width + 30, c.height - 22, YEL, 9); cput(img, c, y); y += c.height + 60
     h = sp([("@deutsch_v_zoshity", "grey")], 50, False, 560); cput(img, h, y); y += h.height
     return img, y
