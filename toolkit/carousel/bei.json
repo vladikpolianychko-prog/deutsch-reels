@@ -1,0 +1,190 @@
+{
+ "no": 10,
+ "prefix": "bei",
+ "keyword": "BEI",
+ "next": "Далі: Префікси №11 — weg-",
+ "hook_de": "Ich bringe dir Deutsch bei.",
+ "wrong_ua": "Я приношу тобі німецьку",
+ "rule": [
+  [
+   [
+    "Дієслово",
+    "red"
+   ],
+   [
+    " — на 2-му місці,",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "bei-",
+    "blue"
+   ],
+   [
+    " — у кінці речення",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Ich ",
+   "ink"
+  ],
+  [
+   "bringe",
+   "red"
+  ],
+  [
+   " dir Deutsch ",
+   "ink"
+  ],
+  [
+   "bei",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "Я навчаю тебе німецької.",
+ "perfekt": [
+  [
+   "Perfekt: ",
+   "ink"
+  ],
+  [
+   "bei",
+   "blue"
+  ],
+  [
+   " + ",
+   "ink"
+  ],
+  [
+   "ge",
+   "orange"
+  ],
+  [
+   " + bracht = ",
+   "ink"
+  ],
+  [
+   "beigebracht",
+   "red"
+  ]
+ ],
+ "verbs": [
+  [
+   "beibringen",
+   "навчити"
+  ],
+  [
+   "beitreten",
+   "вступити"
+  ],
+  [
+   "beitragen",
+   "сприяти"
+  ],
+  [
+   "beistehen",
+   "підтримати"
+  ],
+  [
+   "beilegen",
+   "докласти"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Ich _____ dir Deutsch _____.",
+     "ink"
+    ]
+   ],
+   "hint": "beibringen"
+  },
+  {
+   "q": [
+    [
+     "Er _____ dem Verein _____.",
+     "ink"
+    ]
+   ],
+   "hint": "beitreten"
+  },
+  {
+   "q": [
+    [
+     "Ich habe dem Brief ein Foto _____.",
+     "ink"
+    ]
+   ],
+   "hint": "beilegen"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "bringe",
+    "red"
+   ],
+   [
+    " dir Deutsch ",
+    "ink"
+   ],
+   [
+    "bei",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Er ",
+    "ink"
+   ],
+   [
+    "tritt",
+    "red"
+   ],
+   [
+    " dem Verein ",
+    "ink"
+   ],
+   [
+    "bei",
+    "blue"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich habe dem Brief ein Foto ",
+    "ink"
+   ],
+   [
+    "beigelegt",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ]
+}

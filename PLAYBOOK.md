@@ -41,14 +41,14 @@
    5) «Відповіді до тесту» і «Перевір друга»;
    6) CTA «Напиши X (КЛЮЧОВЕ СЛОВО ВЕЛИКИМИ) — надішлю PDF-шпаргалку» і «Далі: Префікси №N+1 — Y-».
    Німецький матеріал перевіряти на граматику (відокремлювані префікси, Perfekt: ge між префіксом і коренем, напр. nach+ge+dacht).
-3. Канва: `copy-design` від `last_carousel_design`, назва «X- карусель — Префікси №N (6 слайдів)». Кожна сторінка = повноекранне фонове зображення (background media), без елементів.
-4. Для кожного слайда `generate-image`: aspectRatio PORTRAIT_4_5, imageReferences = MEDIA-id відповідного слайда попередньої каруселі (стиль), у промпті ПОВНИЙ точний текст слайда й жорсткі вимоги до орфографії. Результат: `get-generate-image-job` (опитувати). Перевірити текст у повному розмірі, за потреби перегенерувати.
-5. `read-design` з `open_transaction`, далі `edit-design`: `update_fill` на locator_id сторінки (фонове медіа = згенероване зображення), `update_title`, завершити (commit/finalize).
-6. `export-design` PNG 1080x1350: URL усіх сторінок по порядку. (Посилання canva.com/M/<id> Metricool НЕ приймає, лише URL експорту.)
-7. Metricool `createScheduledPost` (instagram, instagramData `{"type":"POST","showReelOnFeed":true,"isAiGenerated":false}`): media = 6 URL, mediaAltText = опис кожного слайда, дата = наступний день 10:00.
+3. Слайди — ДЕТЕРМІНОВАНИЙ рендер (без AI-тексту, помилок у літерах не буває): написати spec JSON за зразком `toolkit/carousel/bei.json` (ключі: no, prefix, keyword, next, hook_de, wrong_ua, rule[2 рядки], example, example_ua, perfekt, verbs[5 пар de/ua], test[3: q-сегменти + hint], answers[3]). Скопіювати bei.json у `toolkit/carousel/<prefix>.json` і змінити текст. У spec НЕ вживати «→» (шрифт Comic Relief без цього символу), лише «:» або «+».
+4. Рендер: `python3 toolkit/carousel/make_carousel.py toolkit/carousel/<prefix>.json carousels/<prefix>-<N>/` (потрібні pillow, numpy). Скрипт сам центрує вміст і падає з помилкою, якщо текст не вміщається. ОБОВ'ЯЗКОВО відкрити Read усі 6 slide*.png у повному розмірі й перевірити: орфографію німецької, нічого не торкається краю, рядки однакового розміру.
+5. Закомітити й запушити `carousels/<prefix>-<N>/` та spec у main. Публічні URL: `https://raw.githubusercontent.com/vladikpolianychko-prog/deutsch-reels/main/carousels/<prefix>-<N>/slide1.png` … `slide6.png` (з sandbox напряму не відкриваються — це нормально, Metricool їх копіює сам).
+6. Запасний варіант (лише якщо рендер зламаний): старий Canva-конвеєр — `copy-design` від `last_carousel_design`, `generate-image` PORTRAIT_4_5 з MEDIA-референсами, `edit-design update_fill`, `export-design` PNG (посилання canva.com/M/<id> Metricool НЕ приймає). Текст AI-зображень перевіряти в повному розмірі.
+7. Metricool `createScheduledPost` (instagram, instagramData `{"type":"POST","showReelOnFeed":true,"isAiGenerated":false}`): media = 6 raw-URL зі кроку 5, mediaAltText = опис кожного слайда, дата = наступний день 10:00.
    Підпис (шаблон): `«<German phrase>» — це НЕ «<хибний переклад>» 🙈\n<одне речення правила>\n\n✏️ як працює рамка з X-\n✏️ 5 дієслів: ...\n✏️ тест + відповіді\n\nХочеш PDF-шпаргалку з X-? Напиши в коментарях КЛЮЧОВЕ_СЛОВО — і я надішлю її в директ 📩\n\n#німецькамова #німецькадляукраїнців #deutschlernen #німецькаграматика #вивчаємонімецьку`
    firstCommentText: `Пиши КЛЮЧОВЕ_СЛОВО 👇 — шпаргалку надсилаю кожному, хто напише`
-8. Перевірити `getScheduledPosts` на цей день: статус PENDING, 6 медіа, дата вірна. Оновити state.json (нова карусель: Metricool id/uuid, design id, media-id слайдів як нові `style_reference_media`).
+8. Перевірити `getScheduledPosts` на цей день: статус PENDING, 6 медіа, дата вірна. Оновити state.json (нова карусель: Metricool id/uuid, папка `carousels/<prefix>-<N>`).
 
 ## 6. Процедура B — рілс (7 с, квіз A/B)
 1. З state.json і з запланованої/опублікованої каруселі взяти префікс N і фразу-хук. Виконати розділ 7.
