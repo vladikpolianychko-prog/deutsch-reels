@@ -1,0 +1,40 @@
+{
+ "series": "Німецька в житті №2 · День народження",
+ "hook_ua": "На дні народження:",
+ "hook_de_lines": [
+  "«Ich habe ein Gift",
+  "für dich!»"
+ ],
+ "say": [
+  "Ich habe ein",
+  "Gift für dich!"
+ ],
+ "klaus": [
+  "Gift?!",
+  "Für mich?!"
+ ],
+ "heard_label": "Він почув:",
+ "heard": "«Я маю ОТРУТУ для тебе»",
+ "fix": "Ich habe ein Geschenk.",
+ "gloss_de": "Geschenk",
+ "gloss_ua": "подарунок",
+ "cta": "Скинь мамі, яка вчить німецьку",
+ "bubble_font": 62,
+ "voices": [
+  {
+   "file": "voice/geschenk/oksana.mp3",
+   "t": 2.95,
+   "who": "oksana"
+  },
+  {
+   "file": "voice/geschenk/klaus.mp3",
+   "t": 6.25,
+   "who": "klaus"
+  },
+  {
+   "file": "voice/geschenk/narrator.mp3",
+   "t": 10.15,
+   "who": "narrator"
+  }
+ ]
+}

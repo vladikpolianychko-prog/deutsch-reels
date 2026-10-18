@@ -1,0 +1,40 @@
+{
+ "series": "Німецька в житті №3 · Ruhezeit",
+ "hook_ua": "«Ruhezeit!» — мама:",
+ "hook_de_lines": [
+  "«Danke,",
+  "gleichfalls!»"
+ ],
+ "say": [
+  "Danke,",
+  "gleichfalls!"
+ ],
+ "klaus": [
+  "Gleichfalls?!",
+  "Es ist Ruhezeit!"
+ ],
+ "heard_label": "Він почув:",
+ "heard": "«Дякую, і вам гарної тиші!»",
+ "fix": "Ich bin gleich leise.",
+ "gloss_de": "leise",
+ "gloss_ua": "тихо",
+ "cta": "Скинь сусідці-українці",
+ "bubble_font": 62,
+ "voices": [
+  {
+   "file": "voice/ruhezeit/oksana.mp3",
+   "t": 2.95,
+   "who": "oksana"
+  },
+  {
+   "file": "voice/ruhezeit/klaus.mp3",
+   "t": 6.25,
+   "who": "klaus"
+  },
+  {
+   "file": "voice/ruhezeit/narrator.mp3",
+   "t": 10.15,
+   "who": "narrator"
+  }
+ ]
+}

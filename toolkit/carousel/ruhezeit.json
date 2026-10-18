@@ -4,13 +4,13 @@
  "keyword": "RUHE",
  "sticky": "Німецька в житті №3",
  "big": "Ruhezeit",
- "t2": "Час тиші = Ruhezeit",
+ "t2": "Ruhezeit — не побажання",
  "t3": "5 слів про сусідів",
  "t4": "Тест: встав слово",
  "cta2": "надішлю фрази для сусідів",
  "next": "Далі: Jobcenter і «Kater»",
- "hook_de": "Ich sauge nur kurz Staub.",
- "wrong_ua": "Це ж лише хвилинка...",
+ "hook_de": "Danke, gleichfalls!",
+ "wrong_ua": "Сусід: Ruhezeit! Я: «І вам!»",
  "rule": [
   [
    [
@@ -24,11 +24,11 @@
   ],
   [
    [
-    "Sonntag",
+    "gleichfalls",
     "red"
    ],
    [
-    " — тиша весь день",
+    " — «і вам» лише на побажання",
     "ink"
    ]
   ]
@@ -54,7 +54,7 @@
    "grey"
   ],
   [
-   "ich höre auf!",
+   "ich bin gleich leise!",
    "blue"
   ]
  ],
@@ -68,16 +68,16 @@
    "правила будинку"
   ],
   [
-   "leise / laut",
-   "тихо / гучно"
+   "gleichfalls",
+   "і вам теж"
+  ],
+  [
+   "leise",
+   "тихо"
   ],
   [
    "der Nachbar",
    "сусід"
-  ],
-  [
-   "sich beschweren",
-   "поскаржитись"
   ]
  ],
  "test": [
@@ -93,20 +93,20 @@
   {
    "q": [
     [
+     "Guten Appetit! — Danke, _____!",
+     "ink"
+    ]
+   ],
+   "hint": "gleichfalls"
+  },
+  {
+   "q": [
+    [
      "Bitte sei _____, ich schlafe.",
      "ink"
     ]
    ],
    "hint": "leise"
-  },
-  {
-   "q": [
-    [
-     "Das steht in der _____.",
-     "ink"
-    ]
-   ],
-   "hint": "Hausordnung"
   }
  ],
  "answers": [
@@ -126,6 +126,20 @@
   ],
   [
    [
+    "Guten Appetit! — Danke, ",
+    "ink"
+   ],
+   [
+    "gleichfalls",
+    "red"
+   ],
+   [
+    "!",
+    "ink"
+   ]
+  ],
+  [
+   [
     "Bitte sei ",
     "ink"
    ],
@@ -137,29 +151,15 @@
     ", ich schlafe.",
     "ink"
    ]
-  ],
-  [
-   [
-    "Das steht in der ",
-    "ink"
-   ],
-   [
-    "Hausordnung",
-    "red"
-   ],
-   [
-    ".",
-    "ink"
-   ]
   ]
  ],
  "note": [
   [
-   "Не знала? ",
+   "Смачного? ",
    "grey"
   ],
   [
-   "Das wusste ich nicht.",
+   "Danke, gleichfalls!",
    "ink"
   ]
  ]

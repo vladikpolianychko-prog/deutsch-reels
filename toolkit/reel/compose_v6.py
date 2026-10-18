@@ -83,10 +83,11 @@ UA = lambda t, sz=60, c=OUT, k="black": (t, k, sz, c)
 
 SERIES = card([[UA(CFG["series"], 40, WHITE, "bold")]], NAVY, pad=(30, 16), radius=28)
 HOOK_UA = line_sprite([UA(CFG["hook_ua"], 100, WHITE)], 940)
-HOOK_DE = card([[DE(l, 84)] for l in CFG.get("hook_de_lines", [CFG["hook_de"]])], CREAM, pad=(44, 30), radius=30, maxw=960)
-B_OKS = bubble([[DE(l, 70)] for l in CFG["say"]], .45, 620)
+HOOK_DE = card([[DE(l, 84)] for l in (CFG.get("hook_de_lines") or [CFG["hook_de"]])], CREAM, pad=(44, 30), radius=30, maxw=960)
+BF = CFG.get("bubble_font", 70)
+B_OKS = bubble([[DE(l, BF)] for l in CFG["say"]], .45, 620)
 _rh = B_OKS.height - 100 - 8; OKS_ROWS = [480 - B_OKS.height / 2 + 20 + 23 + (k + .55) * (_rh - 46) / len(CFG["say"]) for k in range(len(CFG["say"]))]
-B_KLA = bubble([[DE(l, 70)] for l in CFG["klaus"]], .62, 640)
+B_KLA = bubble([[DE(l, BF)] for l in CFG["klaus"]], .62, 640)
 HEARD = card([[UA(CFG.get("heard_label", "Він почув:"), 50, CORAL, "bold")], [UA(CFG["heard"], 66, OUT)]], CREAM, border=CORAL, maxw=980)
 FIX = card([[UA("ПРАВИЛЬНО", 44, WHITE, "black")], [DE(CFG["fix"], 92, WHITE)], [UA(CFG["gloss_de"], 62, SUN, "black"), UA(" = " + CFG["gloss_ua"], 62, WHITE, "bold")]], (35, 150, 118), pad=(46, 30), maxw=1000, gap=10)
 CTA = card([[UA(CFG["cta"], 66, OUT)]], SUN, pad=(44, 28), maxw=1000)
@@ -422,7 +423,7 @@ def render(t):
             for k, yy0 in enumerate(OKS_ROWS):
                 pk = clamp(p * 2 - k * .6)
                 if pk > 0: d.line([(x0, yy0 + 10), (x0 + (x1 - x0) * pk, yy0 - 10)], fill=CORAL + (255,), width=12)
-        pop(frame, B_KLA, 780, 290, t, 6.15, (12.3, 12.6))
+        pop(frame, B_KLA, min(780, W - 64 - B_KLA.width / 2), 290, t, 6.15, (12.3, 12.6))
         pop(frame, QM, 140, 760, t, 8.7, END)
         slide_up(frame, HEARD, W / 2, 1490, t, 6.6, (9.6, 9.9))
         slide_up(frame, FIX, W / 2, 1530, t, 9.9, END)

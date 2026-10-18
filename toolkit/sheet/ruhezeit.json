@@ -48,11 +48,11 @@
    "gap": 20,
    "segs": [
     [
-     "Hausordnung",
+     "gleichfalls",
      "red"
     ],
     [
-     " = точні години саме у вашому будинку",
+     " = «і вам теж» — лише на побажання",
      "ink"
     ]
    ]
@@ -141,24 +141,24 @@
    "perfekt": "Wo hängt die Hausordnung?"
   },
   {
-   "de": "sich beschweren",
-   "ua": "поскаржитись",
+   "de": "gleichfalls",
+   "ua": "і вам теж",
    "ex": [
     [
-     "Der Nachbar hat sich ",
+     "Guten Appetit! — Danke, ",
      "ink"
     ],
     [
-     "beschwert",
+     "gleichfalls",
      "red"
     ],
     [
-     ".",
+     "!",
      "ink"
     ]
    ],
-   "tr": "Сусід поскаржився.",
-   "perfekt": "Die Hausverwaltung weiß Bescheid."
+   "tr": "Смачного! — Дякую, вам теж!",
+   "perfekt": "Але не на «Ruhezeit»!"
   }
  ],
  "test_title": "Тест: встав слово",
@@ -193,11 +193,11 @@
   {
    "q": [
     [
-     "Das steht in der ______.",
+     "Guten Appetit! — Danke, ______!",
      "ink"
     ]
    ],
-   "hint": "(Hausordnung)"
+   "hint": "(gleichfalls)"
   }
  ],
  "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
@@ -255,15 +255,15 @@
   ],
   [
    [
-    "4  Das steht in der ",
+    "4  Guten Appetit! — Danke, ",
     "ink"
    ],
    [
-    "Hausordnung",
+    "gleichfalls",
     "red"
    ],
    [
-    ".",
+    "!",
     "ink"
    ]
   ]
@@ -282,11 +282,11 @@
   ],
   [
    [
-    "Staubsaugen, Bohren, Waschen",
+    "Hausordnung",
     "red"
    ],
    [
-    " — краще вдень у будень",
+    " — точні години саме у вашому будинку",
     "ink"
    ]
   ],

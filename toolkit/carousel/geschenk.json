@@ -1,0 +1,170 @@
+{
+ "no": 2,
+ "prefix": "Gift",
+ "keyword": "GIFT",
+ "sticky": "Німецька в житті №2",
+ "big": "Gift",
+ "t2": "Gift = отрута, не подарунок",
+ "t3": "5 слів для дня народження",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю фрази для свята",
+ "next": "Далі: сусід і «Ruhezeit»",
+ "hook_de": "Ich habe ein Gift für dich.",
+ "wrong_ua": "У мене є подарунок для тебе",
+ "rule": [
+  [
+   [
+    "Gift",
+    "red"
+   ],
+   [
+    " — отрута",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Geschenk",
+    "blue"
+   ],
+   [
+    " — подарунок",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Ich habe ein ",
+   "ink"
+  ],
+  [
+   "Geschenk",
+   "blue"
+  ],
+  [
+   " für dich.",
+   "ink"
+  ]
+ ],
+ "example_ua": "У мене є подарунок для тебе.",
+ "perfekt": [
+  [
+   "Alles Gute zum ",
+   "ink"
+  ],
+  [
+   "Geburtstag",
+   "blue"
+  ],
+  [
+   "!",
+   "ink"
+  ]
+ ],
+ "verbs": [
+  [
+   "das Geschenk",
+   "подарунок"
+  ],
+  [
+   "der Geburtstag",
+   "день народження"
+  ],
+  [
+   "die Einladung",
+   "запрошення"
+  ],
+  [
+   "der Kuchen",
+   "торт, пиріг"
+  ],
+  [
+   "mitbringen",
+   "принести з собою"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Ich habe ein _____ für dich.",
+     "ink"
+    ]
+   ],
+   "hint": "Geschenk"
+  },
+  {
+   "q": [
+    [
+     "Alles Gute zum _____!",
+     "ink"
+    ]
+   ],
+   "hint": "Geburtstag"
+  },
+  {
+   "q": [
+    [
+     "Danke für die _____!",
+     "ink"
+    ]
+   ],
+   "hint": "Einladung"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Ich habe ein ",
+    "ink"
+   ],
+   [
+    "Geschenk",
+    "red"
+   ],
+   [
+    " für dich.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Alles Gute zum ",
+    "ink"
+   ],
+   [
+    "Geburtstag",
+    "red"
+   ],
+   [
+    "!",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Danke für die ",
+    "ink"
+   ],
+   [
+    "Einladung",
+    "red"
+   ],
+   [
+    "!",
+    "ink"
+   ]
+  ]
+ ],
+ "note": [
+  [
+   "Дякую! ",
+   "grey"
+  ],
+  [
+   "Das ist lieb von dir.",
+   "ink"
+  ]
+ ]
+}

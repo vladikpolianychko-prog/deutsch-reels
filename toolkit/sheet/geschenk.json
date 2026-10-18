@@ -1,0 +1,305 @@
+{
+ "sticky": "Deutsch в зошиті · Німецька в житті №2",
+ "title": "Gift",
+ "meaning": "= отрута (НЕ подарунок!)",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Подарунок — це ",
+     "ink"
+    ],
+    [
+     "Geschenk",
+     "blue"
+    ],
+    [
+     ":",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Ich habe ein ",
+     "ink"
+    ],
+    [
+     "Geschenk",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "У мене є подарунок.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "Gift",
+     "red"
+    ],
+    [
+     " = отрута (так, саме отрута!)",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз для дня народження",
+ "verbs": [
+  {
+   "de": "das Geschenk",
+   "ua": "подарунок",
+   "ex": [
+    [
+     "Das ist ein ",
+     "ink"
+    ],
+    [
+     "Geschenk",
+     "red"
+    ],
+    [
+     " für dich.",
+     "ink"
+    ]
+   ],
+   "tr": "Це подарунок для тебе.",
+   "perfekt": "Das ist lieb von dir."
+  },
+  {
+   "de": "zum Geburtstag",
+   "ua": "з днем народження",
+   "ex": [
+    [
+     "Alles Gute ",
+     "ink"
+    ],
+    [
+     "zum Geburtstag",
+     "red"
+    ],
+    [
+     "!",
+     "ink"
+    ]
+   ],
+   "tr": "З днем народження!",
+   "perfekt": "Herzlichen Glückwunsch!"
+  },
+  {
+   "de": "die Einladung",
+   "ua": "запрошення",
+   "ex": [
+    [
+     "Danke für die ",
+     "ink"
+    ],
+    [
+     "Einladung",
+     "red"
+    ],
+    [
+     "!",
+     "ink"
+    ]
+   ],
+   "tr": "Дякую за запрошення!",
+   "perfekt": "Wir kommen gern."
+  },
+  {
+   "de": "mitbringen",
+   "ua": "принести з собою",
+   "ex": [
+    [
+     "Was soll ich ",
+     "ink"
+    ],
+    [
+     "mitbringen",
+     "red"
+    ],
+    [
+     "?",
+     "ink"
+    ]
+   ],
+   "tr": "Що мені принести?",
+   "perfekt": "Ich bringe einen Kuchen mit."
+  },
+  {
+   "de": "der Kindergeburtstag",
+   "ua": "дитяче свято",
+   "ex": [
+    [
+     "Morgen ist der ",
+     "ink"
+    ],
+    [
+     "Kindergeburtstag",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Завтра дитяче свято.",
+   "perfekt": "Wann soll ich abholen?"
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Ich habe ein ______ für dich.",
+     "ink"
+    ]
+   ],
+   "hint": "(Geschenk)"
+  },
+  {
+   "q": [
+    [
+     "Alles Gute zum ______!",
+     "ink"
+    ]
+   ],
+   "hint": "(Geburtstag)"
+  },
+  {
+   "q": [
+    [
+     "Danke für die ______!",
+     "ink"
+    ]
+   ],
+   "hint": "(Einladung)"
+  },
+  {
+   "q": [
+    [
+     "Was soll ich ______?",
+     "ink"
+    ]
+   ],
+   "hint": "(mitbringen)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Ich habe ein ",
+    "ink"
+   ],
+   [
+    "Geschenk",
+    "red"
+   ],
+   [
+    " für dich.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Alles Gute zum ",
+    "ink"
+   ],
+   [
+    "Geburtstag",
+    "red"
+   ],
+   [
+    "!",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Danke für die ",
+    "ink"
+   ],
+   [
+    "Einladung",
+    "red"
+   ],
+   [
+    "!",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Was soll ich ",
+    "ink"
+   ],
+   [
+    "mitbringen",
+    "red"
+   ],
+   [
+    "?",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "Gift",
+    "red"
+   ],
+   [
+    " = отрута, а не подарунок",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Geschenk",
+    "blue"
+   ],
+   [
+    " = подарунок",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Herzlichen Glückwunsch",
+    "blue"
+   ],
+   [
+    " = вітаю!",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Далі: Німецька в житті №3 — Ruhezeit    @deutsch_v_zoshity"
+}
