@@ -379,6 +379,36 @@ def props_back(pen, t):
             cx = tx + k * 30; pen.d.rectangle([*P(cx - 6, ty - 204), *P(cx + 6, ty - 160)], fill=SKY + (255,), outline=OUT + (255,), width=3 * S)
             fl = 1 + .15 * math.sin(t * 19 + k * 2)
             pen.ell(cx, ty - 220, 8 * fl, 14 * fl, SUN, 3); pen.ell(cx, ty - 216, 4, 7, (255, 250, 220), 0)
+    elif kind == "office":
+        # waiting-room / office: folder shelf, number display, wall clock, plant, wall sign
+        shx = sc.get("shelf_x", 700)
+        pen.d.rectangle([*P(shx - 230, 560), *P(shx + 230, FLOOR - 20)], fill=(176, 130, 92, 255), outline=OUT + (255,), width=6 * S)
+        for r in range(3):
+            yy = 560 + r * 240
+            pen.d.rectangle([*P(shx - 230, yy + 226), *P(shx + 230, yy + 238)], fill=(140, 98, 66, 255))
+            for k in range(9):
+                col = (SKY, CORAL, MINT, SUN, (160, 130, 200))[(k + r * 2) % 5]
+                bx = shx - 210 + k * 46
+                pen.d.rectangle([*P(bx, yy + 70 + (k % 3) * 8), *P(bx + 36, yy + 226)], fill=col + (255,), outline=OUT + (255,), width=4 * S)
+                pen.d.rectangle([*P(bx + 8, yy + 100 + (k % 3) * 8), *P(bx + 28, yy + 124 + (k % 3) * 8)], fill=WHITE + (255,))
+        dx, dy = sc.get("display", [200, 640])
+        pen.d.rounded_rectangle([*P(dx - 120, dy - 70), *P(dx + 120, dy + 70)], 16 * S, fill=(30, 34, 50, 255), outline=OUT + (255,), width=6 * S)
+        blink = 1 if int(t * 2) % 2 == 0 else 0.55
+        pen.d.rounded_rectangle([*P(dx - 100, dy - 50), *P(dx + 100, dy + 50)], 10 * S, fill=(int(40 * blink), int(24 * blink), int(24 * blink), 255))
+        num = str(sc.get("number", 47))
+        pen.d.text(P(dx - 62, dy - 36), "Nr. " + num, font=font("black", 40 * S), fill=(255, int(80 + 50 * blink), 60, 255))
+        pen.line([(dx - 12, dy + 70), (dx - 12, FLOOR)], (110, 118, 140), 10)
+        cx, cy = sc.get("clock", [-300, 0]); pen.ell(cx, cy, 64, 64, WHITE, 7)
+        for k in range(12):
+            a = k * math.pi / 6; pen.line([(cx + math.cos(a) * 50, cy + math.sin(a) * 50), (cx + math.cos(a) * 58, cy + math.sin(a) * 58)], OUT, 4)
+        hh, mm = sc.get("time", [9, 15]); ah = ((hh % 12) + mm / 60) / 12 * 2 * math.pi - math.pi / 2; am = mm / 60 * 2 * math.pi - math.pi / 2
+        pen.line([(cx, cy), (cx + math.cos(ah) * 30, cy + math.sin(ah) * 30)], OUT, 8); pen.line([(cx, cy), (cx + math.cos(am) * 46, cy + math.sin(am) * 46)], CORAL, 5)
+        pen.ell(cx, cy, 6, 6, OUT, 0)
+        px = sc.get("plant_x", 480)
+        pen.poly([(px - 50, FLOOR - 120), (px + 50, FLOOR - 120), (px + 38, FLOOR - 6), (px - 38, FLOOR - 6)], (200, 100, 70), 5)
+        for k, (ax, ay) in enumerate(((-60, -200), (0, -250), (60, -190), (-30, -150), (34, -140))):
+            sw = math.sin(t * 1.4 + k) * 6
+            pen.ell(px + ax + sw, FLOOR - 120 + ay, 34, 62, (70 + k * 10, 170, 100), 5)
     elif kind == "night_door":
         dx0, dx1, dy0 = sc.get("door", [660, 940, 640])
         pen.d.rectangle([*P(dx0 - 22, dy0 - 22), *P(dx1 + 22, FLOOR)], fill=(150, 108, 76, 255), outline=OUT + (255,), width=6 * S)

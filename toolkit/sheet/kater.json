@@ -1,0 +1,321 @@
+{
+ "sticky": "Deutsch в зошиті · Німецька в житті №4",
+ "title": "Jobcenter",
+ "meaning": "= центр зайнятості",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Кіт-самець і похмілля — одне слово:",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Ich habe einen ",
+     "ink"
+    ],
+    [
+     "Kater",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Німець почує: у мене похмілля.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "die Katze",
+     "blue"
+    ],
+    [
+     " = кішка (кіт) — безпечне слово",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз для Jobcenter",
+ "verbs": [
+  {
+   "de": "einen Termin haben",
+   "ua": "мати запис",
+   "ex": [
+    [
+     "Ich habe um 9 Uhr einen ",
+     "ink"
+    ],
+    [
+     "Termin",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "У мене запис на 9 годину.",
+   "perfekt": "Mein Termin ist am Montag."
+  },
+  {
+   "de": "einen Antrag stellen",
+   "ua": "подати заяву",
+   "ex": [
+    [
+     "Ich möchte einen ",
+     "ink"
+    ],
+    [
+     "Antrag",
+     "red"
+    ],
+    [
+     " stellen.",
+     "ink"
+    ]
+   ],
+   "tr": "Я хочу подати заяву.",
+   "perfekt": "Wo bekomme ich das Formular?"
+  },
+  {
+   "de": "sich bewerben",
+   "ua": "подаватись на роботу",
+   "ex": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "bewerbe",
+     "red"
+    ],
+    [
+     " mich als Verkäuferin.",
+     "ink"
+    ]
+   ],
+   "tr": "Я подаюсь на посаду продавчині.",
+   "perfekt": "Ich habe mich beworben."
+  },
+  {
+   "de": "die Unterlagen",
+   "ua": "документи",
+   "ex": [
+    [
+     "Ich habe alle ",
+     "ink"
+    ],
+    [
+     "Unterlagen",
+     "red"
+    ],
+    [
+     " dabei.",
+     "ink"
+    ]
+   ],
+   "tr": "Усі документи в мене з собою.",
+   "perfekt": "Fehlt noch etwas?"
+  },
+  {
+   "de": "die Katze",
+   "ua": "кішка (кіт)",
+   "ex": [
+    [
+     "Ich habe eine ",
+     "ink"
+    ],
+    [
+     "Katze",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "У мене є кішка (кіт).",
+   "perfekt": "Не плутай з Kater!"
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Ich habe um 9 Uhr einen ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(Termin)"
+  },
+  {
+   "q": [
+    [
+     "Ich schreibe eine ______ als Verkäuferin.",
+     "ink"
+    ]
+   ],
+   "hint": "(Bewerbung)"
+  },
+  {
+   "q": [
+    [
+     "Ich möchte einen ______ stellen.",
+     "ink"
+    ]
+   ],
+   "hint": "(Antrag)"
+  },
+  {
+   "q": [
+    [
+     "Meine ______ heißt Mimi.",
+     "ink"
+    ]
+   ],
+   "hint": "(Katze)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Ich habe um 9 Uhr einen ",
+    "ink"
+   ],
+   [
+    "Termin",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Ich schreibe eine ",
+    "ink"
+   ],
+   [
+    "Bewerbung",
+    "red"
+   ],
+   [
+    " als Verkäuferin.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Ich möchte einen ",
+    "ink"
+   ],
+   [
+    "Antrag",
+    "red"
+   ],
+   [
+    " stellen.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Meine ",
+    "ink"
+   ],
+   [
+    "Katze",
+    "red"
+   ],
+   [
+    " heißt Mimi.",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "der Termin",
+    "blue"
+   ],
+   [
+    " = запис, зустріч; ",
+    "ink"
+   ],
+   [
+    "die Frist",
+    "blue"
+   ],
+   [
+    " = термін, дедлайн",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "der Antrag",
+    "red"
+   ],
+   [
+    " = заява; ",
+    "ink"
+   ],
+   [
+    "die Antwort",
+    "red"
+   ],
+   [
+    " = відповідь",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "der Kater",
+    "blue"
+   ],
+   [
+    " = кіт-самець і похмілля; ",
+    "ink"
+   ],
+   [
+    "die Katze",
+    "blue"
+   ],
+   [
+    " = кішка",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Далі: Німецька в житті №5 — батьківські збори    @deutsch_v_zoshity"
+}

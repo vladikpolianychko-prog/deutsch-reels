@@ -1,0 +1,216 @@
+{
+ "no": 4,
+ "prefix": "Kater",
+ "keyword": "AMT",
+ "sticky": "Німецька в житті №4",
+ "big": "Kater",
+ "t2": "Kater — кіт і похмілля",
+ "t3": "5 слів для Jobcenter",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю фрази для Jobcenter",
+ "next": "Далі: збори і «Ich bin heiß»",
+ "hook_de": "Ich habe einen Kater.",
+ "wrong_ua": "Я маю кота",
+ "rule": [
+  [
+   [
+    "der Kater",
+    "red"
+   ],
+   [
+    " — кіт-самець і похмілля",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "die Katze",
+    "blue"
+   ],
+   [
+    " — кішка, безпечне слово про кота",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Ich habe eine ",
+   "ink"
+  ],
+  [
+   "Katze",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "У мене є кішка (кіт).",
+ "perfekt": [
+  [
+   "Похмілля: ",
+   "grey"
+  ],
+  [
+   "Ich habe einen Kater.",
+   "red"
+  ]
+ ],
+ "verbs": [
+  [
+   "der Termin",
+   "запис, зустріч"
+  ],
+  [
+   "der Antrag",
+   "заява"
+  ],
+  [
+   "die Bewerbung",
+   "заявка на роботу"
+  ],
+  [
+   "der Lebenslauf",
+   "резюме"
+  ],
+  [
+   "die Unterlagen",
+   "документи"
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Ich habe um 9 Uhr einen _____.",
+     "ink"
+    ]
+   ],
+   "hint": "Termin"
+  },
+  {
+   "q": [
+    [
+     "Ich schreibe eine _____ als Verkäuferin.",
+     "ink"
+    ]
+   ],
+   "hint": "Bewerbung"
+  },
+  {
+   "q": [
+    [
+     "Meine _____ heißt Mimi.",
+     "ink"
+    ]
+   ],
+   "hint": "Katze"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Ich habe um 9 Uhr einen ",
+    "ink"
+   ],
+   [
+    "Termin",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich schreibe eine ",
+    "ink"
+   ],
+   [
+    "Bewerbung",
+    "red"
+   ],
+   [
+    " als Verkäuferin.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Meine ",
+    "ink"
+   ],
+   [
+    "Katze",
+    "red"
+   ],
+   [
+    " heißt Mimi.",
+    "ink"
+   ]
+  ]
+ ],
+ "note": [
+  [
+   "Кіт у документах? ",
+   "grey"
+  ],
+  [
+   "Ich habe eine Katze.",
+   "ink"
+  ]
+ ],
+ "confusables": [
+  [
+   [
+    "der Kater",
+    "кіт; похмілля"
+   ],
+   [
+    "die Katze",
+    "кішка"
+   ]
+  ],
+  [
+   [
+    "der Antrag",
+    "заява"
+   ],
+   [
+    "die Antwort",
+    "відповідь"
+   ],
+   [
+    "der Auftrag",
+    "замовлення"
+   ]
+  ],
+  [
+   [
+    "der Termin",
+    "запис, зустріч"
+   ],
+   [
+    "die Frist",
+    "термін, дедлайн"
+   ]
+  ],
+  [
+   [
+    "sich bewerben",
+    "подаватись на роботу"
+   ],
+   [
+    "bewerten",
+    "оцінювати"
+   ],
+   [
+    "werben",
+    "рекламувати"
+   ]
+  ]
+ ]
+}

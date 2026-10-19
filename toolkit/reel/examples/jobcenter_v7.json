@@ -1,0 +1,367 @@
+{
+ "series": "Німецька в житті №4 · Jobcenter",
+ "hook_ua": "В офісі Jobcenter:",
+ "hook_de_lines": [
+  "«Ich habe",
+  "einen Kater!»"
+ ],
+ "heard_label": "Він почув:",
+ "heard": "«У мене похмілля!»",
+ "fix": "Ich habe eine Katze.",
+ "gloss_de": "Katze",
+ "gloss_ua": "кішка (кіт)",
+ "cta": "Скинь другу з котом",
+ "bubble_font": 62,
+ "open": [
+  0.35,
+  1.0
+ ],
+ "cast": {
+  "A": {
+   "name": "Тарас (клієнт)",
+   "x": 280,
+   "appear": 0.85,
+   "look": 6,
+   "jumps": [
+    8.4
+   ],
+   "look_spec": {
+    "hair": "short",
+    "hair_color": [
+     60,
+     44,
+     36
+    ],
+    "beard": [
+     80,
+     58,
+     44
+    ],
+    "glasses": true,
+    "outfit": "sweater",
+    "outfit_color": [
+     232,
+     150,
+     60
+    ],
+    "outfit_shade": [
+     200,
+     120,
+     44
+    ],
+    "knit": [
+     255,
+     236,
+     200
+    ],
+    "legs_color": [
+     60,
+     70,
+     100
+    ],
+    "shoes": [
+     60,
+     44,
+     36
+    ],
+    "eyes": [
+     90,
+     70,
+     50
+    ],
+    "leg": 215,
+    "torso": 220,
+    "shoulders": 88,
+    "hips": 96,
+    "head_rx": 80,
+    "ph": 0.8
+   },
+   "poses": [
+    [
+     0,
+     "rest"
+    ],
+    [
+     2.75,
+     "shrug"
+    ],
+    [
+     4.8,
+     "rest"
+    ],
+    [
+     8.4,
+     "face"
+    ],
+    [
+     11.0,
+     "rest"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "happy"
+    ],
+    [
+     8.4,
+     "shock"
+    ],
+    [
+     11.0,
+     "neutral"
+    ],
+    [
+     12.4,
+     "happy"
+    ]
+   ]
+  },
+  "B": {
+   "name": "Frau Schneider (працівниця)",
+   "x": 800,
+   "appear": 0.75,
+   "look": -5,
+   "look_spec": {
+    "hair": "bun",
+    "hair_color": [
+     170,
+     170,
+     180
+    ],
+    "scrunchie": [
+     150,
+     60,
+     90
+    ],
+    "glasses": true,
+    "outfit": "dress",
+    "outfit_color": [
+     120,
+     80,
+     170
+    ],
+    "outfit_shade": [
+     92,
+     58,
+     140
+    ],
+    "shoes": [
+     50,
+     40,
+     60
+    ],
+    "lips": [
+     170,
+     50,
+     80
+    ],
+    "eyes": [
+     100,
+     120,
+     140
+    ],
+    "leg": 205,
+    "torso": 205,
+    "shoulders": 78,
+    "hips": 90,
+    "ph": 2.0
+   },
+   "poses": [
+    [
+     0,
+     "hips"
+    ],
+    [
+     1.1,
+     "finger"
+    ],
+    [
+     3.2,
+     "hips"
+    ],
+    [
+     5.2,
+     "finger"
+    ],
+    [
+     8.2,
+     "hips"
+    ],
+    [
+     11.4,
+     "rest"
+    ]
+   ],
+   "moods": [
+    [
+     0,
+     "neutral"
+    ],
+    [
+     4.7,
+     "shock"
+    ],
+    [
+     5.3,
+     "angry"
+    ],
+    [
+     11.4,
+     "happy"
+    ]
+   ]
+  }
+ },
+ "scene": {
+  "kind": "office",
+  "shelf_x": 720,
+  "display": [
+   470,
+   700
+  ],
+  "number": 47,
+  "clock": [
+   -300,
+   0
+  ],
+  "time": [
+   9,
+   15
+  ],
+  "plant_x": 480,
+  "music_off": 9.6
+ },
+ "dialogue": [
+  {
+   "who": "B",
+   "lines": [
+    "Warum so spät?"
+   ],
+   "pos": [
+    790,
+    360
+   ],
+   "tail": 0.5,
+   "in": 1.15,
+   "out": 4.9
+  },
+  {
+   "who": "A",
+   "lines": [
+    "Ich habe",
+    "einen Kater!"
+   ],
+   "pos": [
+    330,
+    470
+   ],
+   "tail": 0.45,
+   "in": 2.75,
+   "out": 12.3,
+   "wrong": true
+  },
+  {
+   "who": "B",
+   "lines": [
+    "Einen Kater?!",
+    "Gestern Party?"
+   ],
+   "pos": [
+    770,
+    300
+   ],
+   "tail": 0.55,
+   "in": 5.25,
+   "out": 12.3
+  }
+ ],
+ "voices": [],
+ "beats": {
+  "series_out": 5.0,
+  "strike": 9.2,
+  "qm": 8.5,
+  "qm_pos": [
+   130,
+   720
+  ],
+  "heard": [
+   6.0,
+   9.3
+  ],
+  "fix": 9.5,
+  "cta": 12.7
+ },
+ "sfx": [
+  [
+   "flip",
+   0.4,
+   0.7
+  ],
+  [
+   "boing",
+   0.75,
+   0.4
+  ],
+  [
+   "boing",
+   0.85,
+   0.4
+  ],
+  [
+   "pop",
+   1.15,
+   0.12
+  ],
+  [
+   "pop",
+   2.75,
+   0.12
+  ],
+  [
+   "pop",
+   5.25,
+   0.12
+  ],
+  [
+   "slide",
+   6.0,
+   0.6
+  ],
+  [
+   "slap",
+   8.4,
+   0.2
+  ],
+  [
+   "pop",
+   8.5,
+   0.12
+  ],
+  [
+   "scribble",
+   9.2,
+   0.4
+  ],
+  [
+   "slide",
+   9.5,
+   0.6
+  ],
+  [
+   "chime",
+   9.6,
+   1.0
+  ],
+  [
+   "pop",
+   12.7,
+   0.12
+  ],
+  [
+   "flip",
+   15.0,
+   0.7
+  ]
+ ]
+}
