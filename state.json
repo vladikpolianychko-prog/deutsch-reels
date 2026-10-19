@@ -144,8 +144,8 @@
   "nach": "sheets/nach-50-diyeslov-15-vprav.pdf (посилання: https://github.com/vladikpolianychko-prog/deutsch-reels/raw/main/sheets/nach-50-diyeslov-15-vprav.pdf)"
  },
  "series": "Німецька в житті (з 19.10). Префікси зупинено після №11 weg-.",
- "next_situation_number": 4,
- "next_situation": "Jobcenter (der Kater = кіт і похмілля)",
+ "next_situation_number": 5,
+ "next_situation": "Батьківські збори (Mir ist heiß, не Ich bin heiß)",
  "situations_prepared": {
   "1": {
    "slug": "kita",
@@ -173,6 +173,15 @@
    "voices": "готові: toolkit/reel/voice/ruhezeit/ (neighbour.mp3 і klaus_old.mp3 з тоном 0.96)",
    "scheduled": "ЗАПЛАНОВАНО: ср 21.10 10:00 рілс v7 (uuid 1317274341075471382), 18:00 карусель 7 слайдів (uuid -7895639236535761639)",
    "reel": "reels/situ-03-ruhezeit.mp4"
+  },
+  "4": {
+   "slug": "kater",
+   "topic": "Jobcenter (der Kater)",
+   "carousel": "carousels/situ-04-kater",
+   "sheet": "sheets/jobcenter-frazy.pdf",
+   "reel_cfg": "toolkit/reel/examples/jobcenter_v7.json",
+   "voices": "НЕМАЄ: потрібні mp3 (A Тарас, B Frau Schneider, narrator), toolkit/reel/voice/jobcenter/",
+   "scheduled": "ЗАПЛАНОВАНО: чт 22.10 18:00 карусель 7 слайдів (uuid -2576315515860858458, id 400256406). Рілс 10:00 НЕ запланований (потрібні голоси)."
   }
  },
  "removed_situations": [
@@ -182,5 +191,5 @@
   "18.10: у кожному рілсі нові персонажі й реквізит під сюжет (рушій v7, PLAYBOOK §6c); дитина лише якщо вона в сюжеті",
   "18.10: у кожній каруселі є слайд «Не плутай!» зі схожими словами, де часто помиляються (поле confusables, 3–4 групи)"
  ],
- "next_free_slot": "чт 22.10: рілс 10:00 + карусель 18:00 — ситуація №4 Jobcenter/Kater (ще не підготовлена; потрібні нові голоси з ElevenLabs, а там безкоштовний доступ заблоковано)"
+ "next_free_slot": "пт 23.10: рілс 10:00 + карусель 18:00 — №5 Батьківські збори. Рілс №4 на 22.10 10:00 чекає на голоси"
 }
