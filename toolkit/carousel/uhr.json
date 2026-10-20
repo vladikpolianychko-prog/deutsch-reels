@@ -1,0 +1,229 @@
+{
+ "no": 0,
+ "prefix": "Uhr",
+ "keyword": "UHR",
+ "sticky": "Ти точно впевнена(ий)?",
+ "big": "halb drei",
+ "warning": {
+  "title": "Чутливий контент",
+  "text": "Цей допис може містити болісні спогади про німецький час: halb drei, Viertel vor і Zeitumstellung.",
+  "button": "Показати допис  →",
+  "hint": "Гортай, якщо не боїшся"
+ },
+ "t2": "BOO! halb drei = 2:30",
+ "t3": "5 слів про час",
+ "t_conf": "Не плутай!",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю шпаргалку «Котра година?»",
+ "next": "Далі: помилки, які пора «ghost»-нути",
+ "hook_de": "Wir treffen uns um halb drei.",
+ "wrong_ua": "Зустрічаємось о 3:30",
+ "rule": [
+  [
+   [
+    "halb drei",
+    "blue"
+   ],
+   [
+    " = 2:30 (пів на третю)",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Viertel nach zwei",
+    "blue"
+   ],
+   [
+    " = 2:15",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Viertel vor drei",
+    "blue"
+   ],
+   [
+    " = 2:45",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Es ist ",
+   "ink"
+  ],
+  [
+   "halb drei",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "Зараз 2:30. «halb» — пів години ДО наступної",
+ "perfekt": [
+  [
+   "Неділя 25.10: ",
+   "grey"
+  ],
+  [
+   "die Uhr wird zurückgestellt",
+   "blue"
+  ]
+ ],
+ "note": [
+  [
+   "3:00 стає 2:00 = ",
+   "grey"
+  ],
+  [
+   "eine Stunde mehr Schlaf",
+   "ink"
+  ]
+ ],
+ "verbs": [
+  [
+   "die Uhr",
+   "годинник; о … годині"
+  ],
+  [
+   "die Stunde",
+   "година (60 хв)"
+  ],
+  [
+   "die Zeit",
+   "час"
+  ],
+  [
+   "spät",
+   "пізно"
+  ],
+  [
+   "die Zeitumstellung",
+   "переведення годинника"
+  ]
+ ],
+ "confusables": [
+  [
+   [
+    "drei Uhr",
+    "3:00 (о третій)"
+   ],
+   [
+    "drei Stunden",
+    "три години (тривалість)"
+   ]
+  ],
+  [
+   [
+    "halb drei",
+    "2:30"
+   ],
+   [
+    "drei Uhr dreißig",
+    "3:30"
+   ]
+  ],
+  [
+   [
+    "spät",
+    "пізно"
+   ],
+   [
+    "später",
+    "пізніше"
+   ],
+   [
+    "die Verspätung",
+    "запізнення"
+   ]
+  ],
+  [
+   [
+    "die Zeit",
+    "час"
+   ],
+   [
+    "das Mal",
+    "раз (zum ersten Mal)"
+   ]
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "Es ist _____ drei. (2:30)",
+     "ink"
+    ]
+   ],
+   "hint": "halb"
+  },
+  {
+   "q": [
+    [
+     "Der Film dauert zwei _____.",
+     "ink"
+    ]
+   ],
+   "hint": "Stunde"
+  },
+  {
+   "q": [
+    [
+     "Wie _____ ist es? — Es ist acht.",
+     "ink"
+    ]
+   ],
+   "hint": "spät"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Es ist ",
+    "ink"
+   ],
+   [
+    "halb",
+    "red"
+   ],
+   [
+    " drei.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Der Film dauert zwei ",
+    "ink"
+   ],
+   [
+    "Stunden",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Wie ",
+    "ink"
+   ],
+   [
+    "spät",
+    "red"
+   ],
+   [
+    " ist es? — Es ist acht.",
+    "ink"
+   ]
+  ]
+ ]
+}

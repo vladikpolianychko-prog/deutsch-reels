@@ -41,6 +41,37 @@ def uniform(rows, size, bold, maxw):
     while size > 24 and max(sp(r, size, bold, 10 ** 6).width for r in rows) > maxw: size -= 2
     return size
 
+def s0(S, top, fin):
+    """Halloween-trend parody of Instagram's sensitive-content screen: blurred hook slide + crossed eye + warning + button"""
+    from PIL import ImageFilter, ImageFont
+    Wn = S["warning"]; base, _ = s1(S, 150, True)
+    img = base.convert("RGB").filter(ImageFilter.GaussianBlur(38)).convert("RGBA")
+    img.alpha_composite(Image.new("RGBA", img.size, (12, 14, 20, 168)))
+    d = ImageDraw.Draw(img); F = "/usr/share/fonts/opentype/inter/"
+    fb = lambda n: ImageFont.truetype(F + "InterDisplay-Bold.otf", n); fr = lambda n: ImageFont.truetype(F + "InterDisplay-Medium.otf", n)
+    cx, cy = W // 2, 430
+    d.ellipse((cx - 92, cy - 52, cx + 92, cy + 52), outline=(255, 255, 255, 255), width=9)
+    d.ellipse((cx - 30, cy - 30, cx + 30, cy + 30), outline=(255, 255, 255, 255), width=9)
+    d.line((cx - 104, cy + 84, cx + 104, cy - 84), fill=(255, 255, 255, 255), width=10)
+    def ctext(t, f, y, col=(255, 255, 255, 255), maxw=880, gap=10):
+        words, lines, cur = t.split(), [], ""
+        for w_ in words:
+            nxt = (cur + " " + w_).strip()
+            if f.getlength(nxt) <= maxw: cur = nxt
+            else: lines.append(cur); cur = w_
+        lines.append(cur)
+        for l in lines:
+            d.text((W // 2 - f.getlength(l) / 2, y), l, font=f, fill=col); y += f.size + gap
+        return y
+    y = ctext(Wn["title"], fb(64), 560) + 24
+    y = ctext(Wn["text"], fr(42), y, (225, 228, 236, 255)) + 70
+    bt = Wn["button"]; f = fb(44); bw = f.getlength(bt) + 90
+    d.line((W // 2 - 300, y, W // 2 + 300, y), fill=(255, 255, 255, 70), width=2); y += 40
+    d.text((W // 2 - f.getlength(bt) / 2, y), bt, font=f, fill=(255, 255, 255, 255))
+    if Wn.get("hint"):
+        y += 120; ctext(Wn["hint"], fr(36), y, (190, 196, 210, 255))
+    return img, 1200
+
 def s1(S, top, fin):
     img = M.paper(1); y = top; y = sticky(img, S.get("sticky", f"Префікси №{S['no']}"), y) + 50
     t = sp([(S.get("big", S["prefix"] + "-"), "blue")], 330, True, X1 - X0)
@@ -128,6 +159,7 @@ def s6(S, top, fin):
     return img, y
 
 def build(f, S):
+    if f is s0: return f(S, 0, True)[0].convert("RGB")
     _, y_end = f(S, 90, False); h = y_end - 90
     top = max(70, (H - h) // 2 - 10)
     img, y_end = f(S, top, True)
@@ -138,6 +170,7 @@ def main():
     S = json.load(open(sys.argv[1], encoding="utf-8")); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     assert len(S["verbs"]) == 5 and len(S["test"]) == 3 and len(S["answers"]) == 3
     fs = (s1, s2, s3, s3b, s4, s5, s6) if S.get("confusables") else (s1, s2, s3, s4, s5, s6)
+    if S.get("warning"): fs = (s0,) + fs
     for i, f in enumerate(fs, 1): build(f, S).save(os.path.join(out, f"slide{i}.png"))
     print("ok", out)
 if __name__ == "__main__": main()
