@@ -1,0 +1,313 @@
+{
+ "sticky": "Deutsch в зошиті · Котра година?",
+ "title": "halb drei",
+ "meaning": "= 2:30 (пів на третю), НЕ 3:30!",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "«halb» — це пів години ДО наступної години:",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Es ist ",
+     "ink"
+    ],
+    [
+     "halb drei",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Зараз 2:30.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "Viertel nach zwei",
+     "blue"
+    ],
+    [
+     " = 2:15 · ",
+     "ink"
+    ],
+    [
+     "Viertel vor drei",
+     "blue"
+    ],
+    [
+     " = 2:45",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз про час",
+ "verbs": [
+  {
+   "de": "Wie spät ist es?",
+   "ua": "котра година?",
+   "ex": [
+    [
+     "Wie spät ist es? — Es ist ",
+     "ink"
+    ],
+    [
+     "halb acht",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Котра година? — Пів на восьму (7:30).",
+   "perfekt": "= Wie viel Uhr ist es?"
+  },
+  {
+   "de": "um ... Uhr",
+   "ua": "о ... годині",
+   "ex": [
+    [
+     "Der Termin ist ",
+     "ink"
+    ],
+    [
+     "um zehn Uhr",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Прийом о 10:00.",
+   "perfekt": "drei Uhr = 3:00, drei Stunden = 3 години"
+  },
+  {
+   "de": "die Stunde",
+   "ua": "година (60 хв)",
+   "ex": [
+    [
+     "Der Kurs dauert zwei ",
+     "ink"
+    ],
+    [
+     "Stunden",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Курс триває дві години.",
+   "perfekt": "eine halbe Stunde = пів години"
+  },
+  {
+   "de": "zu spät kommen",
+   "ua": "запізнюватися",
+   "ex": [
+    [
+     "Entschuldigung, ich bin ",
+     "ink"
+    ],
+    [
+     "zu spät",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Вибачте, я запізнилася(вся).",
+   "perfekt": "Perfekt: ich bin zu spät gekommen"
+  },
+  {
+   "de": "die Zeitumstellung",
+   "ua": "переведення годинника",
+   "ex": [
+    [
+     "Am Sonntag ist ",
+     "ink"
+    ],
+    [
+     "Zeitumstellung",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "У неділю переводять годинник.",
+   "perfekt": "die Uhr wird zurückgestellt (3:00 стає 2:00)"
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "Es ist ______ drei. (2:30)",
+     "ink"
+    ]
+   ],
+   "hint": "(halb)"
+  },
+  {
+   "q": [
+    [
+     "Es ist Viertel ______ vier. (3:45)",
+     "ink"
+    ]
+   ],
+   "hint": "(vor)"
+  },
+  {
+   "q": [
+    [
+     "Der Film dauert zwei ______.",
+     "ink"
+    ]
+   ],
+   "hint": "(Stunde)"
+  },
+  {
+   "q": [
+    [
+     "Wie ______ ist es?",
+     "ink"
+    ]
+   ],
+   "hint": "(spät)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  Es ist ",
+    "ink"
+   ],
+   [
+    "halb",
+    "red"
+   ],
+   [
+    " drei.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Es ist Viertel ",
+    "ink"
+   ],
+   [
+    "vor",
+    "red"
+   ],
+   [
+    " vier.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Der Film dauert zwei ",
+    "ink"
+   ],
+   [
+    "Stunden",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Wie ",
+    "ink"
+   ],
+   [
+    "spät",
+    "red"
+   ],
+   [
+    " ist es?",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "halb drei",
+    "blue"
+   ],
+   [
+    " = 2:30, а не 3:30",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "drei Uhr",
+    "blue"
+   ],
+   [
+    " = 3:00, ",
+    "ink"
+   ],
+   [
+    "drei Stunden",
+    "red"
+   ],
+   [
+    " = 3 години",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "25.10: ",
+    "ink"
+   ],
+   [
+    "die Uhr wird zurückgestellt",
+    "blue"
+   ]
+  ]
+ ],
+ "footer": "Deutsch в зошиті    @deutsch_v_zoshity"
+}
