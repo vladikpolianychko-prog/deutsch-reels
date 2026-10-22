@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "metricool": {
   "brandId": "7305714",
   "timezone": "Europe/Berlin"
@@ -203,5 +203,6 @@
  },
  "paused": {
   "situation_4_jobcenter": "карусель переведена в чернетку в Metricool (uuid -2576315515860858458), cfg v7 готовий; повернути, коли будуть голоси"
- }
+ },
+ "last_check_22_10": "22.10 ранок: карусель 10:00 і рілс 14:00 halb drei вже PENDING, нічого не створювалось; аналітика записана в analytics_log.md"
 }
