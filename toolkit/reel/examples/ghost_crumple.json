@@ -1,0 +1,169 @@
+{
+ "dur": 10,
+ "unfold": [
+  0.35,
+  1.9
+ ],
+ "hook_small": "Ghost these mistakes: Ich bin kalt",
+ "hook_lines": [
+  "Мені холодно?",
+  "Німець чує інше"
+ ],
+ "lines": [
+  {
+   "t": 2.1,
+   "y": 150,
+   "size": 110,
+   "segs": [
+    [
+     "Mir ist kalt",
+     "blue"
+    ],
+    [
+     "!",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "t": 2.8,
+   "y": 300,
+   "size": 54,
+   "segs": [
+    [
+     "Ich bin kalt = я бездушна(ий)",
+     "red"
+    ]
+   ]
+  },
+  {
+   "t": 4.0,
+   "y": 520,
+   "size": 58,
+   "segs": [
+    [
+     "Ich bin 35 Jahre alt",
+     "blue"
+    ]
+   ],
+   "bold": false
+  },
+  {
+   "t": 4.7,
+   "y": 620,
+   "size": 50,
+   "segs": [
+    [
+     "не ",
+     "ink"
+    ],
+    [
+     "Ich habe 35 Jahre",
+     "red"
+    ]
+   ],
+   "bold": false
+  },
+  {
+   "t": 5.7,
+   "y": 800,
+   "size": 52,
+   "segs": [
+    [
+     "Ввічливо замовляй:",
+     "grey"
+    ]
+   ],
+   "bold": false
+  },
+  {
+   "t": 6.2,
+   "y": 880,
+   "size": 44,
+   "segs": [
+    [
+     "Ich hätte gern einen Kaffee",
+     "blue"
+    ]
+   ]
+  },
+  {
+   "t": 6.9,
+   "y": 980,
+   "size": 50,
+   "segs": [
+    [
+     "не ",
+     "ink"
+    ],
+    [
+     "Ich will einen Kaffee",
+     "red"
+    ]
+   ],
+   "bold": false
+  }
+ ],
+ "sticky": {
+  "t": 7.8,
+  "y": 1830,
+  "text": "Скинь тому, хто каже Ich bin kalt"
+ },
+ "sfx": [
+  [
+   "slide",
+   0.35,
+   0.6
+  ],
+  [
+   "flip",
+   1.6,
+   0.6
+  ],
+  [
+   "scribble",
+   2.1,
+   0.5
+  ],
+  [
+   "pop",
+   2.4,
+   0.12
+  ],
+  [
+   "scribble",
+   2.8,
+   0.4
+  ],
+  [
+   "scribble",
+   4.0,
+   0.4
+  ],
+  [
+   "scribble",
+   4.7,
+   0.4
+  ],
+  [
+   "scribble",
+   5.7,
+   0.3
+  ],
+  [
+   "scribble",
+   6.2,
+   0.4
+  ],
+  [
+   "scribble",
+   6.9,
+   0.4
+  ],
+  [
+   "pop",
+   7.8,
+   0.12
+  ]
+ ]
+}
