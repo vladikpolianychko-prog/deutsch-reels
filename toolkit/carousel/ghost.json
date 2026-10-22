@@ -1,0 +1,257 @@
+{
+ "no": 0,
+ "prefix": "Ghost",
+ "keyword": "GHOST",
+ "sticky": "Ці фрази пора ghost-нути",
+ "big": "Ghost!",
+ "ghost_sticky": "Things you should ghost",
+ "t2": "Mir ist + стан",
+ "t3": "5 фраз замість помилок",
+ "t_conf": "Не плутай!",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю шпаргалку з фразами",
+ "next": "Далі: довгі слова — як їх читати",
+ "hook_de": "Ich bin kalt.",
+ "wrong_ua": "Мені холодно",
+ "ghosts": [
+  {
+   "wrong": "Ich bin kalt.",
+   "heard": "«Я бездушна(ий) людина»",
+   "right": [
+    [
+     "Mir ist kalt.",
+     "blue"
+    ]
+   ],
+   "right_ua": "Мені холодно."
+  },
+  {
+   "wrong": "Ich habe 35 Jahre.",
+   "heard": "«У мене є 35 років» — так не кажуть",
+   "right": [
+    [
+     "Ich bin 35 Jahre alt.",
+     "blue"
+    ]
+   ],
+   "right_ua": "Мені 35 років."
+  },
+  {
+   "wrong": "Ich will einen Kaffee.",
+   "heard": "Звучить як вимога: «Хочу каву!»",
+   "right": [
+    [
+     "Ich hätte gern einen Kaffee.",
+     "blue"
+    ]
+   ],
+   "right_ua": "Я б хотіла каву (ввічливо)."
+  }
+ ],
+ "rule": [
+  [
+   [
+    "Mir ist",
+    "blue"
+   ],
+   [
+    " + стан = відчуття",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich bin",
+    "red"
+   ],
+   [
+    " + стан = я така людина",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Mir ist ",
+   "ink"
+  ],
+  [
+   "langweilig",
+   "blue"
+  ],
+  [
+   ".",
+   "ink"
+  ]
+ ],
+ "example_ua": "Мені нудно (а не «я нудна»)",
+ "perfekt": [
+  [
+   "Вік: ",
+   "grey"
+  ],
+  [
+   "Ich bin 35 (Jahre alt)",
+   "blue"
+  ]
+ ],
+ "note": [
+  [
+   "не ",
+   "grey"
+  ],
+  [
+   "Ich habe 35 Jahre",
+   "red"
+  ]
+ ],
+ "verbs": [
+  [
+   "Mir ist kalt",
+   "мені холодно"
+  ],
+  [
+   "Mir ist langweilig",
+   "мені нудно"
+  ],
+  [
+   "Ich bin 35 Jahre alt",
+   "мені 35 років"
+  ],
+  [
+   "Ich hätte gern …",
+   "я б хотіла … (ввічливо)"
+  ],
+  [
+   "Wie alt bist du?",
+   "скільки тобі років?"
+  ]
+ ],
+ "confusables": [
+  [
+   [
+    "kalt",
+    "холодний"
+   ],
+   [
+    "kühl",
+    "прохолодний"
+   ],
+   [
+    "die Kälte",
+    "холод"
+   ]
+  ],
+  [
+   [
+    "wollen",
+    "хотіти (категорично)"
+   ],
+   [
+    "möchten",
+    "хотіти б"
+   ],
+   [
+    "ich hätte gern",
+    "я б хотіла (ввічливо)"
+   ]
+  ],
+  [
+   [
+    "langweilig",
+    "нудний"
+   ],
+   [
+    "die Langeweile",
+    "нудьга"
+   ],
+   [
+    "sich langweilen",
+    "нудьгувати"
+   ]
+  ],
+  [
+   [
+    "alt",
+    "старий; … років"
+   ],
+   [
+    "das Alter",
+    "вік"
+   ],
+   [
+    "das Jahr",
+    "рік"
+   ]
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "_____ ist kalt. (мені)",
+     "ink"
+    ]
+   ],
+   "hint": "Mir"
+  },
+  {
+   "q": [
+    [
+     "Ich _____ 35 Jahre alt.",
+     "ink"
+    ]
+   ],
+   "hint": "bin"
+  },
+  {
+   "q": [
+    [
+     "Ich _____ gern einen Kaffee.",
+     "ink"
+    ]
+   ],
+   "hint": "hätte"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Mir",
+    "red"
+   ],
+   [
+    " ist kalt.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "bin",
+    "red"
+   ],
+   [
+    " 35 Jahre alt.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich ",
+    "ink"
+   ],
+   [
+    "hätte",
+    "red"
+   ],
+   [
+    " gern einen Kaffee.",
+    "ink"
+   ]
+  ]
+ ]
+}

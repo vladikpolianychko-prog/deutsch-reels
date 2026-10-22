@@ -1,0 +1,309 @@
+{
+ "sticky": "Deutsch в зошиті · Ghost-фрази",
+ "title": "Ich bin kalt",
+ "meaning": "≠ «мені холодно» (це: я холодна людина)",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Відчуття — з «мені»: ",
+     "ink"
+    ],
+    [
+     "Mir ist …",
+     "blue"
+    ]
+   ]
+  },
+  {
+   "size": 62,
+   "bold": true,
+   "segs": [
+    [
+     "Mir ist ",
+     "ink"
+    ],
+    [
+     "kalt",
+     "blue"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "Мені холодно.",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "Ich bin kalt",
+     "red"
+    ],
+    [
+     " = я холодна (бездушна) людина",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 фраз замість помилок",
+ "verbs": [
+  {
+   "de": "Mir ist kalt",
+   "ua": "мені холодно",
+   "ex": [
+    [
+     "Mir ist ",
+     "ink"
+    ],
+    [
+     "kalt",
+     "red"
+    ],
+    [
+     ", mach bitte das Fenster zu.",
+     "ink"
+    ]
+   ],
+   "tr": "Мені холодно, зачини вікно.",
+   "perfekt": "Mir ist warm = мені тепло"
+  },
+  {
+   "de": "Mir ist langweilig",
+   "ua": "мені нудно",
+   "ex": [
+    [
+     "Mir ist ",
+     "ink"
+    ],
+    [
+     "langweilig",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Мені нудно.",
+   "perfekt": "Ich bin langweilig = я нудна людина"
+  },
+  {
+   "de": "Ich bin 35 Jahre alt",
+   "ua": "мені 35 років",
+   "ex": [
+    [
+     "Ich bin ",
+     "ink"
+    ],
+    [
+     "35 Jahre alt",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Мені 35 років.",
+   "perfekt": "не Ich habe 35 Jahre"
+  },
+  {
+   "de": "Ich hätte gern …",
+   "ua": "я б хотіла … (ввічливо)",
+   "ex": [
+    [
+     "Ich ",
+     "ink"
+    ],
+    [
+     "hätte gern",
+     "red"
+    ],
+    [
+     " einen Kaffee.",
+     "ink"
+    ]
+   ],
+   "tr": "Я б хотіла каву.",
+   "perfekt": "Ich will … звучить як вимога"
+  },
+  {
+   "de": "Wie alt bist du?",
+   "ua": "скільки тобі років?",
+   "ex": [
+    [
+     "Wie alt ",
+     "ink"
+    ],
+    [
+     "bist du",
+     "red"
+    ],
+    [
+     "? — Ich bin 30.",
+     "ink"
+    ]
+   ],
+   "tr": "Скільки тобі років? — Мені 30.",
+   "perfekt": "das Alter = вік"
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "______ ist kalt. (мені)",
+     "ink"
+    ]
+   ],
+   "hint": "(Mir)"
+  },
+  {
+   "q": [
+    [
+     "Ich ______ 35 Jahre alt.",
+     "ink"
+    ]
+   ],
+   "hint": "(bin)"
+  },
+  {
+   "q": [
+    [
+     "Ich ______ gern einen Tee.",
+     "ink"
+    ]
+   ],
+   "hint": "(hätte)"
+  },
+  {
+   "q": [
+    [
+     "Mir ist ______. (нудно)",
+     "ink"
+    ]
+   ],
+   "hint": "(langweilig)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше вставить усе без підглядання?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  ",
+    "ink"
+   ],
+   [
+    "Mir",
+    "red"
+   ],
+   [
+    " ist kalt.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  Ich ",
+    "ink"
+   ],
+   [
+    "bin",
+    "red"
+   ],
+   [
+    " 35 Jahre alt.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Ich ",
+    "ink"
+   ],
+   [
+    "hätte",
+    "red"
+   ],
+   [
+    " gern einen Tee.",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Mir ist ",
+    "ink"
+   ],
+   [
+    "langweilig",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "Mir ist kalt",
+    "blue"
+   ],
+   [
+    " = мені холодно",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Ich bin 35 Jahre alt",
+    "blue"
+   ],
+   [
+    ", не ",
+    "ink"
+   ],
+   [
+    "habe",
+    "red"
+   ]
+  ],
+  [
+   [
+    "Ich hätte gern …",
+    "blue"
+   ],
+   [
+    " ввічливіше за ",
+    "ink"
+   ],
+   [
+    "Ich will",
+    "red"
+   ]
+  ]
+ ],
+ "footer": "Deutsch в зошиті    @deutsch_v_zoshity"
+}

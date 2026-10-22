@@ -158,6 +158,38 @@ def s6(S, top, fin):
     h = sp([("@deutsch_v_zoshity", "grey")], 50, False, 560); cput(img, h, y); y += h.height
     return img, y
 
+def ghost_figure(img, cx, y, w=300, h=330):
+    """hand-drawn ghost (white sheet, wavy hem, two eyes); returns bottom y"""
+    d = ImageDraw.Draw(img); ink = COL["ink"] + (255,); r = w // 2
+    n = 4; sw = w / n; pts = [(cx - r, y + r)]
+    for k in range(0, 41):                                   # left side up, over the dome
+        a = math.pi + math.pi * k / 40; pts.append((cx + r * math.cos(a), y + r + r * math.sin(a)))
+    for k in range(n * 8, -1, -1):                           # wavy hem, right to left
+        pts.append((cx - r + sw * k / 8, y + h - 16 + 14 * math.sin(k / 8 * 2 * math.pi)))
+    d.polygon(pts, fill=(255, 255, 255, 255)); d.line(pts + [pts[0]], fill=ink, width=7, joint="curve")
+    for dx in (-42, 42): d.ellipse((cx + dx - 14, y + 90, cx + dx + 14, y + 134), fill=ink)
+    d.ellipse((cx - 16, y + 160, cx + 16, y + 200), outline=ink, width=6)
+    return y + h
+
+def make_ghost(i):
+    def g(S, top, fin):
+        G = S["ghosts"][i]
+        img = M.paper(10 + i); y = sticky(img, S.get("ghost_sticky", "Things you should ghost") + f"  {i + 1}/{len(S['ghosts'])}", top) + 40
+        sz = uniform([[(G["wrong"], "red")]], 80, True, 640)
+        s = sp([(G["wrong"], "red")], sz, True, 10 ** 6); bw, bh = s.width + 90, s.height + 60
+        M.frame(img, CX - bw // 2, y, bw, bh, COL["ink"], 50 + i); ImageDraw.Draw(img).rectangle((CX - bw // 2 + 6, y + 6, CX + bw // 2 - 6, y + bh - 6), fill=(255, 255, 255, 255))
+        cput(img, s, y + 22); ly = y + bh // 2 + 8
+        M.stroke(img, M.wobbly_line(CX - s.width // 2 - 10, ly, CX + s.width // 2 + 10, ly, COL["red"], 9, 4, 3), COL["red"], 9)
+        py = y + bh; M.stroke(img, M.wobbly_line(CX, py, CX, py + 50, COL["ink"], 9, 2, 2), COL["ink"], 9)
+        y = ghost_figure(img, CX, py + 30, 260, 270) + 40
+        h = sp([("Німець чує:", "grey")], 46, False, X1 - X0); cput(img, h, y); y += h.height + 4
+        t = sp([(G["heard"], "ink")], 56, True, X1 - X0 - 30); hl(img, CX - t.width // 2 - 15, y + 8, t.width + 30, t.height - 22, PINK, 60 + i); cput(img, t, y); y += t.height + 55
+        r1 = sp(segs(G["right"]), 74, True, X1 - X0 - 60); r2 = sp([(G["right_ua"], "ink")], 48, False, X1 - X0 - 60)
+        bh2 = r1.height + r2.height + 50; M.frame(img, X0 - 10, y, X1 - X0 + 20, bh2, COL["green"], 70 + i)
+        cput(img, r1, y + 22); cput(img, r2, y + 22 + r1.height + 6); y += bh2
+        return img, y
+    g.__name__ = f"ghost{i}"; return g
+
 def build(f, S):
     if f is s0: return f(S, 0, True)[0].convert("RGB")
     _, y_end = f(S, 90, False); h = y_end - 90
@@ -170,6 +202,7 @@ def main():
     S = json.load(open(sys.argv[1], encoding="utf-8")); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     assert len(S["verbs"]) == 5 and len(S["test"]) == 3 and len(S["answers"]) == 3
     fs = (s1, s2, s3, s3b, s4, s5, s6) if S.get("confusables") else (s1, s2, s3, s4, s5, s6)
+    if S.get("ghosts"): fs = fs[:1] + tuple(make_ghost(i) for i in range(len(S["ghosts"]))) + fs[1:]
     if S.get("warning"): fs = (s0,) + fs
     for i, f in enumerate(fs, 1): build(f, S).save(os.path.join(out, f"slide{i}.png"))
     print("ok", out)
