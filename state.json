@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "metricool": {
   "brandId": "7305714",
   "timezone": "Europe/Berlin"
@@ -192,7 +192,7 @@
   "18.10: у кожній каруселі є слайд «Не плутай!» зі схожими словами, де часто помиляються (поле confusables, 3–4 групи)",
   "20.10: з 22.10 карусель 10:00 + рілс 14:00 на одну тему; звичайні формати як у префіксах, адаптовані під вірусні тренди з усіх ніш"
  ],
- "next_free_slot": "пт 23.10 рілс 14:00 (cfg готовий); сб 24.10: карусель 10:00 + рілс 14:00 тема LANG (довгі слова), останні 2 пости жовтня",
+ "next_free_slot": "сб 24.10: карусель 10:00 + рілс 14:00 тема LANG (довгі слова), останні 2 пости жовтня; з 25.10 — outbox",
  "last_check_20_10": "20.10 ранок: рілс Gift 10:00 вже PENDING (uuid 7553910681672959272), нічого не створювалось; аналітика Kita записана в analytics_log.md",
  "trend_backlog": "RESEARCH_TRENDS_2026-10.md розділ 4",
  "day_2026-10-22": {
@@ -209,11 +209,13 @@
   "topic": "Ghost-помилки: Ich bin kalt / Ich habe 35 Jahre / Ich will Kaffee",
   "carousel": "carousels/ghost-fehler (10 сл., Metricool uuid 4628975608005675803, id 403358844, 23.10 10:00 PENDING; медіа з raw URL коміту 1a634c6)",
   "sheet": "sheets/ghost-frazy.pdf (слово GHOST)",
-  "reel_cfg": "toolkit/reel/examples/ghost_crumple.json (рендер: toolkit/reel/render_crumple.sh cfg out reels/ghost-kalt.mp4; НЕ зрендерено, зробити ранковим завданням)",
+  "reel_cfg": "toolkit/reel/examples/ghost_crumple.json (рендер: toolkit/reel/render_crumple.sh cfg out reels/ghost-kalt.mp4; зрендерено 23.10)",
   "reel_caption_draft": "Ich bin kalt — і німець чує «я бездушна людина» 👻 Мені холодно = Mir ist kalt. Ich bin 35 Jahre alt (не Ich habe 35 Jahre). Ich hätte gern einen Kaffee (не Ich will). 📩 Скинь тому, хто каже Ich bin kalt · 📚 Шпаргалка GHOST у каруселі в профілі",
   "reel_first_comment_draft": "Перевір себе: як сказати «Мені нудно»? Пиши німецькою 👇 (Mir ist langweilig)",
-  "reel_time": "14:00 (ліміт: 18-й пост із 20 в жовтні)"
+  "reel_time": "14:00 (ліміт: 18-й пост із 20 в жовтні)",
+  "reel": "reels/ghost-kalt.mp4 (Metricool uuid -8306998850642753744, id 403829262, 23.10 14:00 PENDING, raw URL коміту 43553d6)"
  },
- "metricool_october_count": "22.10 вечір: 16 + карусель 23.10 = 17 (опубліковані/заплановані, draft не рахуємо). 23.10 рілс = 18; 24.10 карусель+рілс = 20. З 25.10 — outbox.",
- "last_check_22_10_evening": "22.10 вечір: аналітика записана, карусель Ghost зрендерена, запланована на 23.10 10:00, PDF готовий, cfg рілса й кадри перевірені"
+ "metricool_october_count": "23.10 ранок: 17 + рілс 23.10 = 18 з 20 (draft не рахуємо). 24.10 карусель+рілс = 20. З 25.10 — outbox.",
+ "last_check_22_10_evening": "22.10 вечір: аналітика записана, карусель Ghost зрендерена, запланована на 23.10 10:00, PDF готовий, cfg рілса й кадри перевірені",
+ "last_check_23_10": "23.10 ранок: рілс Ghost зрендерено, запланований на 14:00, аналітика записана"
 }
