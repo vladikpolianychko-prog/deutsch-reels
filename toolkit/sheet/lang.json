@@ -1,0 +1,329 @@
+{
+ "sticky": "Deutsch в зошиті · Довгі слова",
+ "title": "Langwörter",
+ "meaning": "довге слово = конструктор із простих слів",
+ "rule_head": "Головне",
+ "rule": [
+  {
+   "size": 40,
+   "bold": false,
+   "segs": [
+    [
+     "Читай з кінця: ",
+     "ink"
+    ],
+    [
+     "останнє слово = головне",
+     "blue"
+    ]
+   ]
+  },
+  {
+   "size": 58,
+   "bold": true,
+   "segs": [
+    [
+     "Haus",
+     "blue"
+    ],
+    [
+     "aufgaben",
+     "red"
+    ],
+    [
+     "heft",
+     "orange"
+    ]
+   ]
+  },
+  {
+   "size": 34,
+   "bold": false,
+   "segs": [
+    [
+     "дім + завдання + зошит",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "size": 42,
+   "bold": false,
+   "gap": 20,
+   "segs": [
+    [
+     "das Heft",
+     "blue"
+    ],
+    [
+     " (зошит) + Haus… = ",
+     "ink"
+    ],
+    [
+     "das",
+     "blue"
+    ],
+    [
+     " Hausaufgabenheft",
+     "ink"
+    ]
+   ]
+  }
+ ],
+ "verbs_title": "5 слів-конструкторів",
+ "verbs": [
+  {
+   "de": "der Handschuh",
+   "ua": "рукавичка",
+   "ex": [
+    [
+     "Wo sind meine ",
+     "ink"
+    ],
+    [
+     "Handschuhe",
+     "red"
+    ],
+    [
+     "?",
+     "ink"
+    ]
+   ],
+   "tr": "Де мої рукавички?",
+   "perfekt": "Hand + Schuh = рука + взуття"
+  },
+  {
+   "de": "der Staubsauger",
+   "ua": "пилосос",
+   "ex": [
+    [
+     "Ich brauche einen ",
+     "ink"
+    ],
+    [
+     "Staubsauger",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Мені потрібен пилосос.",
+   "perfekt": "Staub + Sauger = пил + смоктач"
+  },
+  {
+   "de": "der Kühlschrank",
+   "ua": "холодильник",
+   "ex": [
+    [
+     "Die Milch steht im ",
+     "ink"
+    ],
+    [
+     "Kühlschrank",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "Молоко стоїть у холодильнику.",
+   "perfekt": "Kühl + Schrank = охолодження + шафа"
+  },
+  {
+   "de": "die Waschmaschine",
+   "ua": "пральна машина",
+   "ex": [
+    [
+     "Die ",
+     "ink"
+    ],
+    [
+     "Waschmaschine",
+     "red"
+    ],
+    [
+     " läuft.",
+     "ink"
+    ]
+   ],
+   "tr": "Пральна машина працює.",
+   "perfekt": "Wasch + Maschine"
+  },
+  {
+   "de": "der Zahnarzt",
+   "ua": "стоматолог",
+   "ex": [
+    [
+     "Ich habe einen Termin beim ",
+     "ink"
+    ],
+    [
+     "Zahnarzt",
+     "red"
+    ],
+    [
+     ".",
+     "ink"
+    ]
+   ],
+   "tr": "У мене запис до стоматолога.",
+   "perfekt": "Zahn + Arzt = зуб + лікар"
+  }
+ ],
+ "test_title": "Тест: встав слово",
+ "test": [
+  {
+   "q": [
+    [
+     "______ Krankenhausparkplatz (der / die / das)",
+     "ink"
+    ]
+   ],
+   "hint": "(Der)"
+  },
+  {
+   "q": [
+    [
+     "______ Hausaufgabenheft (der / die / das)",
+     "ink"
+    ]
+   ],
+   "hint": "(Das)"
+  },
+  {
+   "q": [
+    [
+     "Wo sind meine ______? (рукавички)",
+     "ink"
+    ]
+   ],
+   "hint": "(Handschuhe)"
+  },
+  {
+   "q": [
+    [
+     "Ich habe einen Termin beim ______. (стоматолог)",
+     "ink"
+    ]
+   ],
+   "hint": "(Zahnarzt)"
+  }
+ ],
+ "friend": "Перевір подругу: хто швидше розбере Krankenhausparkplatz на частини?",
+ "answers_title": "Відповіді (закрий, поки не зробиш тест!)",
+ "answers": [
+  [
+   [
+    "1  ",
+    "ink"
+   ],
+   [
+    "Der",
+    "red"
+   ],
+   [
+    " Krankenhausparkplatz",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "2  ",
+    "ink"
+   ],
+   [
+    "Das",
+    "red"
+   ],
+   [
+    " Hausaufgabenheft",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "3  Wo sind meine ",
+    "ink"
+   ],
+   [
+    "Handschuhe",
+    "red"
+   ],
+   [
+    "?",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "4  Ich habe einen Termin beim ",
+    "ink"
+   ],
+   [
+    "Zahnarzt",
+    "red"
+   ],
+   [
+    ".",
+    "ink"
+   ]
+  ]
+ ],
+ "recap_title": "Запам'ятай",
+ "recap": [
+  [
+   [
+    "Останнє слово",
+    "blue"
+   ],
+   [
+    " = головне, від нього артикль",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Kranken",
+    "blue"
+   ],
+   [
+    "haus",
+    "red"
+   ],
+   [
+    "parkplatz",
+    "orange"
+   ],
+   [
+    " = der Parkplatz",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Між частинами інколи ",
+    "ink"
+   ],
+   [
+    "-s-",
+    "red"
+   ],
+   [
+    " або ",
+    "ink"
+   ],
+   [
+    "-n-",
+    "red"
+   ],
+   [
+    ": Arbeitszimmer",
+    "ink"
+   ]
+  ]
+ ],
+ "footer": "Deutsch в зошиті    @deutsch_v_zoshity"
+}

@@ -80,6 +80,9 @@ def s1(S, top, fin):
     w = sp([(S["wrong_ua"], "red")], 60, False, X1 - X0 - 30); hl(img, CX - w.width // 2 - 15, y + 8, w.width + 30, w.height - 22, PINK, 8); cput(img, w, y)
     ly = y + w.height // 2 + 4; M.stroke(img, M.wobbly_line(CX - w.width // 2 - 5, ly, CX + w.width // 2 + 5, ly, COL["red"], 7, 4, 3), COL["red"], 7)
     y += w.height + 80
+    if S.get("hook_tail"):      # variant without the sad face: a single centred line
+        l = sp([(S["hook_tail"], "ink")], 62, True, X1 - X0 - 30); hl(img, CX - l.width // 2 - 15, y + 10, l.width + 30, l.height - 26, LIME, 9); cput(img, l, y); y += l.height
+        return img, y
     l = sp([("це НЕ так", "ink")], 70, True, 400); hl(img, CX - 210 - 20, y + 10, l.width + 30, l.height - 26, LIME, 9); M.put(img, l, CX - 210, y)
     sad_face(img, CX + 210 + 70, y + l.height // 2, 54); y += l.height
     return img, y
@@ -190,6 +193,25 @@ def make_ghost(i):
         return img, y
     g.__name__ = f"ghost{i}"; return g
 
+def make_split(i):
+    """long compound word cut into coloured parts: word, part-by-part meaning, final meaning with article"""
+    def g(S, top, fin):
+        P = S["splits"][i]; cols = ("blue", "red", "orange")
+        img = M.paper(20 + i); y = sticky(img, S.get("split_sticky", "Розбери на частини") + f"  {i + 1}/{len(S['splits'])}", top) + 50
+        w = sp([(t, cols[k % 3]) for k, t in enumerate(P["parts"])], 110, True, X1 - X0 - 20)
+        hl(img, CX - w.width // 2 - 15, y + 20, w.width + 30, w.height - 40, BLUE_HL, 30 + i); cput(img, w, y); y += w.height + 40
+        rs = uniform([[(a, "blue"), ("  =  " + b, "ink")] for a, b in zip(P["parts"], P["parts_ua"])], 56, True, X1 - X0 - 40)
+        for k, (a, b) in enumerate(zip(P["parts"], P["parts_ua"])):
+            r = sp([(a, cols[k % 3]), ("  =  " + b, "ink")], rs, True, 10 ** 6); cput(img, r, y); y += r.height + 12
+        y += 30; arrow(img, CX, y, y + 70, COL["ink"]); y += 120
+        r1 = sp([(P["article"] + " ", "grey"), (P["word"], "blue")], 74, True, X1 - X0 - 60); r2 = sp([(P["meaning"], "ink")], 50, False, X1 - X0 - 60)
+        bh = r1.height + r2.height + 50; M.frame(img, X0 - 10, y, X1 - X0 + 20, bh, COL["green"], 70 + i)
+        cput(img, r1, y + 22); cput(img, r2, y + 22 + r1.height + 6); y += bh
+        if P.get("rule"):
+            y += 40; t = sp([(P["rule"], "ink")], 46, False, X1 - X0 - 30); hl(img, CX - t.width // 2 - 15, y + 8, t.width + 30, t.height - 22, YEL, 80 + i); cput(img, t, y); y += t.height
+        return img, y
+    g.__name__ = f"split{i}"; return g
+
 def build(f, S):
     if f is s0: return f(S, 0, True)[0].convert("RGB")
     _, y_end = f(S, 90, False); h = y_end - 90
@@ -203,6 +225,7 @@ def main():
     assert len(S["verbs"]) == 5 and len(S["test"]) == 3 and len(S["answers"]) == 3
     fs = (s1, s2, s3, s3b, s4, s5, s6) if S.get("confusables") else (s1, s2, s3, s4, s5, s6)
     if S.get("ghosts"): fs = fs[:1] + tuple(make_ghost(i) for i in range(len(S["ghosts"]))) + fs[1:]
+    if S.get("splits"): fs = fs[:1] + tuple(make_split(i) for i in range(len(S["splits"]))) + fs[1:]
     if S.get("warning"): fs = (s0,) + fs
     for i, f in enumerate(fs, 1): build(f, S).save(os.path.join(out, f"slide{i}.png"))
     print("ok", out)

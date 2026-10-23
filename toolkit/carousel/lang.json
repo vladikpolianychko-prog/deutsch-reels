@@ -1,0 +1,275 @@
+{
+ "no": 0,
+ "prefix": "Lang",
+ "keyword": "LANG",
+ "sticky": "Ось що бісить у німецькій",
+ "big": "1 слово",
+ "hook_de": "Krankenhausparkplatz",
+ "wrong_ua": "Я це ніколи не прочитаю",
+ "hook_tail": "це просто конструктор",
+ "split_sticky": "Розбери на частини",
+ "t2": "Читай справа наліво",
+ "t3": "5 слів-конструкторів",
+ "t_conf": "Не плутай!",
+ "t4": "Тест: встав слово",
+ "cta2": "надішлю шпаргалку з довгими словами",
+ "next": "Далі: Zeitumstellung — переводимо годинник",
+ "splits": [
+  {
+   "parts": [
+    "Haus",
+    "aufgaben",
+    "heft"
+   ],
+   "parts_ua": [
+    "дім",
+    "завдання",
+    "зошит"
+   ],
+   "article": "das",
+   "word": "Hausaufgabenheft",
+   "meaning": "зошит для домашніх завдань",
+   "rule": "Рід — за останнім словом: das Heft"
+  },
+  {
+   "parts": [
+    "Kranken",
+    "haus",
+    "parkplatz"
+   ],
+   "parts_ua": [
+    "хворі",
+    "дім",
+    "парковка"
+   ],
+   "article": "der",
+   "word": "Krankenhausparkplatz",
+   "meaning": "парковка біля лікарні",
+   "rule": "Рід — за останнім словом: der Parkplatz"
+  }
+ ],
+ "rule": [
+  [
+   [
+    "Останнє слово",
+    "blue"
+   ],
+   [
+    " = головне",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Попередні",
+    "red"
+   ],
+   [
+    " = уточнення",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Артикль",
+    "blue"
+   ],
+   [
+    " — від останнього слова",
+    "ink"
+   ]
+  ]
+ ],
+ "example": [
+  [
+   "Haus + ",
+   "ink"
+  ],
+  [
+   "die Aufgabe",
+   "blue"
+  ]
+ ],
+ "example_ua": "= die Hausaufgabe (домашнє завдання)",
+ "perfekt": [
+  [
+   "Між частинами інколи є ",
+   "grey"
+  ],
+  [
+   "-s-",
+   "blue"
+  ],
+  [
+   " або ",
+   "grey"
+  ],
+  [
+   "-n-",
+   "blue"
+  ]
+ ],
+ "note": [
+  [
+   "Arbeit",
+   "ink"
+  ],
+  [
+   "s",
+   "red"
+  ],
+  [
+   "zimmer",
+   "ink"
+  ],
+  [
+   " = кабінет, робоча кімната",
+   "grey"
+  ]
+ ],
+ "verbs": [
+  [
+   "der Handschuh",
+   "рукавичка (рука + взуття)"
+  ],
+  [
+   "der Staubsauger",
+   "пилосос (пил + смоктач)"
+  ],
+  [
+   "der Kühlschrank",
+   "холодильник (охолодження + шафа)"
+  ],
+  [
+   "die Waschmaschine",
+   "пральна машина"
+  ],
+  [
+   "der Zahnarzt",
+   "стоматолог (зуб + лікар)"
+  ]
+ ],
+ "confusables": [
+  [
+   [
+    "Handschuh",
+    "рукавичка"
+   ],
+   [
+    "Handtuch",
+    "рушник"
+   ],
+   [
+    "Handtasche",
+    "сумка"
+   ]
+  ],
+  [
+   [
+    "Krankenhaus",
+    "лікарня"
+   ],
+   [
+    "Krankenkasse",
+    "мед. страхування (каса)"
+   ],
+   [
+    "Krankenwagen",
+    "швидка"
+   ]
+  ],
+  [
+   [
+    "Hausarzt",
+    "сімейний лікар"
+   ],
+   [
+    "Haustier",
+    "домашня тварина"
+   ],
+   [
+    "Hausmeister",
+    "завгосп будинку"
+   ]
+  ],
+  [
+   [
+    "Kindergarten",
+    "дитсадок"
+   ],
+   [
+    "Kindergeld",
+    "допомога на дитину"
+   ],
+   [
+    "Kinderzimmer",
+    "дитяча кімната"
+   ]
+  ]
+ ],
+ "test": [
+  {
+   "q": [
+    [
+     "_____ Krankenhausparkplatz",
+     "ink"
+    ]
+   ],
+   "hint": "der / die / das"
+  },
+  {
+   "q": [
+    [
+     "_____ Hausaufgabenheft",
+     "ink"
+    ]
+   ],
+   "hint": "der / die / das"
+  },
+  {
+   "q": [
+    [
+     "Wo sind meine _____?",
+     "ink"
+    ]
+   ],
+   "hint": "рукавички: Hand + Schuh"
+  }
+ ],
+ "answers": [
+  [
+   [
+    "Der",
+    "red"
+   ],
+   [
+    " Krankenhausparkplatz",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Das",
+    "red"
+   ],
+   [
+    " Hausaufgabenheft",
+    "ink"
+   ]
+  ],
+  [
+   [
+    "Wo sind meine ",
+    "ink"
+   ],
+   [
+    "Handschuhe",
+    "red"
+   ],
+   [
+    "?",
+    "ink"
+   ]
+  ]
+ ]
+}
