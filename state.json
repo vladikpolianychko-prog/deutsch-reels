@@ -192,7 +192,7 @@
   "18.10: у кожній каруселі є слайд «Не плутай!» зі схожими словами, де часто помиляються (поле confusables, 3–4 групи)",
   "20.10: з 22.10 карусель 10:00 + рілс 14:00 на одну тему; звичайні формати як у префіксах, адаптовані під вірусні тренди з усіх ніш"
  ],
- "next_free_slot": "сб 24.10: карусель 10:00 + рілс 14:00 тема LANG (довгі слова), останні 2 пости жовтня; з 25.10 — outbox",
+ "next_free_slot": "нд 25.10: ТІЛЬКИ outbox (ліміт жовтня вичерпано після рілса 24.10); тема ZEIT",
  "last_check_20_10": "20.10 ранок: рілс Gift 10:00 вже PENDING (uuid 7553910681672959272), нічого не створювалось; аналітика Kita записана в analytics_log.md",
  "trend_backlog": "RESEARCH_TRENDS_2026-10.md розділ 4",
  "day_2026-10-22": {
@@ -215,7 +215,17 @@
   "reel_time": "14:00 (ліміт: 18-й пост із 20 в жовтні)",
   "reel": "reels/ghost-kalt.mp4 (Metricool uuid -8306998850642753744, id 403829262, 23.10 14:00 PENDING, raw URL коміту 43553d6)"
  },
- "metricool_october_count": "23.10 ранок: 17 + рілс 23.10 = 18 з 20 (draft не рахуємо). 24.10 карусель+рілс = 20. З 25.10 — outbox.",
+ "metricool_october_count": "23.10 вечір: 18 + карусель 24.10 = 19 з 20. Рілс 24.10 14:00 = 20. З 25.10 — outbox.",
  "last_check_22_10_evening": "22.10 вечір: аналітика записана, карусель Ghost зрендерена, запланована на 23.10 10:00, PDF готовий, cfg рілса й кадри перевірені",
- "last_check_23_10": "23.10 ранок: рілс Ghost зрендерено, запланований на 14:00, аналітика записана"
+ "last_check_23_10": "23.10 ранок: рілс Ghost зрендерено, запланований на 14:00, аналітика записана",
+ "day_2026-10-24": {
+  "topic": "Довгі слова: Hausaufgabenheft / Krankenhausparkplatz (LANG)",
+  "carousel": "carousels/lang-woerter (9 сл., Metricool uuid 7662039607012836389, id 404367560, 24.10 10:00 PENDING; медіа raw URL коміту 5d125e7)",
+  "sheet": "sheets/lang-frazy.pdf (слово LANG)",
+  "reel_cfg": "toolkit/reel/examples/lang_crumple.json (рендер: toolkit/reel/render_crumple.sh cfg out reels/lang-woerter.mp4)",
+  "reel_caption_draft": "Це одне слово? Читай з кінця! Krankenhausparkplatz = Kranken + haus + parkplatz = парковка біля лікарні. Останнє слово головне, від нього й артикль: der Parkplatz. 📩 Скинь тому, хто боїться довгих слів · 📚 Шпаргалка LANG у каруселі в профілі",
+  "reel_first_comment_draft": "Перевір себе: розбери Hausaufgabenheft на частини. Пиши, що вийшло 👇 (Haus + Aufgaben + Heft)",
+  "reel_time": "14:00 (ліміт: 20-й пост із 20 у жовтні)"
+ },
+ "last_check_23_10_evening": "23.10 вечір: аналітика записана, карусель LANG запланована на 24.10 10:00, PDF готовий, cfg рілса й кадри перевірені"
 }
