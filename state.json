@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "metricool": {
   "brandId": "7305714",
   "timezone": "Europe/Berlin"
@@ -215,7 +215,7 @@
   "reel_time": "14:00 (ліміт: 18-й пост із 20 в жовтні)",
   "reel": "reels/ghost-kalt.mp4 (Metricool uuid -8306998850642753744, id 403829262, 23.10 14:00 PENDING, raw URL коміту 43553d6)"
  },
- "metricool_october_count": "23.10 вечір: 18 + карусель 24.10 = 19 з 20. Рілс 24.10 14:00 = 20. З 25.10 — outbox.",
+ "metricool_october_count": "24.10: 20 з 20 (рілс 24.10 14:00 = 20-й). З 25.10 — тільки outbox.",
  "last_check_22_10_evening": "22.10 вечір: аналітика записана, карусель Ghost зрендерена, запланована на 23.10 10:00, PDF готовий, cfg рілса й кадри перевірені",
  "last_check_23_10": "23.10 ранок: рілс Ghost зрендерено, запланований на 14:00, аналітика записана",
  "day_2026-10-24": {
@@ -225,7 +225,9 @@
   "reel_cfg": "toolkit/reel/examples/lang_crumple.json (рендер: toolkit/reel/render_crumple.sh cfg out reels/lang-woerter.mp4)",
   "reel_caption_draft": "Це одне слово? Читай з кінця! Krankenhausparkplatz = Kranken + haus + parkplatz = парковка біля лікарні. Останнє слово головне, від нього й артикль: der Parkplatz. 📩 Скинь тому, хто боїться довгих слів · 📚 Шпаргалка LANG у каруселі в профілі",
   "reel_first_comment_draft": "Перевір себе: розбери Hausaufgabenheft на частини. Пиши, що вийшло 👇 (Haus + Aufgaben + Heft)",
-  "reel_time": "14:00 (ліміт: 20-й пост із 20 у жовтні)"
+  "reel_time": "14:00 (ліміт: 20-й пост із 20 у жовтні)",
+  "reel": "reels/lang-woerter.mp4 (Metricool uuid -905062397605033078, id 404787640, 24.10 14:00 PENDING, raw URL коміту a185c6b)"
  },
- "last_check_23_10_evening": "23.10 вечір: аналітика записана, карусель LANG запланована на 24.10 10:00, PDF готовий, cfg рілса й кадри перевірені"
+ "last_check_23_10_evening": "23.10 вечір: аналітика записана, карусель LANG запланована на 24.10 10:00, PDF готовий, cfg рілса й кадри перевірені",
+ "last_check_24_10": "24.10 ранок: рілс LANG зрендерено й заплановано на 14:00, аналітика записана"
 }
