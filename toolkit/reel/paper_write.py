@@ -16,7 +16,7 @@ ROWS = CFG["rows"]
 THINK, WRITE, HOLD = CFG.get("think", 3.0), CFG.get("write", 1.3), CFG.get("hold", 1.0)
 RD = THINK + WRITE + HOLD
 INTRO = CFG.get("intro", 0.4)
-OUTRO = CFG.get("outro_dur", 2.6)
+OUTRO = CFG.get("outro_dur", 4.6)
 DUR = INTRO + len(ROWS) * RD + OUTRO
 FD = "/usr/share/fonts/opentype/inter/"
 HAND = str(Path(__file__).resolve().parent / "bg/fonts/ComicRelief-Regular.ttf")
@@ -102,6 +102,9 @@ def sticker(lines, fill, fg=INK, pad=(34, 20), rot=0):
     sh = Image.new("RGBA", (im.width + 40, im.height + 40), (0, 0, 0, 0))
     sh.paste((0, 0, 0, 90), (20, 26), im.getchannel("A")); sh = sh.filter(ImageFilter.GaussianBlur(10)); sh.alpha_composite(im, (20, 16)); return sh
 HEAD = sticker([(CFG["header"], 60, "Black"), (CFG["sub"], 44, "SemiBold")], (255, 214, 70), rot=-1.5)
+import follow_card as FC
+SERIES = FC.series_tag(CFG["series"]) if CFG.get("series") else None
+CARDS = FC.make(CFG)
 OUT = sticker([(l, 62, "Black") for l in CFG["outro"]], (255, 214, 70), rot=2)
 SW = .35 if any(r.get("strike") for r in ROWS) else 0.0          # time used by the strike inside WRITE
 
@@ -147,6 +150,8 @@ def render(t):
     if outro:
         t0 = INTRO + len(ROWS) * RD; p = seg(t, t0 + .1, t0 + .5); s = .6 + .4 * (1 + 2.7 * (p - 1) ** 3 + 1.7 * (p - 1) ** 2)
         o = OUT.resize((max(1, int(OUT.width * s)), max(1, int(OUT.height * s))), Image.BICUBIC); fr.alpha_composite(o, ((W - o.width) // 2, CFG.get("outro_y", 1745) - o.height // 2))
+    if SERIES is not None: fr.alpha_composite(SERIES, ((W - SERIES.width) // 2, 36 + HEAD.height - 34))
+    if outro: FC.draw_end(fr, t, INTRO + len(ROWS) * RD + 1.1, CARDS, CFG.get("card_y", 1200))
     return fr.convert("RGB")
 
 def audio(path):

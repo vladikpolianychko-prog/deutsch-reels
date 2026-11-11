@@ -14,7 +14,7 @@ CFG = json.load(open(os.environ["CFG"], encoding="utf-8"))
 QS = CFG["questions"]
 READ, COUNT, REVEAL = CFG.get("read", 2.2), CFG.get("count", 5.0), CFG.get("reveal", 1.9)
 QD = READ + COUNT + REVEAL
-OUTRO = CFG.get("outro_dur", 2.6)
+OUTRO = CFG.get("outro_dur", 4.6)
 DUR = len(QS) * QD + OUTRO
 FD = "/usr/share/fonts/opentype/inter/"
 F = lambda n, w="Bold": ImageFont.truetype(f"{FD}InterDisplay-{w}.otf", n)
@@ -91,6 +91,9 @@ def sticker(lines, fill, fg=INK, pad=(34, 20), rot=0):
     sh = Image.new("RGBA", (im.width + 40, im.height + 40), (0, 0, 0, 0))
     sh.paste((0, 0, 0, 90), (20, 26), im.getchannel("A")); sh = sh.filter(ImageFilter.GaussianBlur(10)); sh.alpha_composite(im, (20, 16)); return sh
 HEAD = sticker([(CFG["header"], 62, "Black"), (CFG["sub"], 46, "SemiBold")], (255, 214, 70), rot=-1.5)
+import follow_card as FC
+SERIES = FC.series_tag(CFG["series"]) if CFG.get("series") else None
+CARDS = FC.make(CFG)
 OUT = sticker([(l, 64, "Black") for l in CFG["outro"]], (255, 214, 70), rot=2)
 
 def render(t):
@@ -143,6 +146,8 @@ def render(t):
     if outro:
         p = seg(t, len(QS) * QD + .1, len(QS) * QD + .5); s = .6 + .4 * (1 + 2.7 * (p - 1) ** 3 + 1.7 * (p - 1) ** 2)
         o = OUT.resize((max(1, int(OUT.width * s)), max(1, int(OUT.height * s))), Image.BICUBIC); fr.alpha_composite(o, ((W - o.width) // 2, 1180 - o.height // 2))
+    if SERIES is not None: fr.alpha_composite(SERIES, ((W - SERIES.width) // 2, 36 + HEAD.height - 34))
+    if outro: FC.draw_end(fr, t, len(QS) * QD + 1.1, CARDS, CFG.get("card_y", 1560))
     return fr.convert("RGB")
 
 # ---------------------------------------------------------------- audio: clean (music bed + ticks + chime), no noise

@@ -6,11 +6,34 @@
  "tag_write": "B2",
  "think": 3.0,
  "rows": [
-  {"print": "gut", "write": "ausgezeichnet"},
-  {"print": "Ich denke, …", "write": "Meiner Meinung nach …"},
-  {"print": "sehr wichtig", "write": "entscheidend"},
-  {"print": "das Problem", "write": "die Herausforderung"},
-  {"print": "helfen", "write": "unterstützen"}
+  {
+   "print": "gut",
+   "write": "ausgezeichnet"
+  },
+  {
+   "print": "Ich denke, …",
+   "write": "Meiner Meinung nach …"
+  },
+  {
+   "print": "sehr wichtig",
+   "write": "entscheidend"
+  },
+  {
+   "print": "das Problem",
+   "write": "die Herausforderung"
+  },
+  {
+   "print": "helfen",
+   "write": "unterstützen"
+  }
  ],
- "outro": ["Збережи перед іспитом", "Яке слово вже знав(-ла)?"]
+ "outro": [
+  "Збережи перед іспитом"
+ ],
+ "series": "A2 → B2 · №1 · щодня новий",
+ "follow": {
+  "line1": "Завтра — №2",
+  "line2": "ще 5 слів рівня B2 у зошиті",
+  "like": "лайк, якщо знав(-ла) хоч одне"
+ }
 }
