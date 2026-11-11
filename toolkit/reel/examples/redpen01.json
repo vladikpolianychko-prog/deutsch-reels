@@ -1,0 +1,13 @@
+{
+ "header": "Знайди помилку за 3 секунди",
+ "sub": "5 речень · так кажуть майже всі",
+ "ink": "red",
+ "rows": [
+  {"print": "Ich bin langweilig.", "strike": "Ich bin", "write": "Mir ist langweilig."},
+  {"print": "Ich gehe zu Hause.", "strike": "zu", "write": "Ich gehe nach Hause."},
+  {"print": "Ich warte für den Bus.", "strike": "für", "write": "Ich warte auf den Bus."},
+  {"print": "Ich habe 35 Jahre.", "strike": "habe", "write": "Ich bin 35 Jahre alt."},
+  {"print": "Ich habe nicht Zeit.", "strike": "nicht", "write": "Ich habe keine Zeit."}
+ ],
+ "outro": ["Скільки знайшов(-ла)?", "Пиши: ?/5"]
+}

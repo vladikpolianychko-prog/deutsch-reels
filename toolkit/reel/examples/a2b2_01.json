@@ -1,0 +1,16 @@
+{
+ "header": "Не кажи так на іспиті B2",
+ "sub": "Те саме, але сильніше",
+ "ink": "blue",
+ "tag_print": "A2",
+ "tag_write": "B2",
+ "think": 3.0,
+ "rows": [
+  {"print": "gut", "write": "ausgezeichnet"},
+  {"print": "Ich denke, …", "write": "Meiner Meinung nach …"},
+  {"print": "sehr wichtig", "write": "entscheidend"},
+  {"print": "das Problem", "write": "die Herausforderung"},
+  {"print": "helfen", "write": "unterstützen"}
+ ],
+ "outro": ["Збережи перед іспитом", "Яке слово вже знав(-ла)?"]
+}
