@@ -42,7 +42,9 @@ def follow_card(line1, line2, like, handle="deutsch_v_zoshity", pressed=False):
     fb = F(38, "Bold"); d.text(((bx0 + bx1 - fb.getlength(t)) / 2, by0 + 14), t, font=fb, fill=c)
     # like row
     y2 = 340; heart(d, 96, y2 + 46, 34, (237, 73, 86))
-    fl = F(44, "Bold"); d.text((150, y2 + 18), like, font=fl, fill=INK)
+    n = 44; fl = F(n, "Bold")
+    while fl.getlength(like) > W - 190 and n > 28: n -= 2; fl = F(n, "Bold")
+    d.text((150, y2 + 18 + (44 - n) // 2), like, font=fl, fill=INK)
     return _shadow(im)
 
 def make(cfg):

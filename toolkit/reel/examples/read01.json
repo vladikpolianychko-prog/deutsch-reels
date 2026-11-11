@@ -1,0 +1,15 @@
+{
+ "mode": "read",
+ "header": "Прочитай уголос і не збийся",
+ "sub": "3 німецькі скоромовки · від легкої до важкої",
+ "series": "Скоромовка-челендж · №1",
+ "think": 3.0,
+ "pace": 0.45,
+ "items": [
+  {"de": "Fischers Fritz fischt frische Fische, frische Fische fischt Fischers Fritz.", "ua": "Рибалчин Фріц ловить свіжу рибу, свіжу рибу ловить рибалчин Фріц."},
+  {"de": "Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid.", "ua": "Червона капуста лишається капустою, а весільна сукня — сукнею."},
+  {"de": "Zwischen zwei Zwetschgenzweigen zwitschern zwei Schwalben.", "ua": "Між двома сливовими гілками щебечуть дві ластівки."}
+ ],
+ "outro": ["Яка була найважча?", "Пиши номер у коментарях"],
+ "follow": {"line1": "Завтра — скоромовка №2", "line2": "ще складніша, у зошиті", "like": "лайк, якщо прочитав(-ла) без помилки"}
+}

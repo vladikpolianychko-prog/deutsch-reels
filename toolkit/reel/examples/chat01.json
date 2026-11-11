@@ -1,0 +1,17 @@
+{
+ "mode": "chat",
+ "who": "Касирка",
+ "header": "На касі в Німеччині",
+ "sub": "Що відповіси? 3 секунди на кожне питання",
+ "series": "Ситуація · Каса · №1",
+ "think": 3.0,
+ "items": [
+  {"q": "Haben Sie eine Kundenkarte?", "q_ua": "У вас є картка клієнта?", "a": "Nein, leider nicht.", "a_ua": "На жаль, ні."},
+  {"q": "Sammeln Sie Punkte?", "q_ua": "Збираєте бонусні бали?", "a": "Nein, danke.", "a_ua": "Ні, дякую."},
+  {"q": "Brauchen Sie eine Tüte?", "q_ua": "Вам потрібен пакет?", "a": "Nein, ich habe eine dabei.", "a_ua": "Ні, у мене є з собою."},
+  {"q": "Zahlen Sie bar oder mit Karte?", "q_ua": "Готівкою чи карткою?", "a": "Mit Karte, bitte.", "a_ua": "Карткою, будь ласка."},
+  {"q": "Möchten Sie den Kassenbon?", "q_ua": "Чек вам потрібен?", "a": "Ja, gerne.", "a_ua": "Так, будь ласка."}
+ ],
+ "outro": ["Скільки знав(-ла)?", "Пиши: ?/5"],
+ "follow": {"line1": "Завтра — Пекарня", "line2": "наступна ситуація в зошиті", "like": "лайк, якщо знав(-ла) всі відповіді"}
+}
