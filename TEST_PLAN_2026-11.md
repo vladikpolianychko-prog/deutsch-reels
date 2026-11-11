@@ -31,4 +31,4 @@ Metricool Free: 20 опублікованих постів на місяць. 11
 ## Журнал
 | Дата | 11:00 | 15:00 | 19:00 |
 |---|---|---|---|
-| 11.11 | Q tests/T1-paper-quiz-a2.mp4 (REEL, перенесено на 11:30) | R tests/T2-redpen-01-v2.mp4 (чистий звук) | B tests/T3-a2b2-01-v2.mp4 (чистий звук) |
+| 11.11 | Q tests/T1-paper-quiz-a2-v2.mp4 (чистий звук, 13:05, https://www.instagram.com/reel/DfmcUCihCJn/; версію 11:30 зі старим звуком власник видалив, у ліміті Metricool вона, імовірно, рахується) | R tests/T2-redpen-01-v2.mp4 (чистий звук) | B tests/T3-a2b2-01-v2.mp4 (чистий звук) |
