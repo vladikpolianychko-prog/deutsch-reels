@@ -150,25 +150,17 @@ def render(t):
     return fr.convert("RGB")
 
 def audio(path):
-    n = int(DUR * SR); a = np.zeros(n + SR); r = np.random.default_rng(2)
-    def add(sig, t, g=1.):
-        i = int(t * SR); j = min(len(a), i + len(sig)); a[i:j] += sig[: j - i] * g
-    tk = np.arange(int(.06 * SR)) / SR; tick = np.sin(2 * np.pi * 1900 * tk) * np.exp(-tk * 90) + .5 * np.sin(2 * np.pi * 950 * tk) * np.exp(-tk * 70)
-    td = np.arange(int(.9 * SR)) / SR; ding = (np.sin(2 * np.pi * 1046 * td) + .6 * np.sin(2 * np.pi * 1568 * td) + .3 * np.sin(2 * np.pi * 2093 * td)) * np.exp(-td * 5)
-    def scratch(dur):
-        m = int(dur * SR); x = r.normal(0, 1, m); x = np.convolve(x, np.ones(6) / 6, "same") - np.convolve(x, np.ones(60) / 60, "same")
-        env = (.6 + .4 * np.sin(np.arange(m) / SR * 2 * np.pi * 9)) * np.minimum(1, np.arange(m) / (.03 * SR)) * np.minimum(1, (m - np.arange(m)) / (.05 * SR)); return x * env
+    import clean_audio as CA
+    ticks, dings = [], []
     for i in range(len(ROWS)):
-        t0 = INTRO + i * RD
-        for k in range(int(THINK)): add(tick, t0 + k + (THINK - int(THINK)), .5 if k < int(THINK) - 1 else .75)
-        add(scratch(WRITE), t0 + THINK, .2); add(ding, t0 + THINK + WRITE, .3)
-    add(ding, INTRO + len(ROWS) * RD + .1, .25)
-    tb = np.arange(len(a)) / SR; bed = .05 * np.sin(2 * np.pi * 110 * tb) * (0.6 + .4 * np.sin(2 * np.pi * .5 * tb)) + .03 * np.sin(2 * np.pi * 164.8 * tb)
-    a = (a + bed)[:n]; a = a / max(1e-6, np.abs(a).max()) * .85; a *= np.minimum(1, (n - np.arange(n)) / (.25 * SR))
-    with wave.open(path, "w") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((a * 32767).astype(np.int16).tobytes())
+        t0 = INTRO + i * RD; off = THINK - int(THINK)
+        for k in range(int(THINK)): ticks.append((t0 + off + k, k == int(THINK) - 1))
+        dings.append(t0 + THINK + WRITE)
+    dings.append(INTRO + len(ROWS) * RD + .1)
+    CA.build(path, DUR, ticks, dings)
 
 if __name__ == "__main__":
+    if sys.argv[1] == "audio": audio(sys.argv[2]); print("ok audio"); sys.exit()
     if sys.argv[1] == "preview":
         out = Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
         for s in sys.argv[3:]: render(float(s)).save(out / f"pw_{float(s):06.2f}.jpg", quality=88)
@@ -177,5 +169,5 @@ if __name__ == "__main__":
         work = Path(tempfile.mkdtemp()); (work / "f").mkdir()
         for k in range(int(DUR * FPS)): render(k / FPS).save(work / "f" / f"{k:05d}.jpg", quality=92)
         audio(str(work / "a.wav"))
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", str(work / "f" / "%05d.jpg"), "-i", str(work / "a.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", "-t", f"{DUR:.2f}", sys.argv[1]], check=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", str(work / "f" / "%05d.jpg"), "-i", str(work / "a.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{DUR:.2f}", sys.argv[1]], check=True)
         subprocess.run(["rm", "-rf", str(work)]); print("ok", sys.argv[1], DUR)
