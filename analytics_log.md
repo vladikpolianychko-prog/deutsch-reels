@@ -138,3 +138,4 @@
 - Рішення про слоти (власник обрав варіант «замінити»): у трьох постах Metricool на 12.11 замінено відео й підпис на U/G/L. Ліміт не витрачено: 7/20.
 - Зроблено рушії ue_cartoon.py, dd_run.py, dativ_beat.py (+ kino.py). Кадри перевірено (по 6–8 на рілс, кінцеві картки в повному розмірі): орфографія DE/UA, текст у межах, нема перекриттів, гліфи (Ü, ö, ї, є, №) в нормі. Звук: лише чисті тони (без шуму), пік −1 dBFS, середній −15…−19 dB.
 - Перевірені приклади: Ich bin voll (розм. «п'яний») / Ich bin satt; der Löffel, die Gabel, das Messer, der Teller, die Tasse; aus/bei/mit/nach/seit/von/zu + Dativ; mit dem Bus, nach der Arbeit, bei meiner Oma, seit einem Jahr, mit dem Zug.
+- Metricool, 12.11 (оновлено 07:35, статус PENDING, cover 300 мс, медіа з коміту 19652ef): 11:00 U uuid -3688272088855133143 (id 425320325); 15:00 G uuid 5961334140613052293 (id 425320333); 19:00 L uuid 4332054935961878583 (id 425320338).
