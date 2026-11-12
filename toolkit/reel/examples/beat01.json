@@ -1,0 +1,67 @@
+{
+ "header": "7 слів — завжди Dativ",
+ "series": "Dativ-біт · №1",
+ "words": [
+  "aus",
+  "bei",
+  "mit",
+  "nach",
+  "seit",
+  "von",
+  "zu"
+ ],
+ "examples": [
+  {
+   "de": [
+    "mit",
+    "dem",
+    "Bus"
+   ],
+   "ua": "автобусом",
+   "note": "der Bus → mit dem"
+  },
+  {
+   "de": [
+    "nach",
+    "der",
+    "Arbeit"
+   ],
+   "ua": "після роботи",
+   "note": "die Arbeit → nach der"
+  },
+  {
+   "de": [
+    "bei",
+    "meiner",
+    "Oma"
+   ],
+   "ua": "у моєї бабусі",
+   "note": "meine Oma → bei meiner"
+  },
+  {
+   "de": [
+    "seit",
+    "einem",
+    "Jahr"
+   ],
+   "ua": "уже рік",
+   "note": "ein Jahr → seit einem"
+  }
+ ],
+ "quiz": {
+  "q": "Ich fahre mit ___ Zug.",
+  "opts": [
+   "der",
+   "dem",
+   "den"
+  ],
+  "a": "dem",
+  "ua": "Я їду потягом.",
+  "why": "der Zug → mit dem Zug"
+ },
+ "follow": {
+  "line1": "Далі — Dativ-біт №2",
+  "line2": "прийменники з Akkusativ",
+  "like": "лайк, якщо встиг(-ла) за 2 секунди"
+ }
+}

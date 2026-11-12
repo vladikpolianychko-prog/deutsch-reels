@@ -1,0 +1,37 @@
+{
+ "series": "Der·Die·Das Run · №1",
+ "level": "LV1 · КУХНЯ",
+ "hook": "2 секунди на артикль",
+ "items": [
+  {
+   "art": "der",
+   "de": "Löffel",
+   "ua": "ложка"
+  },
+  {
+   "art": "die",
+   "de": "Gabel",
+   "ua": "виделка"
+  },
+  {
+   "art": "das",
+   "de": "Messer",
+   "ua": "ніж"
+  },
+  {
+   "art": "der",
+   "de": "Teller",
+   "ua": "тарілка"
+  },
+  {
+   "art": "die",
+   "de": "Tasse",
+   "ua": "чашка"
+  }
+ ],
+ "follow": {
+  "line1": "Далі — Level 2",
+  "line2": "нова локація, нові 5 слів",
+  "like": "лайк, якщо вгадав(-ла) 5/5"
+ }
+}
