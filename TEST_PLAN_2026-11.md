@@ -58,3 +58,5 @@ Metricool Free: 20 опублікованих постів на місяць. П
 | 11.11 | Q tests/T1-paper-quiz-a2-v2.mp4 (чистий звук, 13:05, https://www.instagram.com/reel/DfmcUCihCJn/; версію 11:30 зі старим звуком власник видалив, у ліміті Metricool вона, імовірно, рахується) | R tests/T2-redpen-01-v2.mp4 (чистий звук) | B tests/T3-a2b2-01-v3.mp4 (чистий звук + серія і картка підписки) |
 | 12.11 | U tests/T7-ue-01.mp4 (Ü №1, voll/satt) | G tests/T8-run-01.mp4 (Run №1, кухня) | L tests/T9-beat-01.mp4 (Dativ-біт №1) — замість D/K/S за рішенням власника |
 | 13.11 | P tests/T10-zug-01.mp4 (Речення-потяг №1) | W tests/T11-wort-01.mp4 (Слово-фільм №1, Feierabend) | U tests/T12-ue-02.mp4 (Ü №2, Danke/Ja, gerne) — U обрано, бо з U/G/L дані були тільки по U |
+| 13.11 | мультик /ink-doodle tests/T7-ink-freitag13.mp4 (замість «Речення-потяг №1», рішення власника) | Feierabend | Ü №2 |
+| 14.11 | **ЗАЙНЯТО: «Речення-потяг №1» (перенесено власником з 13.11, вже в Metricool)** — щоденне завдання НЕ ставить свій рілс на 11:00 | | |
