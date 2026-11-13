@@ -28,15 +28,16 @@ def music(dur, bpm=88, seed=1):
     t0, k = 0.0, 0
     while t0 < dur + bar:
         ch = chords[k % 4]; i = int(t0 * SR); L = int((bar + .6) * SR)
+        if i >= len(out): break
         pad = sum(_tone(f, bar + .6, harm=((1, 1), (2, .18))) + _tone(f * 1.003, bar + .6) * .6 for f in ch) * _env(L, .5, .6)
-        out[i:i + L] += pad[: len(out) - i] * .05
+        m = min(L, len(out) - i); out[i:i + m] += pad[:m] * .05
         b = _tone(bass[k % 4], bar, harm=((1, 1), (2, .25))) * _env(int(bar * SR), .03, .4)
-        out[i:i + len(b)] += b[: len(out) - i] * .09
+        m = min(len(b), len(out) - i); out[i:i + m] += b[:m] * .09
         for s in range(8):                                   # eighth-note arpeggio, soft and decaying
             f = ch[[0, 1, 2, 1, 0, 2, 1, 2][s]] * 2
             p = _tone(f, beat * 1.4, decay=6, harm=((1, 1), (2, .3), (3, .08))) * _env(int(beat * 1.4 * SR), .004, .05)
             j = int((t0 + s * beat / 2) * SR)
-            if j < len(out): out[j:j + len(p)] += p[: len(out) - j] * (.05 if s % 2 else .07)
+            if j < len(out): m = min(len(p), len(out) - j); out[j:j + m] += p[:m] * (.05 if s % 2 else .07)
         t0 += bar; k += 1
     return out[:n]
 
@@ -52,7 +53,7 @@ def build(path, dur, ticks=(), dings=(), bpm=88):
     n = int(dur * SR); a = np.zeros(n + SR * 2)
     def add(sig, t, g):
         i = int(t * SR)
-        if 0 <= i < len(a): a[i:i + len(sig)] += sig[: len(a) - i] * g
+        if 0 <= i < len(a): m = min(len(sig), len(a) - i); a[i:i + m] += sig[:m] * g
     a[:n] += music(dur, bpm)
     for t, loud in ticks: add(tick(loud), t, .32 if loud else .24)
     for t in dings: add(ding(), t, .26)
