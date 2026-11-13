@@ -5,7 +5,7 @@
 Правила власника (11.11): усе цифрове, без обличчя й без руки власника; тільки німецька; зв'язок із «зошитом»; 3 пробні рілси (TRIAL_REEL) щодня о 11:00, 15:00, 19:00 (Europe/Berlin); після тестів аналіз і звіт; коли 20 безкоштовних постів Metricool за листопад закінчаться — сигнал власнику, шукаємо інший сервіс.
 
 ## Ліміт
-Metricool Free: 20 опублікованих постів на місяць. Перерахунок 12.11 за getScheduledPosts: 11.11 — 4 пости (видалена власником версія квізу 11:30 рахується), 12.11 — 3; використано 7. Лишається 13: 13–16.11 по 3 (12), 17.11 — 1 (не 2). Після цього НЕ планувати, а складати в outbox/ і першим рядком звіту: «⚠️ Ліміт Metricool на листопад вичерпано».
+Metricool Free: 20 опублікованих постів на місяць. Перерахунок 12.11 за getScheduledPosts: 11.11 — 4 пости (видалена власником версія квізу 11:30 рахується), 12.11 — 3; використано 7. Лишається 13: 13–16.11 по 3 (12), 17.11 — 1 (не 2). **Перерахунок 13.11:** використано 10 (7 + 3 на 13.11). Лишається 10: 14–16.11 по 3 (9), 17.11 — 1. Після цього НЕ планувати, а складати в outbox/ і першим рядком звіту: «⚠️ Ліміт Metricool на листопад вичерпано».
 
 ## Формати (рушії)
 | Код | Формат | Рушій | Зразок cfg |
@@ -31,12 +31,13 @@ Metricool Free: 20 опублікованих постів на місяць. П
 | U | Мультсеріал «Ü в Німеччині»: маскот Ü (крапки — очі) робить ляп однією фразою → 3 с вгадати → що це насправді → правильна фраза → панчлайн | toolkit/reel/ue_cartoon.py | examples/ue01.json |
 | G | Гра «Der·Die·Das Run»: 8-біт ранер, слово + три брами der/die/das, 2 с на вибір, піксельний Ü біжить у правильну | toolkit/reel/dd_run.py | examples/run01.json |
 | L | «Dativ-біт»: кінетична типографіка, кожне слово в біт 120 BPM, приклади, квіз 2 с | toolkit/reel/dativ_beat.py | examples/beat01.json |
-| P | «Речення-потяг»: порядок слів, дієслово у вагоні №2, weil відправляє його в хвіст (зробити 13.11) | — | — |
-| W | Міні-фільм «Слово, якого немає в українській» (Kummerspeck, Feierabend…) у кіностилі (зробити 13.11) | — | — |
+| P | «Речення-потяг»: порядок слів, дієслово у вагоні №2, weil відправляє його в хвіст | toolkit/reel/satz_zug.py | examples/zug01.json |
+| W | Міні-фільм «Слово, якого немає в українській» (Feierabend; далі Kummerspeck…) у кіностилі | toolkit/reel/wort_film.py | examples/wort01.json |
 Спільне: toolkit/reel/kino.py (полотно, чистий синт-звук без шумів, рендер/preview). Правила з гайда: розкадровка до коду, ≤6 слів у кадрі, текст у безпечній зоні 9:16, нова ідея кожні 2–3 с, без вибухів частинок/неону/відблисків/«стрибучої» анімації, звук кодом і удари на склейки, перевірка кадрів перед публікацією. Кінцева картка: «Далі — №2» (не «завтра», бо порядок серій залежить від даних).
 **13.11:** P, W + №2 того з U/G/L, у якого на момент планування найбільше переглядів (якщо даних нема — U №2). **14.11+:** за Гаффні — 2 найкращі формати з усіх протестованих за даними ≥24 год, далі тест хуків на переможці (як у пункті 3 нижче).
 
-1. **11–13.11, тест формату.** Щодня Q (11:00), R (15:00), B (19:00), щоразу нова тема. Теми без повторів (вже були: Ich bin voll/satt, der Löffel/die Gabel/das Messer/der Teller/die Tasse, aus-bei-mit-nach-seit-von-zu + mit dem Bus/nach der Arbeit/bei meiner Oma/seit einem Jahr/mit dem Zug; Mir ist kalt, halb drei, das Mädchen, abholen, das Gift; langweilig, nach Hause, warten auf, 35 Jahre alt, keine Zeit; ausgezeichnet, Meiner Meinung nach, entscheidend, Herausforderung, unterstützen).
+1. **11–13.11, тест формату.** Щодня Q (11:00), R (15:00), B (19:00), щоразу нова тема. Теми без повторів (вже були: Ich bin voll/satt, der Löffel/die Gabel/das Messer/der Teller/die Tasse, aus-bei-mit-nach-seit-von-zu + mit dem Bus/nach der Arbeit/bei meiner Oma/seit einem Jahr/mit dem Zug; Mir ist kalt, halb drei, das Mädchen, abholen, das Gift; langweilig, nach Hause, warten auf, 35 Jahre alt, keine Zeit; ausgezeichnet, Meiner Meinung nach, entscheidend, Herausforderung, unterstützen; 13.11: Ich lerne heute Deutsch / Heute lerne ich Deutsch / weil … lerne (порядок слів), der Feierabend + Schönen Feierabend! + Ich mache Feierabend, Danke! ≠ Ja, gerne! на «Noch ein Stück Kuchen?»).
+   ue_cartoon.py: нові необов'язкові поля cfg — ask, mark, mark_y, mark_w, oma_freeze, punch_mood (для серій, де бабуся не в шоці).
 2. **14.11 зранку, вибір переможця.** Метрики Metricool по 9 рілсах: перегляди, частка переглядів довше 3 с, середній час перегляду / тривалість, поширення + збереження на охоплення, підписки. Переможець — формат із найкращою медіаною переглядів; за рівності — вищий 3-с показник. Записати в analytics_log.md.
 3. **14–16.11, тест хука.** Формат-переможець, 3 рілси на день; у межах дня однаковий зміст, різний header/sub (перший кадр). Хуки з RESEARCH_TRENDS_2026-10.md §6, без неправди й вигаданої статистики.
 4. **17.11, останні 2 пости.** Найкращий хук + нова тема, №1 і №2 серії. Підсумковий звіт: що працює, що ні, що далі.
@@ -56,3 +57,4 @@ Metricool Free: 20 опублікованих постів на місяць. П
 |---|---|---|---|
 | 11.11 | Q tests/T1-paper-quiz-a2-v2.mp4 (чистий звук, 13:05, https://www.instagram.com/reel/DfmcUCihCJn/; версію 11:30 зі старим звуком власник видалив, у ліміті Metricool вона, імовірно, рахується) | R tests/T2-redpen-01-v2.mp4 (чистий звук) | B tests/T3-a2b2-01-v3.mp4 (чистий звук + серія і картка підписки) |
 | 12.11 | U tests/T7-ue-01.mp4 (Ü №1, voll/satt) | G tests/T8-run-01.mp4 (Run №1, кухня) | L tests/T9-beat-01.mp4 (Dativ-біт №1) — замість D/K/S за рішенням власника |
+| 13.11 | P tests/T10-zug-01.mp4 (Речення-потяг №1) | W tests/T11-wort-01.mp4 (Слово-фільм №1, Feierabend) | U tests/T12-ue-02.mp4 (Ü №2, Danke/Ja, gerne) — U обрано, бо з U/G/L дані були тільки по U |
