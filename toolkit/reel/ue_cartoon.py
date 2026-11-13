@@ -97,10 +97,12 @@ def render(t):
     # characters
     frz = T_FREEZE <= t < T_WRONG
     um = "happy"; om = "happy"; look = (.5, 0); blush = sweat = 0
-    if t >= T_FREEZE: om = "shock"; um = "shock" if t < T_THINK + .6 else "neutral"; look = (.6, 0)
+    if t >= T_FREEZE: om = CFG.get("oma_freeze", "shock"); um = "shock" if t < T_THINK + .6 else "neutral"; look = (.6, 0)
     if t >= T_WRONG: um = "oops"; blush = seg(t, T_WRONG, T_WRONG + .5); sweat = seg(t, T_WRONG + .3, T_RIGHT)
     if t >= T_RIGHT: um = "happy"; om = "happy"; blush = 1 - seg(t, T_RIGHT, T_RIGHT + .6); sweat = 0
-    if t >= T_PUNCH + .5: um = "shock"; om = "happy"; sweat = seg(t, T_PUNCH + .5, T_PUNCH + 1.2); look = (.7, -.3)
+    if t >= T_PUNCH + .5:
+        um = CFG.get("punch_mood", "shock"); om = "happy"; look = (.7, -.3)
+        sweat = seg(t, T_PUNCH + .5, T_PUNCH + 1.2) if um == "shock" else 0
     bob = math.sin(t * 5) * 4 if not frz else 0
     shake = math.sin(t * 60) * 7 * (1 - seg(t, T_FREEZE, T_FREEZE + .5)) if t >= T_FREEZE else 0
     oma(c, 770, 920 + bob * .6, 1.25, om, shake)
@@ -117,7 +119,7 @@ def render(t):
     if t < T_RIGHT: bubble(c, 330, 530, [CFG["say"]], 66, tail=-1, p=seg(t, T_SAY, T_SAY + .35))
     else: bubble(c, 330, 530, [CFG["right"]], 66, fill=(225, 246, 232), fg=GREEN, tail=-1, p=seg(t, T_RIGHT, T_RIGHT + .35))
     if T_FREEZE <= t < T_RIGHT:
-        p = back(seg(t, T_FREEZE, T_FREEZE + .3)); c.text((800, 690), "?!", 120 * max(p, .01), RED)
+        p = back(seg(t, T_FREEZE, T_FREEZE + .3)); mk = CFG.get("mark", "?!"); c.text((800, CFG.get("mark_y", 690)), mk, c.fit(mk, 120, CFG.get("mark_w", 400)) * max(p, .01), RED)
     if t >= T_PUNCH: bubble(c, 785, 600, CFG["punch"], 52, tail=1, p=seg(t, T_PUNCH, T_PUNCH + .35), w="Bold")
     # header
     c.text((540, 168), CFG["header"], c.fit(CFG["header"], 78, 960), INK)
@@ -125,7 +127,7 @@ def render(t):
     # captions under the table
     if T_THINK <= t < T_WRONG:
         left = T_WRONG - t; p = seg(t, T_THINK, T_THINK + .3)
-        card(c, 1440, [("Чому бабуся в шоці?", 60, INK, "Black"), ("Вгадай за 3 секунди", 46, (90, 96, 110), "SemiBold")], p, fill=(255, 248, 220))
+        card(c, 1440, [(CFG.get("ask", "Чому бабуся в шоці?"), 60, INK, "Black"), ("Вгадай за 3 секунди", 46, (90, 96, 110), "SemiBold")], p, fill=(255, 248, 220))
         cx, cy, r = 540, 1640, 62; c.circ(cx, cy, r + 8, INK); c.circ(cx, cy, r, WHITE)
         c.d.pieslice([(cx - r) * 2, (cy - r) * 2, (cx + r) * 2, (cy + r) * 2], -90, -90 + 360 * (left / 3), fill=(255, 214, 70))
         c.text((cx, cy), str(min(3, math.ceil(left))), 64, INK)

@@ -1,0 +1,25 @@
+{
+ "header": "Ü в Німеччині",
+ "sub": "Бабуся: «Noch ein Stück Kuchen?»",
+ "series": "Ü в Німеччині · №2",
+ "say": "Danke!",
+ "mark": "Schade!",
+ "oma_freeze": "happy",
+ "ask": "Чому Ü лишилась без торта?",
+ "wrong_ua": "німці чують: «Ні, дякую»",
+ "wrong_note": "«Danke» на пропозицію = ввічлива відмова",
+ "right": "Ja, gerne!",
+ "right_ua": "= Так, залюбки!",
+ "punch": [
+  "Na also!",
+  "Guten Appetit!"
+ ],
+ "punch_mood": "happy",
+ "follow": {
+  "line1": "Далі — Ü №3",
+  "line2": "нова халепа — вже не за столом",
+  "like": "лайк, якщо теж казав(-ла) «Danke»"
+ },
+ "mark_y": 655,
+ "mark_w": 290
+}
